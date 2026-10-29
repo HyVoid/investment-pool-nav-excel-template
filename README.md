@@ -11,7 +11,7 @@
 
 **A dynamic Microsoft Excel fund unitization spreadsheet and Net Asset Value (NAV) calculator built for investment clubs, real estate syndicates, private trading pools, and family offices managing staggered investor contributions and redemptions.**
 
-[Launch the Interactive Fund Unitization & NAV Calculator Web Demo](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/) 
+[Launch the Interactive Fund Unitization & NAV Calculator Web Demo](https://hyvoid.github.io/investment-pool-nav-excel-template/) 
 
 [Download the Complete Fund Unitization & NAV Accounting Excel Workbook (Free)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
 
