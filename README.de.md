@@ -1,242 +1,292 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Die Eigentümerschaft an Investmentpools fair verfolgen, wenn Kapital zu unterschiedlichen Zeitpunkten eintritt
 
-<div align="center">
+# Excel-Vorlage für Fund Unitization & NAV Accounting: Eigentümerschaft im Investmentpool, Partner-Kapitalkonten und Multi-Date-Cashflows nachverfolgen
+
+<div align="left">
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel-217346)
 ![Domain](https://img.shields.io/badge/domain-Fund%20NAV%20Accounting-orange)
 
-**Konzipiert für Investmentpools, Syndikate und Handelsgruppen, in denen Teilnehmer Kapital über mehrere Daten hinweg einzahlen und ein transparentes, kontinuierlich aktualisiertes Eigentumsregister benötigen.**
+**Eine dynamische Microsoft-Excel-Tabelle zur Fund-Unitisierung und ein Net Asset Value (NAV)-Rechner – entwickelt für Investmentclubs, Immobilien-Syndikate, private Handelspools und Family Offices, die gestaffelte Investoreneinzahlungen und Rücknahmen verwalten.**
 
-[Live-Demo](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/) | [Vollständige Excel-Version kaufen (kostenlos)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
+[Die interaktive Web-Demo des Fund Unitization & NAV-Rechners starten](https://hyvoid.github.io/investment-pool-nav-excel-template/) 
+
+[Die vollständige Excel-Arbeitsmappe für Fund Unitization & NAV Accounting herunterladen (kostenlos)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
 
 </div>
 
-Verfolge die Eigentümerschaft jedes Teilnehmers kontinuierlich, löse Verwässerung automatisch auf Buchhaltungsebene auf und pflege einen einzigen prüffähigen Datensatz jedes Saldos—aktualisiert bei jeder Transaktion.
+Die **Fund Unitization & NAV Accounting Workbook** ist ein automatisierter **Microsoft Excel Investment-Pool-Tracker** und ein **Partner-Kapitalkonto-Ledger**. Sie berechnet den **Net Asset Value (NAV) pro Anteil**, automatisiert die **Preisbildung für Anteilsausgabe und Rücknahme**, verhindert die **Verwässerung von Gewinnen vor dem Eintritt** und führt eine **prüffähige Investoren-Cap-Table** über gestaffelte Einzahlungsdaten hinweg – ganz ohne institutionelle Fondsverwaltungssoftware.
 
 ---
 
-## Schnelle Vorschau
-<img width="1536" height="1024" alt="ChatGPT Image May 18, 2026, 04_56_08 PM" src="https://github.com/user-attachments/assets/42e2fe30-0173-45cc-945a-0d066ac2c974" />
-<img width="1672" height="941" alt="ChatGPT Image May 18, 2026, 04_56_14 PM" src="https://github.com/user-attachments/assets/1b9a5b9c-5037-4e2a-8ddb-fd1584d48a5c" />
-<img width="1448" height="1086" alt="ChatGPT Image May 18, 2026, 04_56_17 PM" src="https://github.com/user-attachments/assets/71d0cb5b-76f8-4152-b13d-0b58f792e9bc" />
+## Visuelle Vorschau: NAV-Berechnungs-Engine & Partner-Kapitalkonto-Dashboard
 
+<img width="1536" height="1024" alt="Fund Unitization Excel Template Dashboard showing Net Asset Value per unit and investor ownership percentages" src="https://github.com/user-attachments/assets/42e2fe30-0173-45cc-945a-0d066ac2c974" />
+<img width="1672" height="941" alt="Investment Pool Transaction Ledger in Excel tracking staggered capital contributions, withdrawals, and P&L updates" src="https://github.com/user-attachments/assets/1b9a5b9c-5037-4e2a-8ddb-fd1584d48a5c" />
+<img width="1448" height="1086" alt="Partner Capital Account Statement in Excel displaying unit issuance, entry NAV pricing, and real-time redemption balances" src="https://github.com/user-attachments/assets/71d0cb5b-76f8-4152-b13d-0b58f792e9bc" />
 
-> Sieh dir das interaktive Buchhaltungsmodell an: [Demo des NAV- und Unitization-Simulators für Pools](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/)
+> Testen Sie die anteilsbasierte Zuordnungsmathematik im Browser, bevor Sie herunterladen: [Interaktive Fund Unitization & NAV Accounting Simulator-Demo](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/)
 
 ---
 
-## Warum es dieses Tool gibt
+## Warum statische Cap Tables in Investmentpools mit mehreren Einzahlungsdaten scheitern
 
-Die meisten Streitigkeiten in Investmentpools werden nicht durch schlechte Absichten verursacht.
+Streitigkeiten über die Pool-Buchhaltung entstehen, wenn Schatzmeister feste Eigentümerschaftsprozentsätze, gestaffelte Kapitaleintrittsdaten und manuelle Gewinn-und-Verlust-(P&L)-Zuordnungen in einer flachen Tabelle kombinieren. Wenn ein Investor Monate später eine Teil- oder Voltrücknahme anfordert, deckt die Rekonstruktion seines exakten Kapitalkontosaldos strukturelle Schwächen statischer Prozentsatzmodelle auf.
 
-Sie entstehen, weil feste Prozentsätze, gemischte Eintrittsdaten und manuelle GuV-Zuordnung schwer in Einklang zu bringen sind, wenn ein Teilnehmer aussteigt—insbesondere Monate oder Jahre nachdem die Positionen begründet wurden, die die Uneinigkeit verursacht haben.
-
-Das Risiko ist strukturell:
+**Der herkömmliche statische Prozentsatz-Workflow (hohes Streitrisiko):**
 
 ```text
-New capital contributed
--> Percentage split adjusted manually
--> Prior market gains not ring-fenced
--> Dispute surfaces at withdrawal
+New capital subscription logged
+-> Partner ownership percentage split adjusted manually
+-> Unrealized pre-entry market gains mixed with new capital
+-> Valuation and dilution dispute surfaces at investor withdrawal
+
 ```
 
-Diese Arbeitsmappe ändert den Workflow:
+**Der automatisierte NAV-Unitisierungs-Workflow (prüffähig):**
 
 ```text
-New capital contributed
--> Units issued at current NAV
--> Prior participants' balances unaffected
--> Ownership tracked continuously from day one
+New capital subscription logged
+-> Pool units issued at current mark-to-market NAV per unit
+-> Early investors' accumulated gains locked in structurally
+-> Real-time capital account balances updated at every cash flow event
+
 ```
 
-Das wirtschaftliche Problem ist nicht nur Fairness. Es ist operative Klarheit. Pool-Betreiber, Schatzmeister und Lead-Investoren müssen genau wissen, was jedem Teilnehmer zusteht—zu jedem Zeitpunkt, nicht nur in dem Moment, in dem jemand den Ausstieg verlangt.
+Pool-Betreiber, Syndikats-GPs und Club-Schatzmeister benötigen überprüfbare operative Klarheit. Jeder Komplementär und Kommanditist muss exakte Liquidationssalden, Anteilsbestände und implizite Eigentümerschaftsanteile zu jedem Bewertungsstichtag verifizieren können.
 
 ---
 
-## Drei Zuordnungsfallen, in die selbst Pool-Betreiber tappen
+## Die Geschäftslogik & Methodik: Unitisierte NAV-Bewertung vs. Prozentsatzaufteilungen
 
-### Falle 1 — Statische Prozentsätze, die als faire Eigentümerschaft missverstanden werden
+Diese Arbeitsmappe löst das **Mehrperioden-Kapitalzuordnungsproblem** mittels **Unitisierung nach Fondsmodell und zeitgewichteter Net Asset Value (NAV)-Bewertung** (ausgerichtet an FASB ASC 946 und den IOSCO-Standards zur Bewertung kollektiver Investmentvehikel).
 
-Prozentuale Eigentümerschaft fühlt sich intuitiv an. Sie bricht in dem Moment zusammen, in dem zwei Teilnehmer zu unterschiedlichen Daten in einen steigenden Pool eintreten.
+### Das geschäftliche Problem: Asynchrone Kapitalflüsse vs. kontinuierliche Marktbewegung
 
-Ein Pool im Wert von $130,000 nach einem Gewinn von 30 % erhält eine Einzahlung von $65,000. Wenn der neue Teilnehmer 33 % Eigentümerschaft direkt gegen den aktuellen Poolwert erhält, wird der Gewinn von 30 % vor Eintritt des ursprünglichen Teilnehmers jetzt teilweise mit jemandem geteilt, der daran nicht beteiligt war. Die Zahl sieht intern konsistent aus. Die Ökonomie ist es nicht.
+In einem dynamischen Investmentpool ändern sich zwei Variablen asynchron:
 
-Pool-Betreiber, die pauschale Prozentsätze bei der Einzahlung zuweisen—anstatt den Eintritt zum aktuellen Marktwert zu bewerten—benachteiligen routinemäßig frühe Teilnehmer, ohne es zu merken. Der Fehler akkumuliert sich lautlos. Er tritt beim Ausstieg zutage.
+1. **Portfolio-Bewertung (Markt-P&L):** Die zugrunde liegenden Assets schwanken täglich, wöchentlich oder monatlich.
+2. **Teilnehmer-Cashflows (Zeichnungen & Rücknahmen):** Investoren zahlen Kapital in unregelmäßigen Abständen ein oder ab.
 
-### Falle 2 — XIRR auf ein Eigentumsproblem angewendet, das es nicht lösen kann
+Verfolgt ein Pool die Eigentümerschaft streng über die kumulierte Einzahlungssumme geteilt durch das gesamte Pool-Eigenkapital, dann überträgt jede Einzahlung nach einem Marktgewinn einen Teil der unrealisierten Gewinne der frühen Investoren auf den neuen Teilnehmer. Umgekehrt zwingt eine Einzahlung nach einem Drawdown den Neueintretenden, historische Verluste mitzufinanzieren, die er nie erlitten hat.
 
-XIRR berechnet eine annualisierte Rendite auf einem einzigen Strom von Zahlungsströmen. Es beantwortet: *Welche Rendite hat dieser Investor über diesen Zeitraum erwirtschaftet?* Es beantwortet nicht: *Wie hoch ist der aktuelle Saldo dieses Investors, und wie viel erhält er, wenn er heute aussteigt?*
+### Die Kernmethodik: Anteilsausgabe zum Marktwert (Mark-to-Market)
 
-Das sind verschiedene Fragen. Betreiber, die XIRR als Zuordnungsmechanismus verwenden, lösen ein Rendite-Berichtsproblem mit einem Performance-Messwerkzeug.
+Statt Eigentümerschaftsprozentsätze direkt anzupassen, trennt die Arbeitsmappe **wirtschaftliche Performance** von **Kapitalverwässerung** durch eine Zustandsmaschine mit drei Gleichungen, die bei jeder Transaktionszeile ausgeführt wird:
 
-Um es funktionieren zu lassen, muss ein separater Renditestrom pro Teilnehmer berechnet, nach jeder Transaktion neu berechnet und die resultierenden Salden manuell abgeglichen werden, wenn neues Kapital eintritt. Die Berechnung ist im Moment ihrer Ausführung gültig. Sie pflegt keinen kontinuierlichen Zustand. Jede Einzahlung, Auszahlung oder GuV-Buchung erfordert einen frischen manuellen Lauf und einen neuen Abstimmungsdurchgang.
+1. **NAV-Bewertung vor der Transaktion:**
 
-Betreiber, die individuelle Renditen mit XIRR verfolgen und daraus aktuelle Salden ableiten, fügen zwei Probleme mit einem Werkzeug zusammen—und erzeugen bei jeder Kapitalbewegung Abstimmungslücken.
+$$\text{NAV per Unit}_{t} = \frac{\text{Total Pool Market Value}_{t}}{\text{Total Outstanding Units}_{t-1}}$$
 
-### Falle 3 — Verwässerungseffekte nach der Abwicklung berechnet
 
-In Modellen mit festen Prozentsätzen wird die wirtschaftliche Auswirkung einer neuen Einzahlung typischerweise in der nächsten Abstimmungsperiode aufgelöst, nicht in dem Moment, in dem Kapital eintritt. Bis dahin ist der Einstiegspreis des neuen Teilnehmers im Register nicht mehr sichtbar. Es bleiben nur aktuelle Salden übrig.
 
-Dies schafft eine strukturelle Mehrdeutigkeit, die nicht rückwirkend aufgelöst werden kann: Wenn der Pool zwischen dem Eintritt eines frühen Investors und dem Eintritt eines späteren Investors um 25 % gestiegen ist und beide die zu einem späteren Datum zugewiesene prozentuale Eigentümerschaft erhalten haben, wurde der Timing-Vorteil des frühen Investors lautlos in die statische Aufteilung absorbiert.
+*Geschäftlicher Effekt:* Alle realisierten und unrealisierten Markt-P&L-Veränderungen wirken sich auf den Anteilspreis ($\text{NAV per Unit}$) aus, ohne die Anteilsanzahl eines Teilnehmers zu verändern.
+2. **Preisbildung für Zeichnung & Rücknahme zum Fair Value:**
 
-Der Fehler liegt in niemandes Arithmetik. Er liegt im Buchhaltungsmodell. Und er wird normalerweise im denkbar schlechtesten Moment entdeckt—wenn jemand versucht zu gehen.
+$$\text{Units Issued or Redeemed}_{i,t} = \frac{\text{Cash Flow}_{i,t}}{\text{NAV per Unit}_{t}}$$
 
----
 
-## Für wen dieses Tool gedacht ist
 
-| Benutzer | Praktischer Anwendungsfall |
-|---|---|
-| Schatzmeister von Investmentclubs | Eigentümerschaft pro Mitglied über unregelmäßige Einzahlungsdaten hinweg verfolgen, ohne manuelle Neuberechnung |
-| Syndikatsbetreiber | Kapitalpartnereintritte und -austritte verwalten, ohne Prozentsatzaufteilungen jedes Mal neu zu verhandeln |
-| Administratoren kleiner Fonds | Ein transparentes, prüffähiges Register ohne institutionelle Buchhaltungssoftware pflegen |
-| Koordinatoren von Family Offices | Gewinne und Verluste fair auf Familienmitglieder verteilen, die zu unterschiedlichen Zeiten einzahlen |
-| Leads diskretionärer Handelsgruppen | Anteile ausgeben, wenn neues Kapital hinzukommt; Auszahlungen zu einem überprüfbaren aktuellen Wert abwickeln |
+*Geschäftlicher Effekt:* Neues Kapital kauft Anteile zur aktuellen, marktgerechten NAV und nicht zum Nennwert. Frühe Investoren behalten 100% ihrer Wertsteigerung vor dem Eintritt, weil der neue Investor einen höheren Preis pro Anteil zahlt.
+3. **Kontinuierlich abgeleiteter Kapitalkonto-Zustand:**
 
-Am besten geeignet für Pools mit 3–20 Teilnehmern bei gemischtem Einzahlungstiming, bei denen institutionelle Fondsverwaltungssoftware unerschwinglich ist, manuelle Tabellenkalkulationszuordnung aber keine sauberen Antworten mehr liefert.
+$$\text{Investor Balance}_{i,t} = \text{Units Held}_{i,t} \times \text{NAV per Unit}_{t}$$
 
----
 
-## Was die Arbeitsmappe tut
+$$\text{Economic Ownership \%}_{i,t} = \frac{\text{Units Held}_{i,t}}{\text{Total Outstanding Units}_{t}}$$
 
-### Transaktionsregister
-Ein einziger Dateneingabepunkt für Einzahlungen, Auszahlungen und Markt-GuV-Ereignisse. Erfasse jede Transaktion einmal; Anteilsanzahlen, NAV und Salden pro Teilnehmer aktualisieren sich automatisch im Hintergrund.
 
-### NAV-Berechnungs-Engine
-Der Nettoinventarwert wird kontinuierlich neu berechnet, während Markt-GuV erfasst wird. Der Saldo jedes Teilnehmers leitet sich aus aktueller NAV × gehaltenen Anteilen ab—nicht aus einer Prozentsatztabelle, die manuelle Pflege erfordert.
 
-### Ausgabe und Rücknahme von Anteilen
-Einzahlungen kaufen Anteile zur aktuellen NAV. Auszahlungen lösen Anteile zur aktuellen NAV ein. Neueintretende erhalten Anteile, die zum Marktwert zum Zeitpunkt des Eintritts bewertet sind, nicht zu Nennwert. Die akkumulierten Gewinne früherer Teilnehmer werden strukturell erhalten—keine manuelle Abschottung erforderlich.
-
-### Dashboard pro Teilnehmer
-Der aktuelle Saldo, die Anteilsanzahl, der Eigentümerschaftsprozentsatz, die Einstiegs-NAV und der Einzahlungsverlauf jedes Teilnehmers sind in Echtzeit sichtbar. Keine manuelle Neuberechnung. Kein Abstimmungszyklus erforderlich, um die Frage zu beantworten: *was steht diesem Investor gerade zu?*
-
-### Prüffertige Aufzeichnungen
-Jede Transaktion wird mit Datum, NAV zur Transaktion, ausgegebenen oder eingelösten Anteilen und resultierenden Salden protokolliert. Die Aufzeichnungen sind für Prüfung, Export und Streitbeilegung ab dem ersten Eintrag strukturiert.
+*Geschäftlicher Effekt:* Eigentümerschaftsprozentsätze werden zu einer aus den Anteilsbeständen abgeleiteten Ausgabe statt einer manuellen Eingabetabelle. Rücknahmen werden sofort zu $\text{Units Redeemed} \times \text{Current NAV}$ abgerechnet, ganz ohne rückwirkende Neuberechnung.
 
 ---
 
-## Beispielszenario
+## Drei Kapitalzuordnungsfallen in manuellen Investment-Tabellen
 
-<!-- SCREENSHOT PLACEHOLDER: Before/after comparison or ledger entry view — recommended 1200 × 700 -->
+### Falle 1: Statische Prozentsatzaufteilungen verwässern Marktgewinne vor dem Eintritt
 
-**Pool-Profil:** 8 Teilnehmer. Einzahlungen verteilt über 18 Monate. Der Poolwert stieg über diesen Zeitraum um etwa 40 %. Verwaltet vom Lead-Teilnehmer in einer gemeinsamen manuellen Tabelle.
+Weist man Eigentümerschaft nach dem Anteil an der Kapitaleinlage zu, scheitert dieses Modell genau in dem Moment, in dem zwei Investoren zu unterschiedlichen Daten in ein steigendes Portfolio eintreten.
 
-**Das Problem:** Drei Teilnehmer traten zu verschiedenen Zeitpunkten während der Wachstumsphase bei. Der Lead-Investor passte die Eigentümerschaftsprozentsätze bei jedem Eintritt an. Die GuV wurde monatlich auf Basis der aktuellen Prozentsatztabelle verteilt.
+Angenommen, ein Investmentpool wächst von $100,000 auf $130,000 (+30% Rendite), und ein zweiter Investor zahlt $65,000 ein, wodurch die Pool-Gesamtassets $195,000 erreichen. Weist der Betreiber dem neuen Teilnehmer einen pauschalen Eigentümerschaftsanteil von 33.3% zu ($65,000 / $195,000), ohne das bisherige Eigenkapital zu unitisieren, erhält der neue Investor sofort einen Anspruch auf den $30,000-Gewinn des ersten Investors aus der Zeit vor dessen Eintritt.
 
-Als zwei frühe Teilnehmer die vollständige Rücknahme beantragten, entstanden drei gleichzeitige Streitigkeiten: einer über die korrekte Behandlung eines 15%igen Rückgangs, der zwischen dem Eintrittsdatum des ersten und des zweiten Kohortenjahrgangs auftrat; einer über eine Einzahlung, die im falschen Monat erfasst worden war; und einer darüber, welcher Prozentsatz für den letzten Teilmonat vor dem Ausstieg galt.
+Pool-Betreiber, die bei Einzahlungsdaten pauschale Prozentsatzaufteilungen berechnen, benachteiligen frühere Geldgeber routinemäßig. Die buchhalterische Abweichung vergrößert sich lautlos über mehrere Finanzierungsrunden hinweg und löst bei der Liquidation Streitigkeiten aus.
 
-Die Rekonstruktion erforderte die manuelle Nachverfolgung von 18 Monaten manueller Zuordnungseinträge. Der Prozess dauerte drei Wochen, erforderte einen externen Buchhalter und führte dazu, dass ein Teilnehmer eine Zahl akzeptierte, die von seinem tatsächlichen Anspruch abwich, anstatt den Streit fortzusetzen.
+### Falle 2: Excel-XIRR zur Berechnung von Partner-Kapitalsalden verwenden
 
-| | Vorher | Nachher |
-|---|---|---|
-| Eigentumsmodell | Feste Prozentsätze, bei jeder Einzahlung manuell angepasst | Anteilsbasierte NAV; Anteile werden bei Einzahlung zum aktuellen Marktwert ausgegeben |
-| Behandlung von Neueintretenden | Bei Eintritt ausgehandelter Prozentsatz; frühere Gewinne nicht abgeschottet | Anteile zur aktuellen NAV gekauft; frühere Teilnehmer strukturell unbeeinflusst |
-| GuV-Zuordnung | Manuelle Neuberechnung gegen die Prozentsatztabelle in jeder Periode | Automatisch über NAV-Bewegung; Anteilsanzahlen unverändert |
-| Abwicklung von Auszahlungen | Salden aus historischen Prozentsatzeinträgen rekonstruieren | Anteile zur aktuellen NAV einlösen; Saldo direkt aus dem Registerzustand ablesen |
-| Konfliktoberfläche | Jeder manuelle Abstimmungspunkt | Auf Buchhaltungsebene aufgelöst |
+Die Excel-Funktion `XIRR` berechnet eine annualisierte interne Rendite über eine einzige Reihe datierter Cashflows. Sie misst die **historische, zeitadjustierte Performance**, während die Pool-Verwaltung eine **Bewertung der aktuellen Liquidationssalden** erfordert.
 
----
+Verwendet man `XIRR` als Eigenkapitalzuordnungsmechanismus, muss der Schatzmeister für jeden Teilnehmer separate Cashflow-Arrays pflegen, die Renditeverläufe nach jeder Einzahlung neu berechnen und die Gesamtsalden manuell gegen das tatsächliche Brokerage-Eigenkapital abstimmen. `XIRR` hält keinen kontinuierlichen Ledger-Zustand; jeder Kapitalabruf während der Periode, jede Teilausschüttung und jede Mark-to-Market-Bewertungsbuchung erfordert einen neuen manuellen Abstimmungsdurchlauf.
 
-## Warum NAV-Buchhaltung so funktioniert
+### Falle 3: Aufgeschobene Verwässerungsabstimmung bei der Periodenendabwicklung
 
-Die Fondsbuchhaltung hat die Anteils-/NAV-Struktur genau deshalb übernommen, weil das Timing der Investoren ein wirtschaftliches Fairnessproblem schafft, das statische Eigentümerschaft ohne manuellen Eingriff an jedem Transaktionspunkt nicht lösen kann.
+In traditionellen prozentsatzbasierten Partnerschaftsmodellen werden neue Kapitalzeichnungen oft als reine Bareingänge erfasst und erst zum Quartals- oder Jahresabschluss abgestimmt. Zum Abwicklungstermin ist der exakte Portfolio-Marktwert zum Zeitpunkt der Einzahlung mitten in der Periode unter den nachfolgenden Marktschwankungen begraben.
 
-Ein Teilnehmer, der am Tag 90 in einen steigenden Pool eingezahlt hat, teilte nicht die Risikoexposition eines Teilnehmers, der am Tag 1 eingetreten ist. Sie als gleichwertige Eigentümer zu behandeln erfordert, den wirtschaftlichen Unterschied ihrer Eintrittsbedingungen zu ignorieren—was feste Prozentsätze durch ihr Design tun.
-
-Die Anteilsstruktur kodiert Timing direkt: Der pro Anteil beim Eintritt gezahlte Preis spiegelt den Wert des Pools im Moment der Einzahlung wider. Marktbewegungen nach dem Eintritt fließen durch NAV-Änderungen, nicht durch Prozentsatzanpassungen. Auszahlungen werden zum aktuellen Marktwert verrechnet. Die Buchhaltung erzeugt zu jedem Zeitpunkt einen kontinuierlichen, überprüfbaren Zustand, ohne einen manuellen Korrekturzyklus zu erfordern.
-
-Deshalb verwendet jeder regulierte Investmentfonds—offene Investmentfonds, ETFs, Hedgefonds—NAV-Buchhaltung als sein Eigentumsregister. Die Struktur wurde nicht für Compliance entwickelt. Sie wurde entwickelt, weil sie der einzige Mechanismus ist, der alle vier Eigentumsbelange gleichzeitig handhabt:
-
-| Belang | Handhabt durch |
-|---|---|
-| Timing des Kapitaleintritts | Kaufpreis des Anteils (NAV zum Einzahlungsdatum) |
-| Marktperformance | NAV-Bewegung; Anteilsanzahlen unverändert |
-| Höhe der Einzahlung | Ausgegebene Anteilsmenge |
-| Verwässerung durch Neueintretende | Anteile zur aktuellen NAV ausgegeben; nicht zu Nennwert |
-
-Nützliche Referenzen:
-- [CFA Institute: Pooled Investment Vehicles](https://www.cfainstitute.org)
-- [IOSCO: Principles for the Valuation of Collective Investment Schemes](https://www.iosco.org)
-- [FASB ASC 946: Financial Services — Investment Companies](https://www.fasb.org)
+Gewann das Portfolio 25% vor einer Einzahlung mitten im Quartal und verlor danach 10%, löscht die pauschale Zusammenfassung der Periode den Timing-Vorteil des frühen Investors. Die unitisierte NAV-Bewertung löst die Verwässerung genau in dem Moment, in dem das Kapital eingeht, indem sie die Transaktion an die NAV pro Anteil dieses Tages bindet.
 
 ---
 
-## Wie Anteilsausgabe und NAV funktionieren
+## Für wen diese Fund-Unitisierungs-Excel-Vorlage gedacht ist
 
-Der Nettoinventarwert des Pools entspricht dem gesamten Marktwert geteilt durch die ausstehenden Anteile. Wenn neues Kapital eintritt, kauft es Anteile zur aktuellen NAV—nicht zu Nennwert. Marktgewinne und -verluste ändern die NAV; sie ändern nicht die Anteilsanzahlen.
+Diese Vorlage richtet sich an Betreiber, die über Ad-hoc-Prozentsatztabellen hinausgewachsen sind und institutionelle **NAV-Bewertungs-Softwarelogik in Microsoft Excel** benötigen:
 
-| Ereignis | Poolwert | Ausstehende Anteile | NAV pro Anteil |
-|---|---|---|---|
-| Investor A zahlt $100,000 ein | $100,000 | 100,000 | $1.00 |
-| Marktgewinn: +30 % | $130,000 | 100,000 | $1.30 |
-| Investor B zahlt $65,000 ein | $195,000 | 150,000 | $1.30 |
-| Marktverlust: −15 % | $165,750 | 150,000 | $1.105 |
-| Investor A löst 50,000 Anteile ein | $110,250 | 100,000 | $1.105 |
-
-**Der Mechanismus in Zahlen:**
-Investor B tritt zu einer NAV von $1.30 ein—nicht zu Nennwert—und erhält 50,000 Anteile für $65,000. Nach einem Verlust von 15 % hält Investor B 50,000 × $1.105 = $55,250. Investor B hat genau seinen proportionalen Anteil des Rückgangs relativ zu seinem Einstiegspunkt absorbiert. Der Gewinn von 30 % vor Eintritt von Investor A wurde nicht übertragen.
-
-**Das Modell mit statischen Prozentsätzen im gleichen Szenario:**
-Investor B werden beim Eintritt 33 % Eigentümerschaft zugewiesen (eine Einzahlung von $65K in einen Pool von $195K). Dieser Prozentsatz wird dann direkt auf alle künftige GuV angewendet. Bei der nächsten Abstimmung erhält Investor B 33 % des 15%igen Verlusts—aber der Gewinn von 30 %, den Investor A vor dem Eintritt von Investor B erwirtschaftet hat, wird jetzt ebenfalls teilweise nach derselben Prozentsatztabelle zugeordnet. Die beiden wirtschaftlich unterscheidbaren Perioden wurden zu einer einzigen Eigentumszahl verschmolzen.
-
-Das NAV-Modell trennt sie strukturell. Die Prozentberechnung wird zur Folge der Anteilsanzahlen, nicht zu einer Managemententscheidung, die an jeder Periodengrenze getroffen wird.
-
-Für einen Pool mit 8 Teilnehmern und zweiwöchentlicher Transaktionsaktivität sind das 8 kontinuierliche Saldoberechnungen, die sich bei jeder Einzahlung, Auszahlung und GuV-Buchung aktualisieren—ohne einen manuellen Anpassungszyklus.
+| Rolle & Suchpersona | Konkretes Betriebsszenario & Anwendungsfall der Vorlage |
+| --- | --- |
+| **Schatzmeister von Investmentclubs** *(Investment Club Accounting Spreadsheet)* | Monatliche Mitgliedsbeiträge, unregelmäßige Nachschüsse und vollständige Mitgliederauszahlungen für 3–20 Mitglieder verwalten und dabei überprüfbare Mitglieds-Kapitalabrechnungen erstellen. |
+| **Syndikats-Leads & GP-Betreiber** *(SPV & Syndikat Cap Table Excel-Vorlage)* | Kapitalpartner in späteren Phasen über mehrere Closing-Tranchen (Rolling Closes) hinweg aufnehmen und dabei frühe LPs vor Bewertungsverwässerung vor dem Close schützen. |
+| **Manager aufstrebender Hedgefonds & Krypto-Pools** *(Incubator Fund Shadow NAV Calculator)* | Ein unabhängiges Shadow-Accounting-Ledger neben den Brokerage-Kontoauszügen führen, um LP-Anteilklassen, Anteilspreise und NAV pro Anteil zu verfolgen, bevor ein Drittanbieter-Fondsadministrator beauftragt wird. |
+| **Family-Office-Koordinatoren** *(Family Investment Pool Allocation Workbook)* | Kapital aus mehreren Familienstiftungen oder Generationenkonten mit unterschiedlichen Eintrittsdaten zusammenführen und dabei eine faire P&L-Zurechnung sowie saubere Prüfpfade für die Steuer-CPAs sicherstellen. |
+| **Leads von Prop-Trading- & diskretionären Gruppen** *(Trading Pool P&L Distribution Tracker)* | Partizipationsanteile ausgeben, wenn neue Trader oder Geldgeber Margin-Kapital einzahlen, und teilweise Gewinnauszahlungen zu Mark-to-Market-Anteilspreisen abwickeln. |
 
 ---
 
-## Logik der Arbeitsmappe
+## Anwendungsfälle aus der Praxis: Szenarien der Kapitalzuordnung über mehrere Daten hinweg lösen
 
-Die Arbeitsmappe ist um einen praktischen Pool-Verwaltungsworkflow herum organisiert:
+### Szenario A: Rolling Closes in privaten Investmentsyndikaten & SPVs
 
-1. Teilnehmerinformationen und Ersteinzahlungen eingeben.
-2. Anteile zur aktuellen NAV für jede Einzahlung ausgeben.
-3. Markt-GuV erfassen, wenn sie anfällt—täglich, wöchentlich oder monatlich.
-4. Anteile zur aktuellen NAV für jede Auszahlungsanforderung einlösen.
-5. Salden, Anteilsanzahlen und Eigentümerschaftsprozentsätze pro Teilnehmer jederzeit überprüfen.
-6. Transaktionsverlauf für Abstimmung, Steuerdokumentation oder Streitprüfung exportieren.
-7. Auf Eingabelücken oder Saldounstimmigkeiten prüfen, bevor eine Ausschüttung erfolgt.
+Wenn der Komplementär (General Partner, GP) eines Syndikats über drei separate Closing-Termine innerhalb von sechs Monaten Kapital aufnimmt, während die zugrunde liegenden Assets bereits an Wert gewinnen, verlangen frühe Kommanditisten (Limited Partners, LPs) Schutz vor Free-Riding späterer Tranchen. Indem jede Closing-Tranche als **Anteilszeichnung zur aktuellen NAV** gebucht wird, kaufen spätere Einsteiger zum gestiegenen Anteilspreis ein, wodurch 100% der Gewinne vor dem Close für die Tranche-1-Investoren erhalten bleiben.
 
-Die Arbeitsmappe ist als Entscheidungsunterstützungs- und Buchhaltungstransparenzwerkzeug gedacht. Sie ersetzt keine qualifizierte Rechtsberatung zur Fondsstruktur, zur steuerlichen Behandlung von Investorenzuordnungen oder zur regulatorischen Compliance in der Rechtsordnung des Betreibers.
+### Szenario B: Mitgliederbeitritt, Nachschüsse und Auszahlungen in Aktien- & Krypto-Investmentclubs
 
----
+Investmentclubs ziehen typischerweise ungleiche monatliche Einzahlungen ein und erlauben bestehenden Mitgliedern, Beiträge auszusetzen oder sich teilweise auszahlen zu lassen. Statt die Partnerschaftsvereinbarungen jeden Monat neu zu verhandeln, erfasst der Club-Schatzmeister den aktuellen Liquidationswert des Brokerage-Kontos, aktualisiert die **NAV pro Anteil** und wickelt alle monatlichen Einzahlungen und Auszahlungsanfragen zu diesem einen Abrechnungskurs ab.
 
-## Kauf
+### Szenario C: Inkubatorfonds & Friends-and-Family-Handelspools mit Bedarf an Shadow Accounting
 
-Verwende hier die vollständige Excel-Arbeitsmappe:
-
-[Kaufe den vollständigen Excel-Tracker](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
+Aufstrebende Fondsmanager, die ein Friends-and-Family-Portfolio von $100K–$5M verwalten, rechtfertigen selten institutionelle Fondsverwaltungsgebühren von $15,000+/Jahr. Diese Arbeitsmappe fungiert als lokales **Excel-Shadow-NAV-Bewertungssystem** und erzeugt Anteils-Ledgers auf Investorenebene, Einzahlungshistorien und Kapitalkonto-Zusammenfassungen, bereit für die Steuererstellung durch den CPA (Schedule K-1-Unterstützung) oder das LP-Reporting.
 
 ---
 
-## Einschränkungen
+## Was die Arbeitsmappe verfolgt: Zuordnung von Schmerzpunkten zu Lösungen
 
-- **Abhängigkeit von der Datenintegrität** — NAV-Berechnungen sind nur so genau wie die Einträge; fehlende, falsch datierte oder falsch klassifizierte Transaktionen erzeugen ohne Warnung falsche Salden
-- **Keine Rechts- oder Steuerberatung** — diese Arbeitsmappe spiegelt Standard-NAV-Buchhaltungsprinzipien wider; die steuerliche Behandlung von Anteilszuordnungen und Investorenausschüttungen variiert je nach Rechtsordnung und sollte mit qualifizierten Beratern validiert werden
-- **Nur manuelle Dateneingabe** — Marktwerte müssen manuell eingegeben werden; die Arbeitsmappe stellt keine Verbindung zu externen Preisfeeds, Broker-APIs oder Portfoliomanagementsystemen her
-- **Umfang: nur Bareinzahlungen, -auszahlungen und Markt-GuV** — Carried-Interest-Strukturen, Performance-Fee-Wasserfälle, abgegrenzte Ertragsausschüttungen und Multiwährungspools beinhalten Bedingungen, die in dieser Version nicht codiert sind
-- **Größenobergrenze** — konzipiert für Pools mit 3–20 Teilnehmern bei wöchentlicher bis monatlicher Transaktionsfrequenz; höheres Volumen kann die Excel-Leistung beeinträchtigen
-- **Empfindlichkeit gegenüber der Excel-Version** — erfordert Excel 2016 oder höher unter Windows; das Verhalten in Excel für Mac oder Office 365 Web kann abweichen
-- **Randfälle nicht vollständig automatisiert** — Side-Pocket-Zuordnungen, Bestimmungen zu gesperrtem Kapital und gestaffelte Rücknahmetore beinhalten regulatorische oder vertragliche Bedingungen, die eine manuelle Behandlung erfordern, die in dieser Version nicht codiert ist
+| Schmerzpunkt der Pool-Buchhaltung | Häufig gesuchte Anforderung | Eingebaute Excel-Arbeitsmappen-Lösung |
+| --- | --- | --- |
+| **Unfaire Verwässerung bei gestaffelten Einzahlungen** | *Wie man Gewinne zuordnet, wenn Investoren zu unterschiedlichen Zeiten beitreten* | **Automatisierte Anteilsausgabe-Engine:** Wandelt eingehende Bareinzahlungen in Pool-Anteile um, die zum exakten NAV pro Anteil vor der Einzahlung bepreist sind, und isoliert frühere Gewinne automatisch. |
+| **Manuelle Fehler bei der P&L-Verteilung** | *Investment-Pool-P&L-Zuordnungstabelle* | **Kontinuierliche NAV-Neuberechnung:** Portfolio-Gewinne und -Verluste aktualisieren die globale NAV pro Anteil; die einzelnen Investorensalden (`Units × Current NAV`) passen sich dynamisch an – ganz ohne manuelle Prozentsatzänderungen. |
+| **Komplizierte Rechnungen bei Teilauszahlungen** | *Auszahlungs-/Rücknahmewert eines Investors im Partnerschaftspool berechnen* | **Anteilsrücknahme zum Marktwert (Mark-to-Market):** Wandelt Auszahlungsanfragen in Dollar in exakte Anteilsrücknahmen zur aktuellen NAV um und lässt die Salden der übrigen Partner unangetastet. |
+| **Intransparente Investorensaldo-Berichte** | *Partner-Kapitalkonto-Tracker & Cap Table Excel-Vorlage* | **Echtzeit-Dashboard pro Teilnehmer:** Zeigt das investierte Nettokapital, den Anteilsbestand, den wirtschaftlichen Eigentümerschafts-%, die gewichtete Eintritts-NAV und den kumulativen Dollar-P&L jedes Investors. |
+| **Reibung bei Prüfung & Steuerabstimmung** | *Prüffähiges Fonds-Transaktionsledger für die CPA-Prüfung* | **Chronologischer Transaktions-Audit-Trail:** Protokolliert jedes Bewertungsereignis, jede Einzahlung und jede Rücknahme mit zeitgestempelter NAV, Anteilsdelta und Pool-Zustand nach der Transaktion für sofortigen CSV/PDF-Export. |
 
 ---
 
-## Über dieses Projekt
+## Fallstudie: Manuelle Prozentsatzzuordnung vs. automatisierte NAV-Unitisierung
 
-Diese Arbeitsmappe ist Teil eines breiteren Bemühens, komplexe betriebliche und finanzielle Buchhaltungsanforderungen in leichtgewichtige Werkzeuge zu übersetzen, die kleine und mittlere Organisationen tatsächlich nutzen können.
+**Pool-Profil:** 8 Kapitalpartner zahlen über 18 Monate ungleich in ein aktiv gehandeltes Portfolio ein, das sich insgesamt um ~40% wertsteigerte. Zunächst vom federführenden verwaltenden Partner in einer manuellen Prozentsatzsplit-Tabelle verfolgt.
 
-Kein Abonnement für Fondsverwaltungssoftware. Kein individuelles Entwicklungsprojekt. Keine zusätzlichen Konten.
+**Der operative Zusammenbruch:** Drei Investoren traten mitten im Zyklus in Monaten hoher Volatilität bei. Der verwaltende Partner berechnete die Kapitalbeteiligungsprozentsätze nach jeder Einzahlung manuell neu und verteilte den monatlichen P&L nach diesen statischen Gewichten.
 
-Nur klare Buchhaltungslogik, strukturierte Transaktionsdaten und wiederholbare Eigentumsberechnungen—geliefert in Software, die dein Team bereits hat.
+Als zwei frühe Partner die vollständige Kapitalrücknahme beantragten, blockierten drei buchhalterische Streitigkeiten die Ausschüttungen:
 
-Wenn dein Betrieb Zuordnungs-, Abstimmungs- oder Eigentumsverfolgungsprobleme betrifft, die derzeit im Kopfmodell von jemandem oder in einer getrennten Tabelle leben, [sieh dir an, was sonst verfügbar ist →](https://www.theseusworkshop.com)
+1. Wie ein 15%iger Portfolio-Drawdown mitten im Jahr zuzuordnen ist, der zwischen den Finanzierungsdaten von Kohorte 1 und Kohorte 2 auftrat.
+2. Wie eine Partner-Einzahlung von $25,000 zu korrigieren ist, die im falschen monatlichen Abstimmungs-Tab erfasst worden war.
+3. Welche Eigentümerschaftsprozentsatztabelle für den letzten Teilmonat vor der Rücknahmeabwicklung galt.
+
+Die Rekonstruktion der historischen Kapitalkonten erforderte drei Wochen Forensic Accounting durch einen externen CPA.
+
+### Vergleich: Statische Prozentsatztabellen vs. unitisierte NAV-Bewertung
+
+| Buchhaltungsvorgang | Manuelle Prozentsatzsplit-Tabelle (vorher) | Automatisierte Fund-Unitisierungs-Excel-Arbeitsmappe (nachher) |
+| --- | --- | --- |
+| **Eigenkapital-Eigentümerschaftsmodell** | Statische Kapitaleinlage-Prozentsätze, nach jeder Einzahlung manuell überschrieben | Dynamisches **unitisiertes NAV-Modell**; Anteile werden bei Einzahlung zum Mark-to-Market-Preis ausgegeben |
+| **Behandlung von Späteinsteigern & Verwässerung** | Neues Kapital verwässerte frühere unrealisierte Gewinne, sofern nicht pro Tranche manuell abgeschottet | **Automatische Anti-Verwässerungs-Preisbildung**; eingehendes Kapital kauft Anteile zur aktuellen NAV |
+| **Periodische P&L-Zuordnung** | Manuelle Neuberechnung zum Periodenende über sich verschiebende Partner-Prozentsatztabellen | **Echtzeit-Anpassung der NAV pro Anteil**; die Anteilsbestände der Investoren bleiben bei Marktbewegungen konstant |
+| **Partner-Rücknahme & Auszahlungsabwicklung** | Forensische Rekonstruktion historischer monatlicher P&L-Tabs vor der Auszahlung erforderlich | **Sofortige Liquidationspreisbildung** (`Redeemed Units × Current NAV`), direkt aus dem Live-Ledger abgelesen |
+| **Audit-Trail & Streitfläche** | Hohes Fehlerrisiko bei jeder manuellen Formelüberschreibung und jedem Perioden-Rollforward | **Chronologisches Transaktionsledger aus einer einzigen Quelle**; die Abstimmung erfolgt auf der Buchhaltungsebene |
+
+---
+
+## Institutionelle Standards hinter der unitisierten NAV-Bewertung
+
+Regulierte kollektive Investmentvehikel – darunter Investmentfonds, ETFs, Private-Equity-SPVs und Hedgefonds – setzen auf unitisierte Net Asset Value-Bewertung, weil asynchrone Investoren-Cashflows ein wirtschaftliches Zurechnungsproblem schaffen, das flache Prozentsatztabellen nicht lösen können.
+
+Ein Investor, der an Tag 90 in ein steigendes Portfolio zeichnet, trug das Marktrisiko der Tage 1 bis 89 nicht. Die unitisierte Struktur kodiert das Einstiegstiming direkt in den **Zeichnungsanteilspreis (NAV am Einzahlungsdatum)**. Die nachfolgende Marktperformance fließt ausschließlich durch die **Schwankungen der NAV pro Anteil**, während Investorenauszahlungen zur jeweils geltenden Liquidations-NAV abgerechnet werden.
+
+| Dimension der Fonds-Buchhaltung | Institutioneller NAV-Mechanismus in dieser Arbeitsmappe |
+| --- | --- |
+| **Zeitpunkt der Kapitalzeichnung** | Verankert im Kaufpreis des Investors über die **NAV pro Anteil am Einzahlungsdatum** |
+| **Portfolio-Marktperformance (P&L)** | Spiegelt sich ausschließlich in der **Bewegung der NAV pro Anteil**; die Anzahl der ausstehenden Anteile bleibt unverändert |
+| **Höhe der Kapitaleinlage** | Spiegelt sich in der **Menge der ausgegebenen Pool-Anteile** ($\text{Deposit} \div \text{Current NAV}$) |
+| **Verwässerungsschutz für bestehende LPs** | Durchgesetzt durch die Ausgabe neuer Anteile zur **aktuellen Mark-to-Market-NAV** statt zum anfänglichen Nennwert |
+
+**Referenzierte maßgebliche Bewertungs- und Rechnungslegungsstandards:**
+
+* [CFA Institute: Struktur und Bewertung von Pooled Investment Vehicles](https://www.cfainstitute.org)
+* [IOSCO: Grundsätze für die Bewertung kollektiver Kapitalanlagen](https://www.iosco.org)
+* [FASB ASC 946: Financial Services — Rechnungslegungsstandards für Investmentgesellschaften](https://www.fasb.org)
+
+---
+
+## Durchgerechnetes Zahlenbeispiel: Wie Anteilsausgabe und NAV-Preisbildung funktionieren
+
+Der **Net Asset Value pro Anteil** eines Pools entspricht dem gesamten Portfolio-Marktwert geteilt durch die Gesamtzahl der ausstehenden Anteile. Eingehendes Kapital kauft neue Anteile zur aktuellen NAV pro Anteil. Marktgewinne und -verluste verändern die NAV pro Anteil, während die Anzahl der ausstehenden Anteile unverändert bleibt.
+
+| Transaktionsereignis | Gesamter Pool-Marktwert | Ausstehende Anteile insgesamt | NAV pro Anteil | Anteilsdelta der Partner & buchhalterische Auswirkung |
+| --- | --- | --- | --- | --- |
+| **1. Investor A zahlt $100,000 ein** | $100,000 | 100,000 | $1.000 | Investor A erhält **100,000 Anteile** zur Eröffnungs-NAV von $1.000 (Nennwert) ausgestellt (100% Eigentümerschaft) |
+| **2. Portfolio-Marktgewinn: +30%** | $130,000 | 100,000 | $1.300 | Anteilsanzahl unverändert; die NAV steigt auf **$1.300/Anteil** (Saldo von Investor A = $130,000) |
+| **3. Investor B zahlt $65,000 ein** | $195,000 | 150,000 | $1.300 | Investor B kauft **50,000 Anteile** zur NAV von $1.300 (33.33% Eigentümerschaft; A behält $130,000) |
+| **4. Portfolio-Marktverlust: −15%** | $165,750 | 150,000 | $1.105 | Anteilsanzahl unverändert; die NAV fällt auf **$1.105/Anteil** (A = $110,500; B = $55,250) |
+| **5. Investor A löst 50,000 Anteile ein** | $110,250 | 100,000 | $1.105 | Investor A hebt **$55,250 in bar** ab (50,000 × $1.105); hält 50,000 Anteile (50% des verbleibenden Pools) |
+
+**Warum die unitisierte Rechnung jeden Teilnehmer schützt:**
+
+* **Faire Einstiegspreisbildung:** Investor B zahlt $65,000 ein, wenn der Anteilspreis $1.300 beträgt, und erhält dafür 50,000 Anteile. Der $30,000-Gewinn von Investor A aus der Zeit vor dem Eintritt bleibt zu 100% innerhalb seiner 100,000 Anteile unangetastet.
+* **Proportionale Drawdown-Zurechnung:** Nach dem 15%igen Marktverlust fällt die NAV von $1.300 auf $1.105. Die 50,000 Anteile von Investor B sind $55,250 wert – er absorbiert exakt einen 15%igen Verlust auf sein Einstiegskapital von $65,000, ohne die frühere Periode von Investor A zu erben oder zu subventionieren.
+
+---
+
+## Schnellstart-Tutorial: Ihr Investment-Pool-NAV-Ledger in 6 Schritten einrichten
+
+Folgen Sie diesem Schritt-für-Schritt-Workflow, um Ihren Investmentclub, Ihr Syndikat oder Ihren Handelspool von manuellen Prozentsatzsplits zur automatisierten NAV-Unitisierung zu überführen:
+
+1. **Testen Sie Ihr Cashflow-Szenario im Live-Browser-Simulator**
+Öffnen Sie die [interaktive Web-Demo für Fund Unitization & NAV Accounting](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/), um gestaffelte Einzahlungen, Markt-P&L-Schwankungen und Rücknahmen zu simulieren, bevor Sie Ihre echten Partnerschaftszahlen eingeben.
+2. **Pool-Parameter und Partnerprofile initialisieren**
+Registrieren Sie Ihre anfänglichen Investoren, legen Sie Ihre Basiswährung fest und definieren Sie Ihre Eröffnungs-NAV pro Anteil zum Nennwert (z. B. $1.00 oder $100.00 pro Anteil) zum Startdatum.
+3. **Kapitalzeichnungen erfassen, um Anteile automatisch auszugeben**
+Erfassen Sie jede Investoreneinzahlung zusammen mit dem aktuellen Portfolio-Marktwert. Die Arbeitsmappe berechnet die geltende NAV pro Anteil und schreibt die exakte Bruchteil- oder Gesamtanzahl an Anteilen dem Kapitalkonto des Partners gut.
+4. **Periodisches Mark-to-Market-Portfolio-P&L erfassen**
+Erfassen Sie realisierte und unrealisierte Portfolio-Bewertungsaktualisierungen täglich, wöchentlich oder monatlich – und unmittelbar vor jedem externen Cashflow –, um die NAV pro Anteil des Pools zu aktualisieren.
+5. **Investorenauszahlungen und Anteilsrücknahmen abwickeln**
+Geben Sie Teil- oder Voltrücknahme-Anfragen ein. Die Engine liquidiert die entsprechende Anzahl an Anteilen zur aktuellen NAV, verringert die Gesamtzahl der ausstehenden Anteile und berechnet die Eigentümerschaftsgewichte nach der Rücknahme für die verbleibenden Partner neu.
+6. **Kapitalkonto-Auszüge prüfen und die wiederverwendbare Excel-Arbeitsmappe herunterladen**
+Überprüfen Sie die Saldointegrität über die automatisierten Fehlerprüf-Flags und exportieren Sie saubere Transaktionsprotokolle für das LP-Reporting oder die Steuervorbereitung. Sobald Sie den Workflow in der Web-Demo für eine Sitzung validiert haben, **[laden Sie die vollständige, wiederverwendbare Fund-Unitisierungs- & NAV-Accounting-Excel-Vorlage herunter](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**, um dauerhafte historische Ledgers zu speichern, Partner-Dashboards anzupassen und laufende mehrjährige Pool-Betriebe offline in Microsoft Excel zu verwalten.
+
+*Haftungsausschluss: Diese Arbeitsmappe ist eine betriebliche Buchhaltungs- und Entscheidungsunterstützungsvorlage. Ziehen Sie einen qualifizierten CPA oder Fondsanwalt zu Fragen der steuerlichen Zuordnung in Partnerschaften (z. B. IRC Section 704(b) / Schedule K-1) und der Wertpapier-Compliance in Ihrer Rechtsordnung hinzu.*
+
+---
+
+## Die vollständige Excel-Vorlage herunterladen
+
+Bereit, die Buchhaltung Ihres Investmentpools zu automatisieren und ein dauerhaftes, prüffähiges Partner-Ledger zu führen?
+
+👉 **[Holen Sie sich die vollständige Fund Unitization & NAV Accounting Excel-Arbeitsmappe (kostenloser Download)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**
+
+---
+
+## Technischer Umfang & betriebliche Einschränkungen
+
+* **Abhängigkeit von der Eingabedatengenauigkeit:** Die Genauigkeit der NAV pro Anteil hängt davon ab, Mark-to-Market-Portfolio-Bewertungen unmittelbar vor der Erfassung jeder neuen Kapitaleinzahlung oder -auszahlung einzugeben.
+* **Betrieblicher Buchhaltungsumfang (keine Steuer-/Rechtsberatung):** Spiegelt die Standard-Mathematik der zeitgewichteten NAV-Unitisierung wider; spezifische steuerliche Partnerschaftszuordnungen, Buch-zu-Steuer-Abstimmungen und regulatorische Einreichungen erfordern eine Validierung durch einen zugelassenen CPA oder Rechtsanwalt.
+* **Manuelle Bewertungseingabe offline:** Ausgelegt auf Privatsphäre und null externe Abhängigkeiten; Portfolio-Marktwerte werden manuell eingegeben und nicht über Live-Brokerage-APIs abgerufen.
+* **Standard-Umfang für Gebühren & Cashflows:** Deckt Kapitalzeichnungen, Rücknahmen und Markt-P&L ab. Komplexe GP/LP-Carried-Interest-Wasserfälle, Hurdle Rates, High-Water-Mark-Performance-Gebühren und Multiwährungs-FX-Absicherung liegen außerhalb des Umfangs dieser Basisversion.
+* **Empfohlene Pool-Größe:** Optimiert für Investmentpools mit **3 bis 20 Teilnehmern**, die wöchentliche oder monatliche Transaktionen erfassen.
+* **Systemkompatibilität:** Gebaut für **Microsoft Excel 2016 oder höher (Windows & macOS)**, unter Verwendung Standard-nativer Formeln ohne jegliche Makro-/VBA-Sicherheitsabhängigkeiten.
+* **Besondere Strukturvorkehrungen:** Side-Pocket-Zuordnungen illiquider Positionen, Lock-up-Ablaufpläne und gated Rücknahmewarteschlangen erfordern individuelle Terminanpassungen außerhalb des Kern-Ledger-Tabs.
+
+---
+
+## Über Theseus Workshop
+
+Wir entwickeln transparente, prüffähige Finanz- und operative Excel-Modelle für kleine Fonds, Syndikate und operator-geführte Unternehmen, die institutionelle Buchhaltungslogik in Microsoft Excel benötigen.
+
+Jede Vorlage läuft lokal auf nativen Tabellenkalkulationsformeln und gibt Ihrem Team volle Einsicht in jede Berechnungszelle und jede Eigentümerschafts-Ledger-Eintragung.
+
+Verwalten Sie komplexe Kapitalzuordnungs-, Abstimmungs- oder Eigentümerschaftsverfolgungs-Workflows in Tabellen? **[Entdecken Sie unsere vollständige Bibliothek Finanz- & operativer Excel-Vorlagen bei Theseus Workshop →](https://www.theseusworkshop.com)**
 
 ---
 
 ## Lizenz
 
-Vertrieben unter der [MIT-Lizenz](https://opensource.org/licenses/MIT).
+Vertrieben unter der [MIT-Open-Source-Lizenz](https://opensource.org/licenses/MIT).
+
