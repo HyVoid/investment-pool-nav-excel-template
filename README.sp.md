@@ -1,242 +1,292 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Rastrear la propiedad de fondos de inversión de forma justa cuando el capital entra en momentos diferentes
 
-<div align="center">
+# Plantilla de Excel de contabilización por unidades y NAV de fondos: rastree la propiedad del pool de inversión, las cuentas de capital de los socios y los flujos de caja en múltiples fechas
+
+<div align="left">
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel-217346)
 ![Domain](https://img.shields.io/badge/domain-Fund%20NAV%20Accounting-orange)
 
-**Diseñado para fondos de inversión, sindicatos y grupos de negociación donde los participantes aportan capital en múltiples fechas y necesitan un libro de propiedad transparente y continuamente actualizado.**
+**Una hoja de cálculo dinámica de Microsoft Excel para la contabilización por unidades de fondos y una calculadora de valor liquidativo (NAV) diseñada para clubes de inversión, sindicatos inmobiliarios, pools privados de negociación y family offices que gestionan aportaciones y reembolsos de inversores en fechas escalonadas.**
 
-[Demo en vivo](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/) | [Comprar el Excel completo (gratis)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
+[Lanzar la demo web interactiva de la calculadora de contabilización por unidades y NAV de fondos](https://hyvoid.github.io/investment-pool-nav-excel-template/) 
+
+[Descargar el libro de Excel completo de contabilización por unidades y NAV de fondos (gratis)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
 
 </div>
 
-Rastrea la propiedad de cada participante de forma continua, resuelve la dilución automáticamente en la capa contable y mantiene un único registro auditable de cada saldo—actualizado en cada transacción.
+El **libro de contabilización por unidades y NAV de fondos** es un **rastreador de pools de inversión en Microsoft Excel** automatizado y un **libro mayor de cuentas de capital de socios**. Calcula el **valor liquidativo (NAV) por unidad**, automatiza la **emisión de participaciones y el precio de reembolso**, previene la **dilución de beneficios previos a la entrada** y mantiene una **tabla de capitalización de inversores lista para auditoría** a lo largo de fechas de aportación escalonadas, sin requerir software institucional de administración de fondos.
 
 ---
 
-## Vista previa rápida
-<img width="1536" height="1024" alt="ChatGPT Image May 18, 2026, 04_56_08 PM" src="https://github.com/user-attachments/assets/42e2fe30-0173-45cc-945a-0d066ac2c974" />
-<img width="1672" height="941" alt="ChatGPT Image May 18, 2026, 04_56_14 PM" src="https://github.com/user-attachments/assets/1b9a5b9c-5037-4e2a-8ddb-fd1584d48a5c" />
-<img width="1448" height="1086" alt="ChatGPT Image May 18, 2026, 04_56_17 PM" src="https://github.com/user-attachments/assets/71d0cb5b-76f8-4152-b13d-0b58f792e9bc" />
+## Vista previa visual: motor de cálculo del NAV y panel de cuentas de capital de socios
 
+<img width="1536" height="1024" alt="Fund Unitization Excel Template Dashboard showing Net Asset Value per unit and investor ownership percentages" src="https://github.com/user-attachments/assets/42e2fe30-0173-45cc-945a-0d066ac2c974" />
+<img width="1672" height="941" alt="Investment Pool Transaction Ledger in Excel tracking staggered capital contributions, withdrawals, and P&L updates" src="https://github.com/user-attachments/assets/1b9a5b9c-5037-4e2a-8ddb-fd1584d48a5c" />
+<img width="1448" height="1086" alt="Partner Capital Account Statement in Excel displaying unit issuance, entry NAV pricing, and real-time redemption balances" src="https://github.com/user-attachments/assets/71d0cb5b-76f8-4152-b13d-0b58f792e9bc" />
 
-> Observa el modelo contable interactivo: [demo del simulador de NAV y unitización de fondos](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/)
+> Pruebe las matemáticas de asignación basadas en unidades en su navegador antes de descargar: [Demo del simulador interactivo de contabilización por unidades y NAV de fondos](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/)
 
 ---
 
-## Por qué existe esto
+## Por qué fallan las tablas de capitalización estáticas en pools de inversión con múltiples fechas
 
-La mayoría de las disputas en fondos de inversión no son causadas por malas intenciones.
+Las disputas contables en pools de inversión surgen cuando los tesoreros combinan porcentajes de propiedad fijos, fechas de entrada de capital escalonadas y asignaciones manuales de pérdidas y ganancias (P&L) en una hoja de cálculo plana. Cuando un inversor solicita un reembolso parcial o total meses después, reconstruir el saldo exacto de su cuenta de capital expone los fallos estructurales de los modelos de porcentajes estáticos.
 
-Ocurren porque los porcentajes fijos, las fechas de entrada mixtas y la asignación manual de pérdidas y ganancias son difíciles de conciliar cuando un participante se retira—especialmente meses o años después de que se establecieran las posiciones que causaron el desacuerdo.
-
-El riesgo es estructural:
+**El flujo de trabajo heredado de porcentajes estáticos (alto riesgo de disputas):**
 
 ```text
-New capital contributed
--> Percentage split adjusted manually
--> Prior market gains not ring-fenced
--> Dispute surfaces at withdrawal
+New capital subscription logged
+-> Partner ownership percentage split adjusted manually
+-> Unrealized pre-entry market gains mixed with new capital
+-> Valuation and dilution dispute surfaces at investor withdrawal
+
 ```
 
-Este libro cambia el flujo de trabajo:
+**El flujo de trabajo automatizado de contabilización por unidades con NAV (listo para auditoría):**
 
 ```text
-New capital contributed
--> Units issued at current NAV
--> Prior participants' balances unaffected
--> Ownership tracked continuously from day one
+New capital subscription logged
+-> Pool units issued at current mark-to-market NAV per unit
+-> Early investors' accumulated gains locked in structurally
+-> Real-time capital account balances updated at every cash flow event
+
 ```
 
-El problema comercial no es solo la equidad. Es la claridad operativa. Los operadores de fondos, los tesoreros y los inversores principales necesitan saber exactamente cuánto se le debe a cada participante—en cualquier momento, no solo en el instante en que alguien pide salir.
+Los operadores de pools, los GP de sindicatos y los tesoreros de clubes necesitan claridad operativa verificable. Cada socio general y socio limitado debe poder verificar los saldos exactos de liquidación, las unidades en cartera y las participaciones de propiedad implícitas en cualquier fecha de valoración.
 
 ---
 
-## Tres trampas de asignación que atrapan incluso a los operadores de fondos
+## La lógica de negocio y la metodología: contabilidad NAV por unidades frente a repartos porcentuales
 
-### Trampa 1 — Porcentajes estáticos malinterpretados como propiedad justa
+Este libro resuelve el **problema de asignación de capital multiperíodo** mediante la **contabilización por unidades de fondos mutuos y la contabilidad del valor liquidativo (NAV) ponderado por tiempo** (alineada con las normas FASB ASC 946 y de valoración de inversión colectiva de IOSCO).
 
-La propiedad porcentual parece intuitiva. Se desmorona en el momento en que dos participantes entran en un fondo en alza en fechas diferentes.
+### El problema comercial: flujos de capital asíncronos frente a movimiento continuo del mercado
 
-Un fondo valorado en $130,000 tras una ganancia del 30 % recibe una aportación de $65,000. Si el nuevo participante recibe el 33 % de la propiedad directamente contra el valor actual del fondo, la ganancia del 30 % previa a la entrada del participante original ahora se comparte parcialmente con alguien que no estuvo presente para ella. El número parece internamente consistente. La economía no lo es.
+En un pool de inversión dinámico, dos variables cambian de forma asíncrona:
 
-Los operadores de fondos que asignan porcentajes fijos en el momento de la aportación—en lugar de valorar la entrada al valor de mercado actual—compensan insuficientemente a los participantes tempranos de forma rutinaria sin darse cuenta. El error se acumula silenciosamente. Sale a la luz en la salida.
+1. **Valoración de la cartera (P&L de mercado):** Los activos subyacentes fluctúan a diario, semanalmente o mensualmente.
+2. **Flujos de caja de los participantes (suscripciones y reembolsos):** Los inversores depositan o retiran capital a intervalos irregulares.
 
-### Trampa 2 — XIRR aplicado a un problema de propiedad que no puede resolver
+Cuando un pool rastrea la propiedad estrictamente por el efectivo acumulado aportado dividido entre el patrimonio total del pool, cada depósito posterior a una ganancia de mercado transfiere una parte del beneficio no realizado de los inversores tempranos al participante entrante. Por el contrario, depositar tras una caída obliga al nuevo entrante a subvencionar pérdidas históricas que nunca sufrió.
 
-XIRR calcula un rendimiento anualizado sobre un único flujo de caja. Responde: *¿Qué rendimiento obtuvo este inversor durante este período?* No responde: *¿Cuál es el saldo actual de este inversor, y cuánto recibe si sale hoy?*
+### La metodología central: emisión de unidades a valoración a mercado
 
-Son preguntas diferentes. Los operadores que usan XIRR como mecanismo de asignación están resolviendo un problema de reporte de rendimientos con una herramienta de medición de desempeño.
+En lugar de ajustar directamente los porcentajes de propiedad, el libro separa el **rendimiento económico** de la **dilución de capital** mediante una máquina de estados de tres ecuaciones ejecutada en cada fila de transacción:
 
-Hacerlo funcionar requiere calcular un flujo de rendimiento separado por participante, recalcular después de cada transacción y conciliar manualmente los saldos resultantes cuando entra capital nuevo. El cálculo es válido en el momento en que se ejecuta. No mantiene ningún estado continuo. Cada depósito, retiro o entrada de pérdidas y ganancias requiere una ejecución manual nueva y una nueva pasada de conciliación.
+1. **Valoración del NAV previa a la transacción:**
 
-Los operadores que rastrean rendimientos individuales con XIRR y luego derivan los saldos actuales de esos rendimientos están uniendo dos problemas con una sola herramienta—y generando brechas de conciliación cada vez que se mueve el capital.
+$$\text{NAV per Unit}_{t} = \frac{\text{Total Pool Market Value}_{t}}{\text{Total Outstanding Units}_{t-1}}$$
 
-### Trampa 3 — Efectos de dilución calculados después de la liquidación
 
-En los modelos de porcentaje fijo, el impacto económico de una nueva aportación normalmente se resuelve en el siguiente período de conciliación, no en el momento en que entra el capital. Para entonces, el precio de entrada del nuevo participante ya no es visible en el libro. Solo quedan los saldos actuales.
 
-Esto crea una ambigüedad estructural que no puede resolverse retroactivamente: si el fondo subió un 25 % entre la entrada de un inversor temprano y la entrada de un inversor posterior, y ambos recibieron propiedad porcentual asignada en la fecha posterior, la ventaja de temporalidad del inversor temprano ha sido absorbida silenciosamente en la división estática.
+*Efecto comercial:* Todas las pérdidas y ganancias de mercado, realizadas y no realizadas, modifican el precio de la unidad ($\text{NAV per Unit}$), dejando intacto el recuento de unidades de cada participante.
+2. **Precios de suscripción y reembolso a valor razonable:**
 
-El error no está en la aritmética de nadie. Está en el modelo contable. Y normalmente se descubre en el peor momento posible—cuando alguien intenta irse.
+$$\text{Units Issued or Redeemed}_{i,t} = \frac{\text{Cash Flow}_{i,t}}{\text{NAV per Unit}_{t}}$$
 
----
 
-## Para quién es esta herramienta
 
-| Usuario | Caso de uso práctico |
-|---|---|
-| Tesoreros de clubes de inversión | Rastrear la propiedad por miembro a través de fechas de aportación irregulares sin recálculo manual |
-| Operadores de sindicatos | Gestionar entradas y salidas de socios de capital sin renegociar divisiones porcentuales cada vez |
-| Administradores de fondos pequeños | Mantener un libro transparente y auditable sin software contable institucional |
-| Coordinadores de family offices | Asignar ganancias y pérdidas de forma justa entre familiares que aportan en momentos diferentes |
-| Líderes de grupos de negociación discrecionales | Emitir units cuando se une capital nuevo; liquidar retiros a un valor actual verificable |
+*Efecto comercial:* El capital nuevo compra unidades al NAV actual ajustado a mercado en lugar del valor nominal. Los inversores tempranos conservan el 100% de su apreciación previa a la entrada porque el inversor entrante paga un precio mayor por unidad.
+3. **Estado derivado continuo de la cuenta de capital:**
 
-Es más adecuado para fondos con 3–20 participantes con tiempos de aportación mixtos, donde el software institucional de administración de fondos es prohibitivamente costoso pero la asignación manual con hojas de cálculo ya no produce respuestas limpias.
+$$\text{Investor Balance}_{i,t} = \text{Units Held}_{i,t} \times \text{NAV per Unit}_{t}$$
 
----
 
-## Lo que hace el libro
+$$\text{Economic Ownership \%}_{i,t} = \frac{\text{Units Held}_{i,t}}{\text{Total Outstanding Units}_{t}}$$
 
-### Libro de transacciones
-Un único punto de entrada de datos para depósitos, retiros y eventos de pérdidas y ganancias de mercado. Registra cada transacción una vez; los recuentos de units, el NAV y los saldos por participante se actualizan automáticamente en segundo plano.
 
-### Motor de cálculo de NAV
-El valor liquidativo se recalcula continuamente a medida que se registran las pérdidas y ganancias de mercado. El saldo de cada participante se deriva del NAV actual × units mantenidas—no de una tabla de porcentajes que requiere mantenimiento manual.
 
-### Emisión y reembolso de units
-Los depósitos compran units al NAV actual. Los retiros reembolsan units al NAV actual. Los nuevos participantes reciben units valoradas al valor de mercado en el momento de la entrada, no a la par. Las ganancias acumuladas de los participantes anteriores se preservan estructuralmente—sin necesidad de aislamiento manual.
-
-### Panel por participante
-El saldo actual, el recuento de units, el porcentaje de propiedad, el NAV de entrada y el historial de aportaciones de cada participante son visibles en tiempo real. Sin recálculo manual. Sin ciclo de conciliación requerido para responder la pregunta: *¿cuánto se le debe a este inversor ahora mismo?*
-
-### Registros listos para auditoría
-Cada transacción se registra con fecha, NAV en la transacción, units emitidas o reembolsadas y saldos resultantes. Los registros están estructurados para revisión, exportación y resolución de disputas desde la primera entrada.
+*Efecto comercial:* Los porcentajes de propiedad se convierten en un resultado derivado de las unidades en cartera en lugar de una tabla de entrada manual. Los reembolsos se liquidan de inmediato a $\text{Units Redeemed} \times \text{Current NAV}$ sin recálculos retroactivos.
 
 ---
 
-## Escenario de ejemplo
+## Tres trampas de asignación de capital en las hojas de cálculo de inversión manuales
 
-<!-- SCREENSHOT PLACEHOLDER: Before/after comparison or ledger entry view — recommended 1200 × 700 -->
+### Trampa 1: Los repartos porcentuales estáticos diluyen las ganancias de mercado previas a la entrada
 
-**Perfil del fondo:** 8 participantes. Aportaciones repartidas a lo largo de 18 meses. El valor del fondo creció aproximadamente un 40 % durante ese período. Gestionado por el participante principal en una hoja de cálculo manual compartida.
+Asignar la propiedad según la cuota de aportación de capital falla en el momento en que dos inversores entran en una cartera en alza en fechas diferentes.
 
-**El problema:** Tres participantes se unieron en distintos momentos durante el período de crecimiento. El inversor principal ajustó los porcentajes de propiedad en cada entrada. Las pérdidas y ganancias se distribuyeron mensualmente en función de la tabla de porcentajes actual.
+Suponga que un pool de inversión crece de $100,000 a $130,000 (rentabilidad del +30%) y un segundo inversor aporta $65,000, llevando los activos totales del pool a $195,000. Si el operador asigna al nuevo participante una participación plana del 33.3% ($65,000 / $195,000) sin contabilizar por unidades el patrimonio previo, el nuevo inversor captura de inmediato un derecho sobre la ganancia previa a la entrada de $30,000 del primer inversor.
 
-Cuando dos participantes tempranos solicitaron reembolsos totales, surgieron tres disputas simultáneas: una sobre el tratamiento correcto de una caída del 15 % que ocurrió entre las fechas de entrada de la primera y la segunda cohorte; una sobre una aportación que se había registrado en el mes equivocado; y una sobre qué porcentaje se aplicaba al último mes parcial antes de la salida.
+Los operadores de pools que calculan repartos porcentuales planos en las fechas de aportación compensan insuficientemente a los inversores tempranos de forma rutinaria. La discrepancia contable se acumula silenciosamente a lo largo de múltiples rondas de financiación y desencadena disputas durante la liquidación.
 
-La reconstrucción requirió rastrear a mano 18 meses de entradas de asignación manuales. El proceso tomó tres semanas, requirió un contador externo y resultó en que un participante aceptara una cifra diferente de su derecho real antes que continuar la disputa.
+### Trampa 2: Usar XIRR de Excel para calcular los saldos de capital de los socios
 
-| | Antes | Después |
-|---|---|---|
-| Modelo de propiedad | Porcentajes fijos, ajustados manualmente en cada aportación | NAV basado en units; units emitidas al valor de mercado actual en el depósito |
-| Tratamiento del nuevo participante | Porcentaje negociado en la entrada; ganancias previas no aisladas | Units compradas al NAV actual; participantes anteriores no afectados estructuralmente |
-| Asignación de pérdidas y ganancias | Recálculo manual contra la tabla de porcentajes cada período | Automático vía movimiento del NAV; recuentos de units sin cambios |
-| Liquidación de retiros | Reconstruir saldos a partir de entradas porcentuales históricas | Reembolsar units al NAV actual; saldo leído directamente del estado del libro |
-| Superficie de disputa | Cualquier punto de conciliación manual | Resuelto en la capa contable |
+La función `XIRR` de Excel calcula una tasa interna de retorno anualizada sobre una única serie de flujos de caja con fechas. Mide el **rendimiento histórico ajustado por tiempo**, mientras que la administración de un pool requiere **contabilidad de saldos de liquidación actuales**.
 
----
+Usar `XIRR` como mecanismo de asignación de patrimonio obliga al tesorero a mantener matrices de flujos de caja separadas para cada participante, recalcular las series de rentabilidad después de cada depósito y conciliar manualmente los saldos totales frente al patrimonio real del bróker. `XIRR` no mantiene ningún estado continuo de libro mayor; cada llamada de capital a mitad de período, distribución parcial o asiento de valoración a mercado requiere una nueva pasada manual de conciliación.
 
-## Por qué la contabilidad NAV funciona así
+### Trampa 3: Conciliación de dilución diferida al cierre de período
 
-La contabilidad de los fondos de inversión adoptó la estructura de units/NAV específicamente porque la temporalidad de los inversores crea un problema de equidad económica que la propiedad estática no puede resolver sin intervención manual en cada punto de transacción.
+En los modelos tradicionales de sociedad basados en porcentajes, las nuevas suscripciones de capital suelen registrarse como efectivo bruto y conciliarse solo en el cierre trimestral o anual. En la fecha de liquidación, el valor de mercado exacto de la cartera en el momento del depósito a mitad de período queda enterrado bajo las oscilaciones de mercado posteriores.
 
-Un participante que aportó a un fondo en alza el día 90 no compartió la exposición al riesgo de un participante que entró el día 1. Tratarlos como tenedores de propiedad equivalentes requiere ignorar la diferencia económica en sus condiciones de entrada—lo que los porcentajes fijos hacen por diseño.
-
-La estructura de units codifica la temporalidad directamente: el precio pagado por unit en la entrada refleja el valor del fondo en el momento de la aportación. El movimiento del mercado después de la entrada fluye a través de cambios en el NAV, no a través de ajustes porcentuales. Los retiros se liquidan al valor de mercado actual. La contabilidad produce un estado continuo y verificable en cada momento sin requerir un ciclo de corrección manual.
-
-Por eso cada fondo de inversión regulado—fondos mutuos, ETF, fondos de cobertura—usa la contabilidad NAV como su libro de propiedad. La estructura no se desarrolló para el cumplimiento normativo. Se desarrolló porque es el único mecanismo que maneja las cuatro preocupaciones de propiedad simultáneamente:
-
-| Preocupación | Manejada por |
-|---|---|
-| Temporalidad de la entrada de capital | Precio de compra de la unit (NAV en la fecha de depósito) |
-| Rendimiento del mercado | Movimiento del NAV; recuentos de units sin cambios |
-| Tamaño de la aportación | Cantidad de units emitidas |
-| Dilución por nuevos participantes | Units emitidas al NAV actual; no a la par |
-
-Referencias útiles:
-- [CFA Institute: Pooled Investment Vehicles](https://www.cfainstitute.org)
-- [IOSCO: Principles for the Valuation of Collective Investment Schemes](https://www.iosco.org)
-- [FASB ASC 946: Financial Services — Investment Companies](https://www.fasb.org)
+Si la cartera ganó un 25% antes de un depósito a mitad de trimestre y perdió un 10% después, agrupar el período completo borra la ventaja temporal del inversor temprano. La contabilidad NAV por unidades resuelve la dilución en el momento exacto en que el capital se liquida, fijando la transacción al NAV por unidad de ese día.
 
 ---
 
-## Cómo funcionan la emisión de units y el NAV
+## Para quién es esta plantilla de Excel de contabilización por unidades de fondos
 
-El valor liquidativo del fondo equivale al valor de mercado total dividido por las units en circulación. Cuando entra capital nuevo, compra units al NAV actual—no a la par. Las ganancias y pérdidas de mercado cambian el NAV; no cambian los recuentos de units.
+Esta plantilla está dirigida a operadores que han superado las hojas de cálculo porcentuales ad hoc y necesitan lógica de **software de contabilidad NAV de nivel institucional dentro de Microsoft Excel**:
 
-| Evento | Valor del fondo | Units en circulación | NAV por unit |
-|---|---|---|---|
-| El inversor A deposita $100,000 | $100,000 | 100,000 | $1.00 |
-| Ganancia de mercado: +30 % | $130,000 | 100,000 | $1.30 |
-| El inversor B deposita $65,000 | $195,000 | 150,000 | $1.30 |
-| Pérdida de mercado: −15 % | $165,750 | 150,000 | $1.105 |
-| El inversor A reembolsa 50,000 units | $110,250 | 100,000 | $1.105 |
-
-**El mecanismo en números:**
-El inversor B entra a un NAV de $1.30—no a la par—y recibe 50,000 units por $65,000. Tras una pérdida del 15 %, el inversor B mantiene 50,000 × $1.105 = $55,250. El inversor B absorbió exactamente su parte proporcional de la caída en relación con su punto de entrada. La ganancia del 30 % previa a la entrada del inversor A no se transfirió.
-
-**El modelo de porcentaje estático en el mismo escenario:**
-Al inversor B se le asigna el 33 % de la propiedad en la entrada (una aportación de $65K en un fondo de $195K). Ese porcentaje se aplica directamente contra todas las pérdidas y ganancias futuras. En la próxima conciliación, el inversor B recibe el 33 % de la pérdida del 15 %—pero la ganancia del 30 % que el inversor A obtuvo antes de la entrada del inversor B ahora también se asigna parcialmente según la misma tabla de porcentajes. Los dos períodos económicamente distintos se han fusionado en un único número de propiedad.
-
-El modelo NAV los separa estructuralmente. El cálculo porcentual se convierte en una consecuencia de los recuentos de units, no en una decisión de gestión tomada en cada límite de período.
-
-Para un fondo con 8 participantes y actividad transaccional quincenal, eso son 8 cálculos de saldo continuos que se actualizan en cada depósito, retiro y registro de pérdidas y ganancias—sin un ciclo de ajuste manual.
+| Rol y persona de búsqueda | Escenario operativo específico y caso de uso de la plantilla |
+| --- | --- |
+| **Tesoreros de clubes de inversión** *(hoja de cálculo contable para clubes de inversión)* | Gestionar cuotas mensuales de miembros, recargas irregulares y compras totales de participaciones de miembros para 3–20 miembros, generando estados de capital de miembros verificables. |
+| **Líderes de sindicatos y operadores GP** *(plantilla de Excel de tabla de capitalización para SPV y sindicatos)* | Incorporar socios de capital en etapas avanzadas a través de múltiples tramos de cierre (closes continuos) protegiendo a los LP tempranos de la dilución de valoración previa al cierre. |
+| **Gestores emergentes de hedge funds y pools de cripto** *(calculadora NAV sombra para fondos incubadora)* | Mantener un libro mayor contable sombra independiente junto a los estados del bróker para rastrear clases de participaciones de LP, precios de unidades y NAV por participación antes de contratar un administrador de fondos externo. |
+| **Coordinadores de family offices** *(libro de asignación para pools de inversión familiar)* | Combinar capital de múltiples trusts familiares o cuentas generacionales que entran en fechas diferentes, garantizando una atribución justa del P&L y pistas de auditoría limpias para los CPA fiscales. |
+| **Líderes de grupos de negociación propietaria y discrecional** *(rastreador de distribución de P&L para pools de negociación)* | Emitir unidades de participación cuando nuevos traders o financiadores depositan capital de margen, y liquidar los retiros parciales de beneficios a precios de unidad a valoración a mercado. |
 
 ---
 
-## Lógica del libro
+## Casos de uso reales: resolución de escenarios de asignación de capital en múltiples fechas
 
-El libro está organizado en torno a un flujo práctico de administración de fondos:
+### Escenario A: Closes continuos en sindicatos de inversión privados y SPV
 
-1. Introduce la información de los participantes y las aportaciones iniciales.
-2. Emite units al NAV actual para cada depósito.
-3. Registra las pérdidas y ganancias de mercado a medida que ocurren—diarias, semanales o mensuales.
-4. Reembolsa units al NAV actual para cada solicitud de retiro.
-5. Revisa los saldos, recuentos de units y porcentajes de propiedad por participante en cualquier momento.
-6. Exporta el historial de transacciones para conciliación, documentación fiscal o revisión de disputas.
-7. Verifica si hay huecos de entrada o inconsistencias de saldo antes de realizar cualquier distribución.
+Cuando un socio general (GP) de un sindicato capta capital en tres fechas de cierre separadas a lo largo de seis meses mientras los activos subyacentes ya se aprecian, los socios limitados (LP) tempranos exigen protección frente al aprovechamiento gratuito de los tramos posteriores. Al registrar cada tramo de cierre como una **suscripción de unidades al NAV actual**, los entrantes posteriores compran al precio de unidad incrementado, preservando el 100% de las ganancias previas al cierre para los inversores del Tramo 1.
 
-El libro está pensado como una herramienta de apoyo a la decisión y transparencia contable. No reemplaza el asesoramiento legal cualificado sobre la estructura del fondo, el tratamiento fiscal de las asignaciones a inversores o el cumplimiento normativo en la jurisdicción del operador.
+### Escenario B: Entrada de miembros, recargas y compras de participaciones en clubes de inversión de acciones y cripto
 
----
+Los clubes de inversión suelen recaudar depósitos mensuales desiguales permitiendo que los miembros existentes pausen aportaciones o retiren efectivo parcialmente. En lugar de renegociar los acuerdos de sociedad cada mes, el tesorero del club registra el valor de liquidación actual de la cuenta del bróker, actualiza el **NAV por unidad** y procesa todos los depósitos mensuales y solicitudes de compra de participaciones a ese único precio de liquidación.
 
-## Compra
+### Escenario C: Fondos incubadora y pools de negociación de amigos y familiares que necesitan contabilidad sombra
 
-Usa el libro de Excel completo aquí:
-
-[Compra el rastreador de Excel completo](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
+Los gestores de fondos emergentes que administran una cartera de amigos y familiares de $100K–$5M rara vez justifican más de $15,000+/año en honorarios de administración de fondos institucional. Este libro funciona como un **sistema local de contabilidad NAV sombra en Excel**, produciendo libros mayores de unidades por inversor, historiales de aportaciones y resúmenes de cuentas de capital listos para la preparación fiscal por un CPA (soporte de Schedule K-1) o informes para LP.
 
 ---
 
-## Limitaciones
+## Qué rastrea el libro: mapeo de puntos de dolor a soluciones
 
-- **Dependencia de la integridad de los datos** — los cálculos de NAV son tan precisos como las entradas; las transacciones faltantes, mal fechadas o mal clasificadas producen saldos incorrectos sin advertencia
-- **No es asesoramiento legal ni fiscal** — este libro refleja principios estándar de contabilidad NAV; el tratamiento fiscal de las asignaciones de units y las distribuciones a inversores varía según la jurisdicción y debe validarse con asesores cualificados
-- **Solo entrada manual de datos** — los valores de mercado deben introducirse manualmente; el libro no se conecta a feeds de precios externos, API de corretaje ni sistemas de gestión de carteras
-- **Alcance: solo depósitos, retiros y pérdidas y ganancias de mercado en efectivo** — las estructuras de carried interest, las cascadas de comisiones de rendimiento, las distribuciones de ingresos acumulados y los fondos multidivisa implican condiciones no codificadas en esta versión
-- **Techo de escala** — diseñado para fondos con 3–20 participantes con frecuencia de transacción semanal a mensual; un volumen mayor puede degradar el rendimiento de Excel
-- **Sensibilidad a la versión de Excel** — requiere Excel 2016 o posterior en Windows; el comportamiento en Excel para Mac u Office 365 web puede diferir
-- **Casos límite no totalmente automatizados** — las asignaciones de side pocket, las disposiciones de capital bloqueado y las compuertas de reembolso escalonadas implican condiciones regulatorias o contractuales que requieren tratamiento manual no codificado en esta versión
+| Punto de dolor contable del pool | Requisito de búsqueda de alta frecuencia | Solución integrada del libro de Excel |
+| --- | --- | --- |
+| **Dilución injusta en depósitos escalonados** | *Cómo asignar beneficios cuando los inversores entran en momentos diferentes* | **Motor automatizado de emisión de unidades:** Convierte los depósitos de efectivo entrantes en unidades del pool al precio del NAV por unidad exacto previo al depósito, aislando automáticamente las ganancias previas. |
+| **Errores en la distribución manual del P&L** | *Hoja de cálculo de asignación de P&L para pools de inversión* | **Recálculo continuo del NAV:** Las ganancias y pérdidas de la cartera actualizan el NAV global por unidad; los saldos individuales de los inversores (`Units × Current NAV`) se ajustan dinámicamente sin ninguna edición manual de porcentajes. |
+| **Cálculos complejos de retiros parciales** | *Calcular el valor de compra de participaciones / reembolso de un inversor en un pool de sociedad* | **Reembolso de unidades a valoración a mercado:** Convierte las solicitudes de retiro en dólares en reembolsos exactos de unidades al NAV actual, dejando intactos los saldos de los socios restantes. |
+| **Informes opacos de saldos de inversores** | *Rastreador de cuentas de capital de socios y plantilla de Excel de tabla de capitalización* | **Panel en tiempo real por participante:** Muestra el capital neto invertido, el saldo de unidades, el % de propiedad económica, el NAV de entrada ponderado y el P&L acumulado en dólares de cada inversor. |
+| **Fricción en la conciliación de auditoría e impuestos** | *Libro mayor de transacciones de fondos auditable para revisión de CPA* | **Pista de auditoría cronológica de transacciones:** Registra cada evento de valoración, depósito y reembolso con NAV con marca de tiempo, delta de unidades y estado del pool posterior a la transacción para exportación instantánea a CSV/PDF. |
 
 ---
 
-## Acerca de este proyecto
+## Caso práctico: asignación porcentual manual frente a contabilización NAV automatizada por unidades
 
-Este libro forma parte de un esfuerzo más amplio por traducir requisitos contables operativos y financieros complejos en herramientas ligeras que las organizaciones pequeñas y medianas realmente puedan usar.
+**Perfil del pool:** 8 socios de capital que aportaron de forma desigual a lo largo de 18 meses a una cartera negociada activamente que se apreció ~40% en total. Inicialmente rastreada por el socio gestor principal en una hoja de cálculo manual de repartos porcentuales.
 
-Sin suscripción a software de administración de fondos. Sin proyecto de desarrollo personalizado. Sin cuentas adicionales.
+**El fallo operativo:** Tres inversores se unieron a mitad de ciclo durante meses de alta volatilidad. El socio gestor recalculaba manualmente los porcentajes de aportación de capital después de cada depósito y distribuía el P&L mensual según esos pesos estáticos.
 
-Solo lógica contable clara, datos de transacciones estructurados y cálculos de propiedad repetibles—entregados en software que tu equipo ya tiene.
+Cuando dos socios tempranos solicitaron reembolsos totales de capital, tres disputas contables detuvieron las distribuciones:
 
-Si tu operación involucra problemas de asignación, conciliación o rastreo de propiedad que actualmente viven en el modelo mental de alguien o en una hoja de cálculo desconectada, [mira qué más está disponible →](https://www.theseusworkshop.com)
+1. Cómo asignar una caída del 15% de la cartera a mitad de año que ocurrió entre las fechas de financiación de la Cohorte 1 y la Cohorte 2.
+2. Cómo corregir un depósito de socio de $25,000 registrado en la pestaña de conciliación mensual equivocada.
+3. Qué tabla de porcentajes de propiedad regía el último mes parcial antes de la liquidación del reembolso.
+
+Reconstruir las cuentas de capital históricas requirió tres semanas de contabilidad forense por parte de un CPA externo.
+
+### Comparación: hojas de cálculo porcentuales estáticas frente a contabilidad NAV por unidades
+
+| Operación contable | Hoja de cálculo manual de repartos porcentuales (antes) | Libro de Excel automatizado de contabilización por unidades de fondos (después) |
+| --- | --- | --- |
+| **Modelo de propiedad patrimonial** | Porcentajes estáticos de aportación de capital sobrescritos manualmente después de cada depósito | **Modelo NAV por unidades** dinámico; unidades emitidas a precio de valoración a mercado en cada depósito |
+| **Gestión de entrantes tardíos y dilución** | El capital nuevo diluía las ganancias no realizadas previas salvo aislamiento manual por tramo | **Precios automáticos antidilución**; el capital entrante compra unidades al NAV actual |
+| **Asignación periódica del P&L** | Recálculo manual al cierre de período sobre tablas porcentuales de socios cambiantes | **Ajuste del NAV por unidad en tiempo real**; los saldos de unidades de los inversores permanecen constantes durante los movimientos de mercado |
+| **Liquidación de reembolsos y compras de participaciones de socios** | Reconstrucción forense de las pestañas históricas de P&L mensual requerida antes del pago | **Precio de liquidación instantáneo** (`Redeemed Units × Current NAV`) leído directamente del libro mayor en vivo |
+| **Pista de auditoría y superficie de disputa** | Alto riesgo de error en cada sobrescritura manual de fórmulas y arrastre de período | **Libro mayor cronológico de transacciones de fuente única**; la conciliación se gestiona en la capa contable |
+
+---
+
+## Normas institucionales detrás de la contabilidad NAV por unidades
+
+Los vehículos de inversión colectiva regulados —incluidos fondos mutuos, ETF, vehículos SPV de capital privado y hedge funds— se apoyan en la contabilidad del valor liquidativo por unidades porque los flujos de caja asíncronos de los inversores crean un problema de atribución económica que las tablas porcentuales planas no pueden resolver.
+
+Un inversor que suscribe el día 90 en una cartera en apreciación no asumió el riesgo de mercado de los días 1 al 89. La estructura por unidades codifica el momento de entrada directamente en el **precio de la unidad de suscripción (NAV en la fecha de depósito)**. El rendimiento de mercado posterior fluye estrictamente a través de las **fluctuaciones del NAV por unidad**, mientras que los retiros de los inversores se liquidan al NAV de liquidación vigente.
+
+| Dimensión contable del fondo | Mecanismo NAV institucional implementado en este libro |
+| --- | --- |
+| **Momento de la suscripción de capital** | Fijado en el precio de compra del inversor mediante el **NAV por unidad en la fecha de depósito** |
+| **Rendimiento de mercado de la cartera (P&L)** | Reflejado estrictamente a través del **movimiento del NAV por unidad**; los recuentos de unidades en circulación permanecen sin cambios |
+| **Tamaño de la aportación de capital** | Reflejado en la **cantidad de unidades del pool emitidas** ($\text{Deposit} \div \text{Current NAV}$) |
+| **Protección contra la dilución para los LP existentes** | Aplicada emitiendo nuevas unidades al **NAV actual a valoración a mercado** en lugar del valor nominal inicial |
+
+**Normas contables y de valoración de referencia:**
+
+* [CFA Institute: Estructura y valoración de vehículos de inversión colectiva](https://www.cfainstitute.org)
+* [IOSCO: Principios para la valoración de esquemas de inversión colectiva](https://www.iosco.org)
+* [FASB ASC 946: Servicios financieros — Normas contables para empresas de inversión](https://www.fasb.org)
+
+---
+
+## Ejemplo numérico detallado: cómo funcionan la emisión de unidades y el precio del NAV
+
+El **valor liquidativo por unidad** de un pool es igual al valor de mercado total de la cartera dividido entre el total de unidades en circulación. El capital entrante compra nuevas unidades al NAV por unidad actual. Las ganancias y pérdidas de mercado alteran el NAV por unidad dejando sin cambios los recuentos de unidades en circulación.
+
+| Evento de transacción | Valor de mercado total del pool | Total de unidades en circulación | NAV por unidad | Delta de unidades del socio e impacto contable |
+| --- | --- | --- | --- | --- |
+| **1. El inversor A deposita $100,000** | $100,000 | 100,000 | $1.000 | Al inversor A se le emitieron **100,000 unidades** al NAV nominal inicial de $1.000 (propiedad del 100%) |
+| **2. Ganancia de mercado de la cartera: +30%** | $130,000 | 100,000 | $1.300 | Recuento de unidades sin cambios; el NAV sube a **$1.300/unidad** (saldo del inversor A = $130,000) |
+| **3. El inversor B deposita $65,000** | $195,000 | 150,000 | $1.300 | El inversor B compra **50,000 unidades** al NAV de $1.300 (propiedad del 33.33%; A conserva $130,000) |
+| **4. Pérdida de mercado de la cartera: −15%** | $165,750 | 150,000 | $1.105 | Recuento de unidades sin cambios; el NAV cae a **$1.105/unidad** (A = $110,500; B = $55,250) |
+| **5. El inversor A reembolsa 50,000 unidades** | $110,250 | 100,000 | $1.105 | El inversor A retira **$55,250 en efectivo** (50,000 × $1.105); mantiene 50,000 unidades (50% del pool restante) |
+
+**Por qué las matemáticas por unidades protegen a cada participante:**
+
+* **Precio justo de entrada:** El inversor B aporta $65,000 cuando el precio de la unidad es $1.300, recibiendo 50,000 unidades. El beneficio previo a la entrada de $30,000 del inversor A permanece 100% intacto dentro de las 100,000 unidades del inversor A.
+* **Atribución proporcional de las caídas:** Tras la pérdida de mercado del 15%, el NAV cae de $1.300 a $1.105. Las 50,000 unidades del inversor B valen $55,250—absorbiendo exactamente una pérdida del 15% sobre sus $65,000 de capital de entrada sin heredar ni subvencionar el período anterior del inversor A.
+
+---
+
+## Tutorial de inicio rápido: cómo configurar su libro mayor NAV de pool de inversión en 6 pasos
+
+Siga este flujo de trabajo paso a paso para pasar su club de inversión, sindicato o pool de negociación de los repartos porcentuales manuales a la contabilización NAV automatizada por unidades:
+
+1. **Pruebe su escenario de flujo de caja en el simulador en vivo del navegador**
+Abra la [demo web interactiva de contabilización por unidades y NAV de fondos](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/) para simular depósitos escalonados, oscilaciones de P&L de mercado y reembolsos antes de introducir sus números reales de sociedad.
+2. **Inicialice los parámetros del pool y los perfiles de los socios**
+Registre sus inversores iniciales, establezca su moneda base y defina su NAV nominal por unidad de apertura (por ejemplo, $1.00 o $100.00 por unidad) en la fecha de constitución.
+3. **Registre las suscripciones de capital para emitir unidades automáticamente**
+Anote cada depósito de inversor junto con el valor de mercado actual de la cartera. El libro calcula el NAV por unidad vigente y emite la cantidad exacta de unidades fraccionarias o enteras en la cuenta de capital del socio.
+4. **Registre periódicamente el P&L de la cartera a valoración a mercado**
+Introduzca las actualizaciones de valoración de la cartera, realizadas y no realizadas, con una frecuencia diaria, semanal o mensual—inmediatamente antes de cualquier flujo de caja externo—para actualizar el NAV por unidad del pool.
+5. **Procese los retiros de inversores y los reembolsos de unidades**
+Introduzca las solicitudes de reembolso parciales o totales. El motor liquida el número correspondiente de unidades al NAV actual, reduce el total de unidades en circulación y recalcula los pesos de propiedad posteriores al reembolso para los socios restantes.
+6. **Audite los estados de cuentas de capital y descargue el libro de Excel reutilizable**
+Verifique la integridad de los saldos mediante los indicadores automatizados de comprobación de errores y exporte registros de transacciones limpios para informes a LP o preparación fiscal. Una vez validado el flujo de trabajo en la demo web de sesión única, **[descargue la plantilla de Excel completa y reutilizable de contabilización por unidades y NAV de fondos](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)** para guardar libros mayores históricos permanentes, personalizar los paneles de socios y gestionar operaciones continuas de pools multianuales sin conexión en Microsoft Excel.
+
+*Aviso: este libro es una plantilla de contabilidad operativa y de apoyo a la toma de decisiones. Consulte a un CPA cualificado o a un abogado especializado en fondos respecto a las asignaciones fiscales de la sociedad (por ejemplo, IRC Section 704(b) / Schedule K-1) y el cumplimiento de normativa de valores en su jurisdicción.*
+
+---
+
+## Descargue la plantilla de Excel completa
+
+¿Listo para automatizar la contabilidad de su pool de inversión y mantener un libro mayor de socios permanente y auditable?
+
+👉 **[Obtenga el libro de Excel completo de contabilización por unidades y NAV de fondos (descarga gratuita)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**
+
+---
+
+## Alcance técnico y limitaciones operativas
+
+* **Dependencia de la precisión de los datos de entrada:** La precisión del NAV por unidad depende de introducir las valoraciones de la cartera a valoración a mercado inmediatamente antes de registrar cualquier nuevo depósito o retiro de capital.
+* **Alcance contable operativo (no es asesoramiento fiscal/legal):** Refleja las matemáticas estándar de contabilización NAV por unidades ponderadas por tiempo; las asignaciones fiscales específicas de la sociedad, las conciliaciones contabilidad-impuestos y las presentaciones regulatorias requieren validación por un CPA colegiado o asesor legal.
+* **Entrada manual de valoraciones sin conexión:** Diseñado para privacidad y cero dependencias externas; los valores de mercado de la cartera se introducen manualmente en lugar de obtenerse mediante API de bróker en tiempo real.
+* **Alcance estándar de honorarios y flujos de caja:** Cubre suscripciones de capital, reembolsos y P&L de mercado. Las cascadas complejas de carried interest GP/LP, las tasas mínimas (hurdle rates), las comisiones de rendimiento de high-water mark y la cobertura FX multidivisa quedan fuera del alcance de esta versión base.
+* **Escala recomendada del pool:** Optimizado para pools de inversión con **3 a 20 participantes** que registran transacciones semanales o mensuales.
+* **Compatibilidad del sistema:** Construido para **Microsoft Excel 2016 o posterior (Windows y macOS)** usando fórmulas nativas estándar sin dependencias de seguridad de macros/VBA.
+* **Disposiciones estructurales especiales:** Las asignaciones ilíquidas de side-pocket, los calendarios de vencimiento de períodos de bloqueo y las colas de reembolso con compuertas requieren ajustes de calendario personalizados fuera de la pestaña central del libro mayor.
+
+---
+
+## Acerca de Theseus Workshop
+
+Construimos modelos financieros y operativos de Excel transparentes y listos para auditoría para fondos pequeños, sindicatos y negocios dirigidos por operadores que necesitan lógica contable institucional dentro de Microsoft Excel.
+
+Cada plantilla se ejecuta localmente con fórmulas nativas de hoja de cálculo, dando a su equipo visibilidad total de cada celda de cálculo y cada asiento del libro mayor de propiedad.
+
+¿Gestiona flujos de trabajo complejos de asignación de capital, conciliación o rastreo de propiedad en hojas de cálculo? **[Explore nuestra biblioteca completa de plantillas de Excel financieras y operativas en Theseus Workshop →](https://www.theseusworkshop.com)**
 
 ---
 
 ## Licencia
 
-Distribuido bajo la [Licencia MIT](https://opensource.org/licenses/MIT).
+Distribuido bajo la [Licencia de código abierto MIT](https://opensource.org/licenses/MIT).
+
