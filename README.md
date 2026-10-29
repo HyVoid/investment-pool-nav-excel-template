@@ -3,7 +3,7 @@
 
 # Fund Unitization & NAV Accounting Excel Template: Track Investment Pool Ownership, Partner Capital Accounts, and Multi-Date Cash Flows
 
-<div align="center">
+<div align="left">
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel-217346)
@@ -12,6 +12,7 @@
 **A dynamic Microsoft Excel fund unitization spreadsheet and Net Asset Value (NAV) calculator built for investment clubs, real estate syndicates, private trading pools, and family offices managing staggered investor contributions and redemptions.**
 
 [Launch the Interactive Fund Unitization & NAV Calculator Web Demo](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/) 
+
 [Download the Complete Fund Unitization & NAV Accounting Excel Workbook (Free)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
 
 </div>
