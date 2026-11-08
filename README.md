@@ -1,266 +1,261 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-
-# Fund Unitization & NAV Accounting Excel Template: Track Investment Pool Ownership, Partner Capital Accounts, and Multi-Date Cash Flows
+# Investment Pool Excel Template, Profit Split Calculator & Fund Unitization NAV Spreadsheet: Track Shared Capital, Partner Ownership & Multi-Date Cash Flows
 
 <div align="left">
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel-217346)
-![Domain](https://img.shields.io/badge/domain-Fund%20NAV%20Accounting-orange)
+![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel%20365%20%7C%202021%2B-217346)
+![Privacy](https://img.shields.io/badge/data%20privacy-100%25%20Local%20Offline%20%7C%20Zero%20Cloud%20Risk-critical)
+![Guarantee](https://img.shields.io/badge/guarantee-30--Day%20Money--Back-success)
 
-**A dynamic Microsoft Excel fund unitization spreadsheet and Net Asset Value (NAV) calculator built for investment clubs, real estate syndicates, private trading pools, and family offices managing staggered investor contributions and redemptions.**
+<p><strong>A plug-and-play Microsoft Excel investment pool tracker, shared portfolio profit split calculator, and automated Net Asset Value (NAV) unitization spreadsheet. Built for beginners, friends-and-family funds, investment clubs, real estate syndicates, and trading groups managing uneven investor deposits and withdrawals on different dates—with zero formula dragging, zero cloud privacy risks, and zero monthly SaaS subscription fees.</strong></p>
 
-[Launch the Interactive Fund Unitization & NAV Calculator Web Demo](https://hyvoid.github.io/investment-pool-nav-excel-template/) 
+<p>
+  🚀 <a href="https://hyvoid.github.io/investment-pool-nav-excel-template/" title="Launch Free Interactive Investment Pool & NAV Calculator Web Demo"><strong>Launch the Free Interactive Investment Pool & NAV Calculator Web Simulator (Test Sample Cash Flows in Your Browser)</strong></a>
+</p>
 
-[Download the Complete Fund Unitization & NAV Accounting Excel Workbook (Free)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
+<p>
+  📥 <a href="https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav" title="Get the Complete Ready-to-Use Fund Unitization and Investment Pool Excel Template"><strong>Get the Complete Investment Pool & NAV Accounting Excel Workbook (One-Time Purchase | 100% Local Offline File | 30-Day Money-Back Guarantee)</strong></a>
+</p>
 
 </div>
 
-**Fund Unitization & NAV Accounting Workbook** is an automated **Microsoft Excel investment pool tracker** and **partner capital account ledger**. It calculates **Net Asset Value (NAV) per unit**, automates **share issuance and redemption pricing**, prevents **pre-entry profit dilution**, and maintains an **audit-ready investor cap table** across staggered contribution dates without requiring institutional fund administration software.
+---
+
+**Fund Unitization & NAV Accounting Workbook** is a ready-to-use **Microsoft Excel investment pool template**, **shared capital account tracker**, and **automated profit-splitting calculator** designed for instant copy-and-paste data entry. If you are pooling money with friends, family, club members, or syndicate partners and struggling with **how to split investment profits fairly when people deposit or withdraw cash at different times**, this pre-built spreadsheet locks a complex institutional workflow into a simple, repeatable local Excel system. It automatically calculates **Net Asset Value (NAV) per unit**, handles **staggered investor buy-ins and buyouts**, prevents **unfair profit dilution**, and maintains an **audit-ready investor cap table**—saving you thousands of dollars in annual fund software subscriptions while keeping your sensitive partner financial data 100% offline on your own computer.
 
 ---
 
-## Visual Preview: NAV Calculation Engine & Partner Capital Account Dashboard
+## Why Manual Percentage Spreadsheets Fail When Tracking Shared Investments & Group Pools
 
-<img width="1536" height="1024" alt="Fund Unitization Excel Template Dashboard showing Net Asset Value per unit and investor ownership percentages" src="https://github.com/user-attachments/assets/42e2fe30-0173-45cc-945a-0d066ac2c974" />
-<img width="1672" height="941" alt="Investment Pool Transaction Ledger in Excel tracking staggered capital contributions, withdrawals, and P&L updates" src="https://github.com/user-attachments/assets/1b9a5b9c-5037-4e2a-8ddb-fd1584d48a5c" />
-<img width="1448" height="1086" alt="Partner Capital Account Statement in Excel displaying unit issuance, entry NAV pricing, and real-time redemption balances" src="https://github.com/user-attachments/assets/71d0cb5b-76f8-4152-b13d-0b58f792e9bc" />
+When beginners or treasurers pool money to invest in stocks, crypto, real estate, or private deals, they almost always start by tracking ownership using a simple **cash-contributed percentage split** (`Your Deposit ÷ Total Pool Cash`) alongside manual profit-and-loss (P&L) columns. 
 
-> Test the unit-based allocation math in your browser before downloading: [Interactive Fund Unitization & NAV Accounting Simulator Demo](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/)
+The moment the portfolio makes or loses money and a member adds new cash—or asks to cash out partially—a flat percentage spreadsheet breaks down. Reconstructing who owns what after six months of uneven deposits exposes severe mathematical errors that trigger partner disputes.
 
----
-
-## Why Static Cap Tables Fail in Multi-Date Investment Pools
-
-Investment pool accounting disputes happen when treasurers combine fixed ownership percentages, staggered capital entry dates, and manual profit-and-loss (P&L) allocations in a flat spreadsheet. When an investor requests a partial or full redemption months later, reconstructing their exact capital account balance exposes structural flaws in static percentage models.
-
-**The Legacy Static Percentage Workflow (High Dispute Risk):**
+**The Broken DIY Percentage Spreadsheet Workflow (High Dispute & Financial Loss Risk):**
 
 ```text
-New capital subscription logged
--> Partner ownership percentage split adjusted manually
--> Unrealized pre-entry market gains mixed with new capital
--> Valuation and dilution dispute surfaces at investor withdrawal
-
+New member deposits cash mid-year after the portfolio already grew +30%
+-> Treasurer manually overwrites ownership percentage formulas in Excel
+-> Early investors' unrealized profits get accidentally shared with the new depositor
+-> Cell references break (#REF! / #VALUE!) when dragging formulas down
+-> Accounting freeze and partner dispute erupt when someone asks to withdraw cash
 ```
 
-**The Automated NAV Unitization Workflow (Audit-Ready):**
+**The Automated Copy-Paste NAV Unitization Workflow (1-Minute Audit-Ready Clarity):**
 
 ```text
-New capital subscription logged
--> Pool units issued at current mark-to-market NAV per unit
--> Early investors' accumulated gains locked in structurally
--> Real-time capital account balances updated at every cash flow event
-
+Paste raw deposit, withdrawal, or portfolio balance rows into the standardized Excel input table
+-> Pre-built dynamic formulas automatically calculate current Share Price (NAV per Unit)
+-> Early investors' prior profits are locked in 100% before new shares are issued
+-> Real-time partner buyout values and ownership % update automatically with zero formula dragging
 ```
 
-Pool operators, syndicate GPs, and club treasurers need verifiable operational clarity. Every general partner and limited partner must be able to verify exact liquidation balances, unit holdings, and implied ownership stakes at any valuation date.
+Whether you are an **investment club treasurer**, a **friends-and-family fund organizer**, or a **syndicate general partner (GP)**, you need instant, verifiable numbers. Every participant must be able to see their exact dollar balance, unit holdings, and fair buyout payout at any date in seconds.
 
 ---
 
-## The Business Logic & Methodology: Unitized NAV Accounting vs. Percentage Splits
+## The Business Logic & Methodology: Plain-English Guide to Fair Profit Splitting & Hidden Financial Blind Spots
 
-This workbook solves the **multi-period capital allocation problem** using **Mutual Fund Unitization and Time-Weighted Net Asset Value (NAV) Accounting** (aligned with FASB ASC 946 and IOSCO collective investment valuation standards).
+Most novice pool managers do not realize that **tracking shared investments by simple cash percentages creates a direct financial transfer from early investors to late investors**. Even though institutional fund accounting seems complex on the surface, understanding the underlying business logic reveals why standard spreadsheets silently cost you money—and how this workbook eliminates those blind spots automatically.
 
-### The Commercial Problem: Asynchronous Capital Flows vs. Continuous Market Movement
+### Three Commercial Blind Spots That Cost Pool Operators Money
 
-In a dynamic investment pool, two variables change asynchronously:
+If you pool money with others and do not use unitized share pricing, you are exposed to three objective financial risks:
 
-1. **Portfolio Valuation (Market P&L):** The underlying assets fluctuate daily, weekly, or monthly.
-2. **Participant Cash Flows (Subscriptions & Redemptions):** Investors deposit or withdraw capital at irregular intervals.
+1. **Blind Spot 1: The "Silent Profit Giveaway" on Late Deposits (Giving Away 10%–40% of Your Gains)**
+   * **The Objective Fact:** Suppose you put **$100,000** into a trading pool and grow it to **$130,000** (+$30,000 profit). A friend then joins and deposits **$65,000**, bringing total pool cash to **$195,000**. If you use a basic percentage spreadsheet (`$65,000 ÷ $195,000`), your spreadsheet gives your friend **33.33% ownership of the entire pool**. 
+   * **Your Financial Loss:** Because your friend now owns 33.33% of $195,000, their account is immediately worth **$65,000**, which includes a claim on the $30,000 profit earned *before they even joined*. If the market drops the next day, or if you split profits by contributed cash ratio, **you accidentally transfer up to $10,000 of your personal pre-entry profit to the late entrant for free.**
+2. **Blind Spot 2: The "Loss Subsidy Trap" During Market Drawdowns**
+   * **The Objective Fact:** Suppose a $100,000 pool drops 20% to **$80,000** (−$20,000 loss). A new partner invests **$40,000** to buy the dip, making total pool value **$120,000**. If you track ownership by raw cash invested (`$40,000 ÷ $140,000 total historic cash = 28.57%`), the new partner's account is immediately valued at only **$34,285** (`28.57% × $120,000`).
+   * **Your Financial Loss:** The new investor instantly loses **$5,715** on Day 1 simply by depositing money, because a flat cash-ratio spreadsheet forces new cash to pay off old members' historical losses. No informed investor will add fresh capital once they spot this math error.
+3. **Blind Spot 3: The Tax, Buyout & Cloud SaaS Cost Trap ($2,500+ in CPA Fees or Bloated Software Subscriptions)**
+   * **The Objective Fact:** Tax authorities and CPAs require exact capital account continuity when partners enter, top up, or exit mid-year.
+   * **Your Financial Loss:** If you overwrite percentage columns every month, reconstructing fair payouts during tax season costs **$2,500–$10,000+ in external CPA forensic accounting hours**. Conversely, subscribing to enterprise fund administration SaaS platforms costs **$5,000–$15,000+ every year** and forces you to upload sensitive partner net-worth and transaction records to third-party cloud servers.
 
-When a pool tracks ownership strictly by cumulative cash contributed divided by total pool equity, every deposit after a market gain transfers a portion of the early investors' unrealized profit to the incoming participant. Conversely, depositing after a drawdown forces the new entrant to subsidize historical losses they never incurred.
+### How "Mutual Fund Unitization" Solves the Problem Automatically (Explained for Beginners)
 
-### The Core Methodology: Mark-to-Market Unit Issuance
+Instead of recalculating messy ownership percentages every time someone deposits $500 or $50,000, this Excel template uses the exact same **Unitization (Share Price) Method** used by Vanguard ETFs and Fidelity mutual funds (aligned with FASB ASC 946 and IOSCO valuation standards)—**pre-programmed into a fixed, repeatable Excel workflow so you never have to do the math yourself**:
 
-Instead of adjusting ownership percentages directly, the workbook separates **economic performance** from **capital dilution** through a three-equation state machine executed at every transaction row:
-
-1. **Pre-Transaction NAV Valuation:**
-
-$$\text{NAV per Unit}_{t} = \frac{\text{Total Pool Market Value}_{t}}{\text{Total Outstanding Units}_{t-1}}$$
-
-
-
-*Business Effect:* All realized and unrealized market P&L changes the unit price ($\text{NAV per Unit}$), leaving each participant's unit count untouched.
-2. **Fair-Value Subscription & Redemption Pricing:**
-
-$$\text{Units Issued or Redeemed}_{i,t} = \frac{\text{Cash Flow}_{i,t}}{\text{NAV per Unit}_{t}}$$
-
-
-
-*Business Effect:* New capital buys units at the current market-adjusted NAV rather than par value. Early investors retain 100% of their pre-entry appreciation because the incoming investor pays a higher price per unit.
-3. **Continuous Capital Account Derived State:**
-
-$$\text{Investor Balance}_{i,t} = \text{Units Held}_{i,t} \times \text{NAV per Unit}_{t}$$
-
-
-$$\text{Economic Ownership \%}_{i,t} = \frac{\text{Units Held}_{i,t}}{\text{Total Outstanding Units}_{t}}$$
-
-
-
-*Business Effect:* Ownership percentages become an output derived from unit holdings rather than a manual input table. Redemptions settle immediately at $\text{Units Redeemed} \times \text{Current NAV}$ with zero retroactive recalculation.
+* **Think of Your Pool Like a Mini-ETF:** When the pool starts, every $1.00 deposited buys **1 Unit (Share)** priced at **$1.00**.
+* **When the Portfolio Makes Money, Only the Share Price Goes Up:**
+  $$\text{Share Price (NAV per Unit)}_{t} = \frac{\text{Total Pool Market Value}_{t}}{\text{Total Units Already Issued}_{t-1}}$$
+  *Plain-English Effect:* If your $100,000 pool grows +30% to $130,000, you still hold 100,000 units, but each unit is now worth **$1.30**. Your $30,000 profit is locked inside that $1.30 share price.
+* **New Deposits Buy Shares at Today's Price (Zero Profit Dilution):**
+  $$\text{New Units Issued}_{i,t} = \frac{\text{New Cash Deposited}_{i,t}}{\text{Current Share Price (NAV)}_{t}}$$
+  *Plain-English Effect:* When your friend deposits $65,000 into the $130,000 pool, they must buy units at **$1.30 per unit**, receiving exactly **50,000 units** (`$65,000 ÷ $1.30`). You keep 100% of your $130,000 (`100,000 units × $1.30`), and they start with exactly $65,000 (`50,000 units × $1.30`).
+* **Cash-Outs & Ownership Percentages Calculate Themselves:**
+  $$\text{Partner Cash Value}_{i,t} = \text{Units Held}_{i,t} \times \text{Current Share Price (NAV)}_{t}$$
+  $$\text{True Ownership \%}_{i,t} = \frac{\text{Units Held}_{i,t}}{\text{Total Pool Units}_{t}}$$
+  *Plain-English Effect:* If anyone wants to withdraw cash on any day, the Excel sheet simply multiplies the units they want to cash out by today's share price. Zero arguments, zero retroactive spreadsheet edits, and **zero manual formula copying**.
 
 ---
 
-## Three Capital Allocation Traps in Manual Investment Spreadsheets
+## Three Common Excel Mistakes Beginners Make When Building DIY Investment Trackers
 
-### Trap 1: Static Percentage Splits Dilute Pre-Entry Market Gains
+### Mistake 1: Overwriting Ownership Percentages on Deposit Dates
+Beginners often build a simple table listing each member's total cash put in and divide by the sum of all deposits. As shown above, this treats $1,000 invested on Day 1 (which took all the early market risk) identically to $1,000 invested on Day 300 after the portfolio doubled. Our **automated NAV calculator spreadsheet** locks in historical gains at every single deposit timestamp automatically.
 
-Assigning ownership based on capital contribution share fails the moment two investors enter a rising portfolio on different dates.
+### Mistake 2: Trying to Use Excel `XIRR` to Calculate Current Partner Balances
+Many intermediate Excel users try to use the `XIRR` formula to figure out how much money each partner owns. However, `XIRR` only calculates an **annualized percentage return rate**; it cannot tell you a partner's **exact dollar liquidation balance today** or reconcile total payouts against your real bank or brokerage balance. Using `XIRR` forces you to maintain separate tabs for every member and manually adjust cell ranges after every deposit. This workbook replaces fragile `XIRR` hacks with a **continuous, single-ledger unit balance engine**.
 
-Suppose an investment pool grows from $100,000 to $130,000 (+30% return), and a second investor contributes $65,000, bringing total pool assets to $195,000. If the operator assigns the new participant a flat 33.3% ownership share ($65,000 / $195,000) without unitizing prior equity, the new investor immediately captures a claim on the first investor's $30,000 pre-entry gain.
-
-Pool operators who calculate flat percentage splits on contribution dates routinely undercompensate early backers. The accounting discrepancy compounds quietly across multiple funding rounds and triggers disputes during liquidation.
-
-### Trap 2: Using Excel XIRR to Calculate Partner Capital Balances
-
-Excel's `XIRR` function calculates an annualized internal rate of return across a single series of dated cash flows. It measures **historical time-adjusted performance**, whereas pool administration requires **current liquidation balance accounting**.
-
-Using `XIRR` as an equity allocation mechanism forces the treasurer to maintain separate cash flow arrays for every participant, recalculate return streams after every deposit, and manually reconcile total balances against actual brokerage equity. `XIRR` holds no continuous ledger state; every mid-period capital call, partial distribution, or mark-to-market valuation entry requires a fresh manual reconciliation pass.
-
-### Trap 3: Deferred Dilution Reconciliation at Period-End Settlement
-
-In traditional percentage-based partnership models, new capital subscriptions are often logged as raw cash and reconciled only at quarter-end or year-end close. By settlement date, the exact portfolio market value at the timestamp of the mid-period deposit is buried beneath subsequent market swings.
-
-If the portfolio gained 25% before a mid-quarter deposit and lost 10% afterward, lumping the period together erases the early investor's timing advantage. Unitized NAV accounting resolves dilution at the exact moment capital clears by locking the transaction to that day's NAV per unit.
+### Mistake 3: Waiting Until Year-End to Calculate Profit Splits
+When treasurers log deposits as raw cash and wait until December 31 to split profits, mid-year market swings get averaged out unfairly. If the pool gained +25% before a friend deposited in June and lost −10% in October, lumping the whole year together wipes out the early investor's timing advantage. This template settles dilution **the exact day cash enters or leaves**, simply by pasting the current brokerage balance alongside the deposit row.
 
 ---
 
-## Who This Fund Unitization Excel Template Is For
+## Who This Investment Pool Spreadsheet Is For: Role-Based Templates & Real-World Scenarios
 
-This template serves operators who have outgrown ad-hoc percentage spreadsheets and need institutional-grade **NAV accounting software logic inside Microsoft Excel**:
+Whether you are a complete beginner pooling money with friends or an experienced operator managing a multi-tranche syndicate, this template replaces complex software with a fixed, repeatable local Excel workflow:
 
-| Role & Search Persona | Specific Operational Scenario & Template Use Case |
+| User Identity & High-Intent Search Persona | Specific Operational Scenario & Plug-and-Play Excel Use Case |
 | --- | --- |
-| **Investment Club Treasurers** *(Investment Club Accounting Spreadsheet)* | Manage monthly member dues, irregular top-ups, and full member buyouts for 3–20 members while generating verifiable member capital statements. |
-| **Syndicate Leads & GP Operators** *(SPV & Syndicate Cap Table Excel Template)* | Onboard late-stage capital partners across multiple closing tranches (rolling closes) while protecting early LPs from pre-close valuation dilution. |
-| **Emerging Hedge Fund & Crypto Pool Managers** *(Incubator Fund Shadow NAV Calculator)* | Run an independent shadow accounting ledger alongside brokerage statements to track LP share classes, unit prices, and NAV per share before hiring a third-party fund administrator. |
-| **Family Office Coordinators** *(Family Investment Pool Allocation Workbook)* | Commingle capital from multiple family trusts or generational accounts entering at different dates, ensuring fair P&L attribution and clean audit trails for tax CPAs. |
-| **Prop Trading & Discretionary Group Leads** *(Trading Pool P&L Distribution Tracker)* | Issue participation units when new traders or backers deposit margin capital, and settle partial profit withdrawals at mark-to-market unit prices. |
+| **Friends & Family Fund Organizers** *(Friends and Family Investment Pool Excel Template)* | Pool money with relatives or friends to invest in stocks, ETFs, or crypto without awkward money disputes. Paste deposits and account balances to generate clear, fair balance updates for everyone in 1 click. |
+| **Stock & Crypto Investment Club Treasurers** *(Investment Club Accounting Spreadsheet & Member Ledger)* | Track monthly member dues, skipped payments, irregular top-ups, and full member buyouts for 3–50 club members with zero manual formula dragging. |
+| **Real Estate Syndicate Leads & GP Operators** *(Real Estate Syndicate & SPV Cap Table Excel Calculator)* | Onboard late-stage limited partners (LPs) across multiple closing dates (rolling closes) while automatically protecting early investors from pre-close valuation dilution. |
+| **Co-Investing Partners & Joint Venture Founders** *(Partnership Capital Account & Profit Split Calculator)* | Track uneven capital contributions, equipment/cash injections, and partial profit draws between 2–10 business partners with a private, offline, CPA-ready ledger. |
+| **Prop Trading & Crypto Group Leads** *(Shared Trading Pool P&L Distribution Tracker)* | Issue participation units when backers or traders add margin capital, and settle weekly or monthly profit withdrawals at exact mark-to-market unit prices without exposing wallet/account data to the cloud. |
+| **Emerging Hedge Fund & Incubator Managers** *(Incubator Fund Shadow NAV Accounting Workbook)* | Run an independent local Excel shadow accounting ledger alongside Interactive Brokers, Schwab, or crypto exchange statements—avoiding $15,000+/year institutional fund administrator subscriptions. |
+| **Family Office Coordinators & Bookkeepers** *(Multi-Trust Family Investment Pool Allocation Template)* | Commingle capital from multiple family trusts or generational accounts entering on staggered dates, keeping sensitive family net-worth data 100% offline on local storage. |
 
 ---
 
-## Real-World Use Cases: Solving Multi-Date Capital Allocation Scenarios
+## High-Frequency Use Cases: How Beginners & Fund Managers Track Multi-Date Investments
 
-### Scenario A: Rolling Closes in Private Investment Syndicates & SPVs
+### Scenario A: Friends & Family Stock or Crypto Pool with Irregular Deposits
+Five friends start a shared $20,000 investment account, but each person adds different amounts ($500, $2,000, $5,000) whenever they have spare cash, and one friend needs to withdraw $3,000 for an emergency six months later. Instead of spending hours building complex formulas, the organizer pastes the date, member name, deposit/withdrawal amount, and current brokerage balance into the Excel sheet—instantly seeing everyone's updated dollar balance and fair payout.
 
-When a syndicate general partner (GP) raises capital across three separate closing dates over six months while underlying assets are already appreciating, early limited partners (LPs) demand protection against free-riding by later tranches. By logging each closing tranche as a **unit subscription at current NAV**, later entrants buy in at the stepped-up unit price, preserving 100% of pre-close gains for Tranche 1 investors.
+### Scenario B: Rolling Closes in Private Investment Syndicates & SPVs
+When a syndicate general partner (GP) raises capital across three separate closing tranches over six months while underlying assets are already rising in value, early limited partners (LPs) demand protection against free-riding by later entrants. By logging each closing tranche into this **SPV cap table spreadsheet**, Tranche 2 and Tranche 3 investors automatically buy units at the stepped-up NAV price, preserving 100% of early gains for Tranche 1 backers.
 
-### Scenario B: Member Entry, Top-Ups, and Buyouts in Stock & Crypto Investment Clubs
-
-Investment clubs typically collect uneven monthly deposits while allowing existing members to pause contributions or cash out partially. Rather than renegotiating partnership agreements every month, the club treasurer records the brokerage account's current liquidation value, updates the **NAV per unit**, and processes all monthly deposits and buyout requests at that single clearing price.
-
-### Scenario C: Incubator Funds & Friends-and-Family Trading Pools Needing Shadow Accounting
-
-Emerging fund managers running a $100K–$5M friends-and-family portfolio rarely justify $15,000+/year in institutional fund administration fees. This workbook operates as a local **Excel shadow NAV accounting system**, producing investor-level unit ledgers, contribution histories, and capital account summaries ready for CPA tax preparation (Schedule K-1 support) or LP reporting.
+### Scenario C: Incubator Funds & Small Trading Pools Replacing Expensive SaaS Subscriptions
+Emerging managers running a $50K–$5M portfolio cannot justify paying $1,000–$1,500/month for cloud fund administration platforms—nor do they want to upload confidential partner identity and capital records to third-party servers. With a **one-time purchase**, this local Excel workbook serves as a permanent **offline shadow NAV accounting system**, generating investor-level unit ledgers and net P&L summaries that you can duplicate and reuse across unlimited funds and years.
 
 ---
 
-## What The Workbook Tracks: Pain-Point to Solution Mapping
+## What This Excel Template Tracks: Pain-Point to Automated Solution Mapping
 
-| Pool Accounting Pain Point | High-Frequency Search Requirement | Built-In Excel Workbook Solution |
+| Common Beginner & Operator Pain Point | High-Frequency Search Query (What You Need to Solve) | Pre-Built Automated Excel Workbook Solution |
 | --- | --- | --- |
-| **Unfair Dilution on Staggered Deposits** | *How to allocate profit when investors join at different times* | **Automated Unit Issuance Engine:** Converts incoming cash deposits into pool units priced at the exact pre-deposit NAV per unit, isolating prior gains automatically. |
-| **Manual P&L Distribution Errors** | *Investment pool P&L allocation spreadsheet* | **Continuous NAV Recalculation:** Portfolio gains and losses update the global NAV per unit; individual investor balances (`Units × Current NAV`) adjust dynamically with zero manual percentage edits. |
-| **Complex Partial Withdrawal Math** | *Calculate investor buyout / redemption value in partnership pool* | **Mark-to-Market Unit Redemption:** Converts dollar withdrawal requests into exact unit redemptions at current NAV, leaving remaining partners' balances intact. |
-| **Opaque Investor Balance Reporting** | *Partner capital account tracker & cap table Excel template* | **Real-Time Per-Participant Dashboard:** Displays each investor's net invested capital, unit balance, economic ownership %, weighted entry NAV, and cumulative dollar P&L. |
-| **Audit & Tax Reconciliation Friction** | *Auditable fund transaction ledger for CPA review* | **Chronological Transaction Audit Trail:** Logs every valuation event, deposit, and redemption with timestamped NAV, unit delta, and post-transaction pool state for instant CSV/PDF export. |
+| **Unfair Profit Sharing on Late Deposits** | *How to split investment profits fairly when someone invests later in Excel* | **Automated Unit Issuance Engine:** Instantly converts new cash deposits into pool units priced at that day's exact NAV per unit—locking in prior gains for existing members with zero manual math. |
+| **Broken Formulas When Adding Rows** | *Easy group investment tracker spreadsheet without dragging formulas* | **Zero-Click Dynamic Array Auto-Update:** Pre-built native Excel formulas automatically expand and calculate the moment you paste new transaction rows—no clicking and dragging cell corners required. |
+| **Confusing Member Buyout & Cash-Out Math** | *How to calculate partner buyout value or partial withdrawal in an investment club* | **Instant Mark-to-Market Redemption Calculator:** Enter the dollar amount or unit count a member wants to withdraw; the sheet immediately calculates exact cash payout and updates remaining members' ownership %. |
+| **Cloud Privacy Risks & Expensive SaaS Fees** | *Offline investment pool software without monthly subscription* | **100% Local Excel Architecture (One-Time Payment):** Runs entirely on your local hard drive with zero cloud uploads, zero third-party data leaks, and a fraction of the cost of recurring SaaS tools. |
+| **Stressful Tax Season & CPA Audits** | *Audit-ready investment pool transaction log for CPA Schedule K-1 prep* | **Chronological Audit Trail & Error Checkers:** Records every valuation update, deposit, and withdrawal with built-in balance reconciliation flags ready for 1-click PDF or CSV export. |
 
 ---
 
-## Case Study: Manual Percentage Allocation vs. Automated NAV Unitization
+## Case Study & SEO Feature Comparison: Manual Spreadsheets vs. Cloud SaaS vs. Our Local Excel Engine
 
-**Pool Profile:** 8 capital partners contributing unevenly across 18 months into an actively traded portfolio that appreciated ~40% overall. Initially tracked by the lead managing partner in a manual percentage-split spreadsheet.
+**Real-World Pool Breakdown:** 8 partners contributed unevenly across 18 months into an actively traded portfolio that grew +40% overall. The organizer tracked everything in a homemade percentage-split spreadsheet by manually editing formulas after each deposit.
 
-**The Operational Breakdown:** Three investors joined mid-cycle during high-volatility months. The managing partner manually recalculated capital contribution percentages after each deposit and distributed monthly P&L against those static weights.
+**What Went Wrong:** Three members joined mid-year during volatile months. When two early partners asked to cash out their profits, three accounting deadlocks froze all payouts:
+1. Nobody could agree on how to split a −15% market dip that happened *before* the newest member joined.
+2. A $25,000 deposit was pasted into the wrong monthly tab, breaking downstream `SUM` and `%` references across 6 sheets.
+3. Reconstructing the true balances required **3 weeks of manual forensic reconstruction** by an outside CPA.
 
-When two early partners requested full capital redemptions, three accounting disputes halted distributions:
+### Feature Comparison: DIY Percentage Spreadsheets vs. Enterprise Cloud SaaS vs. Automated Fund Unitization Excel Workbook
 
-1. How to allocate a 15% mid-year portfolio drawdown that occurred between Cohort 1 and Cohort 2 funding dates.
-2. How to correct a $25,000 partner deposit booked into the wrong monthly reconciliation tab.
-3. Which ownership percentage table governed the final partial month prior to redemption settlement.
-
-Reconstructing the historical capital accounts required three weeks of forensic accounting by an external CPA.
-
-### Comparison: Static Percentage Spreadsheets vs. Unitized NAV Accounting
-
-| Accounting Operation | Manual Percentage-Split Spreadsheet (Before) | Automated Fund Unitization Excel Workbook (After) |
-| --- | --- | --- |
-| **Equity Ownership Model** | Static capital-contribution percentages manually overwritten after each deposit | Dynamic **unitized NAV model**; units issued at mark-to-market price upon deposit |
-| **Late Entrant & Dilution Handling** | New capital diluted prior unrealized gains unless manually ring-fenced per tranche | **Automatic anti-dilution pricing**; incoming capital buys units at current NAV |
-| **Periodic P&L Allocation** | Manual period-end recalculation across shifting partner percentage tables | **Real-time NAV per unit adjustment**; investor unit balances remain constant during market moves |
-| **Partner Redemption & Buyout Settlement** | Forensic reconstruction of historical monthly P&L tabs required before payout | **Instant liquidation pricing** (`Redeemed Units × Current NAV`) read directly from the live ledger |
-| **Audit Trail & Dispute Surface** | High error risk at every manual formula override and period roll-forward | **Single-source chronological transaction ledger**; reconciliation handled at the accounting layer |
+| Operational & Financial Dimension | Homemade Percentage & `XIRR` Spreadsheet (DIY) | Enterprise Fund Admin Cloud SaaS (Competitors) | Automated Fund Unitization Excel Workbook (This Tool) |
+| --- | --- | --- | --- |
+| **Workflow & Formula Maintenance** | Manually inserting columns, rewriting cell references, and dragging formulas down (high `#REF!` error risk) | Complex onboarding, rigid web forms, and steep learning curves | **Fixed, repeatable copy-paste workflow**; pre-built dynamic formulas auto-update with zero mouse dragging |
+| **Ownership & Profit Split Accuracy** | Static cash-contributed percentages that unfairly dilute early investors | Institutional NAV unitization | **Institutional NAV unitization**; shares issued at live market value with 100% automatic anti-dilution |
+| **Cost & Pricing Model** | "Free" upfront, but costs thousands in profit leakage and CPA cleanup fees | **$3,000 – $15,000+ per year** in recurring subscription fees | **Low one-time payment**; reuse forever across unlimited pools with a **30-day money-back guarantee** |
+| **Data Privacy & Cloud Security** | Stored locally, but structurally broken and un-auditable | **High cloud exposure**; sensitive partner names, net worth, and cash flows stored on third-party servers | **100% local offline privacy**; your financial data never leaves your computer or touches the cloud |
+| **Member Buyouts & Partial Withdrawals** | Requires days of historical tab reconstruction to figure out fair cash-out value | Automated, but locked behind ongoing subscription paywalls | **Instant liquidation payout pricing** (`Redeemed Units × Current NAV`) displayed live on your local dashboard |
+| **Beginner Usability & Time Required** | Takes hours of spreadsheet debugging every month | Requires dedicated accounting staff to operate | **1-minute copy-paste workflow**; turns complete beginners into confident financial analysts instantly |
 
 ---
 
-## Institutional Standards Behind Unitized NAV Accounting
+## Institutional Valuation Standards Behind Automated Share Pricing (FASB & IOSCO Logic Made Simple)
 
-Regulated collective investment vehicles—including mutual funds, ETFs, private equity SPVs, and hedge funds—rely on unitized Net Asset Value accounting because asynchronous investor cash flows create an economic attribution problem that flat percentage tables cannot solve.
+Regulated investment vehicles—including mutual funds, ETFs, real estate SPVs, and hedge funds—use **unitized Net Asset Value (NAV) accounting** because uneven investor cash flows cannot be solved fairly with flat percentages. 
 
-An investor who subscribes on Day 90 into an appreciating portfolio did not bear the market risk of Days 1 through 89. The unitized structure encodes entry timing directly into the **subscription unit price (NAV at deposit date)**. Subsequent market performance flows strictly through **NAV per unit fluctuations**, while investor withdrawals clear at the prevailing liquidation NAV.
+This Excel workbook embeds those exact institutional rules into clean, transparent spreadsheet cells so small pools and beginners get Wall Street-grade accuracy without learning accounting jargon:
 
-| Fund Accounting Dimension | Institutional NAV Mechanism Implemented in This Workbook |
+| Fund Accounting Dimension | How This Excel Template Automates Institutional Standards Behind the Scenes |
 | --- | --- |
-| **Timing of Capital Subscription** | Locked into the investor's purchase price via **NAV per unit at deposit date** |
-| **Portfolio Market Performance (P&L)** | Reflected strictly through **NAV per unit movement**; outstanding unit counts stay unchanged |
-| **Capital Contribution Size** | Reflected in the **quantity of pool units issued** ($\text{Deposit} \div \text{Current NAV}$) |
-| **Dilution Protection for Existing LPs** | Enforced by issuing new units at **current mark-to-market NAV** rather than initial par value |
+| **Entry Timing Fairness** | Automatically locks each investor's entry timing into their **purchase share price (NAV per unit on deposit date)** |
+| **Market Profit & Loss (P&L) Tracking** | Flows 100% through **NAV per unit price changes**, leaving everyone's unit count untouched during market swings |
+| **Deposit Size Weighting** | Automatically converts dollar deposit size into the **exact quantity of pool units issued** ($\text{Deposit} \div \text{Current NAV}$) |
+| **Protection for Existing Members** | Enforces fair market pricing by issuing new units at **current mark-to-market NAV** rather than initial $1.00 par value |
 
-**Authoritative Accounting & Valuation Standards Referenced:**
-
-* [CFA Institute: Structure and Valuation of Pooled Investment Vehicles](https://www.cfainstitute.org)
-* [IOSCO: Principles for the Valuation of Collective Investment Schemes](https://www.iosco.org)
-* [FASB ASC 946: Financial Services — Investment Companies Accounting Standards](https://www.fasb.org)
+**Authoritative Accounting & Valuation Standards Referenced in This Model:**
+- 📖 [Read the CFA Institute Official Guide on Structure and Valuation of Pooled Investment Vehicles (External Valuation Reference)](https://www.cfainstitute.org)
+- 📖 [Explore the IOSCO Principles for the Valuation of Collective Investment Schemes (International Regulatory Standard)](https://www.iosco.org)
+- 📖 [Review FASB ASC 946 Financial Services — Investment Companies Accounting Standards (US GAAP NAV Accounting Framework)](https://www.fasb.org)
 
 ---
 
-## Worked Numerical Example: How Unit Issuance and NAV Pricing Work
+## Worked Step-by-Step Math Example: How Share Issuance & Buyout Pricing Actually Work
 
-A pool's **Net Asset Value per Unit** equals Total Portfolio Market Value divided by Total Units Outstanding. Incoming capital purchases new units at the current NAV per unit. Market gains and losses alter the NAV per unit while leaving outstanding unit counts unchanged.
+Here is the exact math the Excel template runs automatically behind the scenes when you paste your numbers:
 
-| Transaction Event | Total Pool Market Value | Total Units Outstanding | NAV per Unit | Partner Unit Delta & Accounting Impact |
+| Transaction Event You Paste Into Excel | Total Pool Market Value | Total Units in Pool | Auto-Calculated Share Price (NAV) | What the Excel Template Automatically Records for Each Partner |
 | --- | --- | --- | --- | --- |
-| **1. Investor A deposits $100,000** | $100,000 | 100,000 | $1.000 | Investor A issued **100,000 units** at $1.000 opening par NAV (100% ownership) |
-| **2. Portfolio market gain: +30%** | $130,000 | 100,000 | $1.300 | Unit count unchanged; NAV rises to **$1.300/unit** (Investor A balance = $130,000) |
-| **3. Investor B deposits $65,000** | $195,000 | 150,000 | $1.300 | Investor B buys **50,000 units** at $1.300 NAV (33.33% ownership; A retains $130,000) |
-| **4. Portfolio market loss: −15%** | $165,750 | 150,000 | $1.105 | Unit count unchanged; NAV drops to **$1.105/unit** (A = $110,500; B = $55,250) |
-| **5. Investor A redeems 50,000 units** | $110,250 | 100,000 | $1.105 | Investor A withdraws **$55,250 cash** (50,000 × $1.105); holds 50,000 units (50% of remaining pool) |
+| **1. Investor A deposits $100,000 to start pool** | $100,000 | 100,000 | **$1.000** | Issues **100,000 units** to Investor A at $1.000 starting share price (100% ownership) |
+| **2. Portfolio grows +30% in the market** | $130,000 | 100,000 | **$1.300** | Unit count stays 100,000; Share Price rises to **$1.300** (Investor A balance = **$130,000**) |
+| **3. Investor B joins later & deposits $65,000** | $195,000 | 150,000 | **$1.300** | Investor B buys **50,000 units** at $1.300 price (33.33% share; Investor A keeps **$130,000** intact!) |
+| **4. Market drops −15% the next month** | $165,750 | 150,000 | **$1.105** | Unit count stays 150,000; Share Price drops to **$1.105** (A = **$110,500**; B = **$55,250**) |
+| **5. Investor A cashes out 50,000 units (half)** | $110,250 | 100,000 | **$1.105** | Investor A withdraws **$55,250 cash** (`50,000 × $1.105`); keeps 50,000 units (now 50% of remaining pool) |
 
-**Why the Unitized Math Protects Every Participant:**
-
-* **Fair Entry Pricing:** Investor B contributes $65,000 when the unit price is $1.300, receiving 50,000 units. Investor A's $30,000 pre-entry profit remains 100% intact inside Investor A's 100,000 units.
-* **Proportional Drawdown Attribution:** Following the 15% market loss, the NAV drops from $1.300 to $1.105. Investor B's 50,000 units are worth $55,250—absorbing exactly a 15% loss on their $65,000 entry capital without inheriting or subsidizing Investor A's earlier period.
-
----
-
-## Quick Start Tutorial: How to Set Up Your Investment Pool NAV Ledger in 6 Steps
-
-Follow this step-by-step workflow to transition your investment club, syndicate, or trading pool from manual percentage splits to automated NAV unitization:
-
-1. **Test Your Cash Flow Scenario in the Live Browser Simulator**
-Open the [Interactive Fund Unitization & NAV Accounting Web Demo](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/) to simulate staggered deposits, market P&L swings, and redemptions before entering your live partnership numbers.
-2. **Initialize Pool Parameters and Partner Profiles**
-Register your initial investors, set your base currency, and establish your opening par NAV per unit (e.g., $1.00 or $100.00 per unit) on the inception date.
-3. **Log Capital Subscriptions to Issue Units Automatically**
-Record each investor deposit alongside the current portfolio market value. The workbook calculates the prevailing NAV per unit and issues the exact fractional or whole unit quantity to the partner's capital account.
-4. **Record Periodic Mark-to-Market Portfolio P&L**
-Enter realized and unrealized portfolio valuation updates on a daily, weekly, or monthly schedule—and immediately prior to any external cash flow—to update the pool's NAV per unit.
-5. **Process Investor Withdrawals and Unit Redemptions**
-Input partial or full redemption requests. The engine liquidates the corresponding number of units at current NAV, reduces total outstanding units, and recalculates post-redemption ownership weights for remaining partners.
-6. **Audit Capital Account Statements and Download the Reusable Excel Workbook**
-Verify balance integrity across the automated error-check flags and export clean transaction logs for LP reporting or tax preparation. Once you have validated the workflow in the single-session web demo, **[Download the Complete, Reusable Fund Unitization & NAV Accounting Excel Template](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)** to save permanent historical ledgers, customize partner dashboards, and manage ongoing multi-year pool operations offline in Microsoft Excel.
-
-*Disclaimer: This workbook is an operational accounting and decision-support template. Consult a qualified CPA or fund attorney regarding partnership tax allocations (e.g., IRC Section 704(b) / Schedule K-1) and securities compliance in your jurisdiction.*
+**Why Beginners Love Having This Automated in Excel:**
+- **Zero Unfair Dilution:** When Investor B puts in $65,000 at Step 3, the spreadsheet automatically charges them **$1.30 per unit**, protecting 100% of Investor A's $30,000 early profit.
+- **Exact Loss Fairness:** When the market drops 15% at Step 4, Investor B's $65,000 drops by exactly 15% to $55,250—they never subsidize Investor A's earlier history.
 
 ---
 
-## Download the Complete Excel Template
+## Quick Start Tutorial: How to Automate Your Investment Pool Analysis in 1 Minute (Zero Formula Dragging)
 
-Ready to automate your investment pool accounting and maintain a permanent, auditable partner ledger?
+Even though institutional fund accounting and time-weighted NAV math are complex, **you do not need to understand a single formula to use this tool**. We have turned a complex institutional accounting process into a **simple, fixed Excel workflow** with pre-built matching rules and dynamic auto-updating formulas—**you don't even need to double-click your mouse to drag or copy formulas down a column.** 
 
-👉 **[Get the Complete Fund Unitization & NAV Accounting Excel Workbook (Free Download)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**
+Follow these 6 simple steps to go from raw numbers to a complete, executive-ready investment pool analysis in under 1 minute:
+
+1. **Test Your Scenario in the Free Browser Simulator (Zero Installation Needed)**
+   Click to open the [Free Interactive Fund Unitization & NAV Calculator Web Simulator](https://hyvoid.github.io/investment-pool-nav-excel-template/) *(or view the [Cashflow Management Web Demo Mirror](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/))* to simulate staggered deposits, market P&L swings, and investor buyouts online for free before committing to your permanent ledger.
+2. **Initialize Your Pool Parameters & Partner Profiles**
+   Set your initial investor names, choose your base currency, and establish your starting share price (e.g., `$1.00` or `$100.00` per unit) on your inception date.
+3. **Copy & Paste Your Investor Deposits (Zero Formula Copying Required)**
+   Simply paste your deposit dates, investor names, and cash amounts into the standardized input table alongside your current account balance. The pre-built engine automatically matches each investor, calculates the live share price, and issues exact units—**without you ever touching or dragging a formula cell**.
+4. **Paste Periodic Portfolio Balances to Update Everyone's Profit Automatically**
+   Whenever you check your brokerage, crypto exchange, or syndicate bank balance (weekly, monthly, or right before someone adds cash), paste the single total market value number. Every partner's net profit and % ownership updates in 1 click.
+5. **Process Member Withdrawals & Buyouts in Seconds**
+   When a member asks to withdraw cash or exit the pool, enter their withdrawal row. The sheet immediately calculates how many units to liquidate at today's NAV price and adjusts everyone else's post-withdrawal ownership automatically.
+6. **Switch from the Single-Use Demo to the Reusable Local Excel Workbook (Risk-Free)**
+   While the free web simulator is great for a one-time test in your browser, managing a real investment pool requires saving your historical ledger month after month without exposing private partner data to the cloud. **[Get the Complete, Reusable Fund Unitization & NAV Accounting Excel Workbook](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)** to lock this complex accounting math into a **simple, fixed local Excel workflow** you can save and reuse forever:
+   - **1-Minute Expert Decision Feedback:** Just download the `.xlsx` file to your computer and copy-paste your own data to see instant analysis results—turning complete beginners into 1-minute financial analysis experts so you can focus on core business decisions during busy seasons.
+   - **One-Time Payment vs. Expensive SaaS Subscriptions:** Pay once to solve recurring capital allocation problems forever, at a tiny fraction of what leading cloud fund-accounting platforms charge per month.
+   - **100% Local Data Privacy:** All calculations run offline on your machine—zero cloud uploads, zero third-party data breaches.
+   - **30-Day No-Questions-Asked Money-Back Guarantee:** Test the Excel workbook with your real pool data for a full 30 days; if it doesn't save you hours of spreadsheet headaches, get a 100% refund with zero hassle.
+
+*Disclaimer: This workbook is an operational accounting and decision-support Excel template. Consult a qualified CPA or tax attorney regarding formal partnership tax filings (such as IRS Schedule K-1 or IRC Section 704(b) allocations) in your jurisdiction.*
+
+---
+
+## Get the Ready-to-Use Investment Pool Excel Workbook (30-Day Money-Back Guarantee)
+
+Stop wasting hours debugging broken percentage formulas, worrying about unfair profit splits, or overpaying for cloud SaaS subscriptions. Lock your pool accounting into a simple, repeatable local Excel workflow today:
+
+- ✅ **Instant Copy-Paste Automation:** Pre-built dynamic formulas auto-update without clicking or dragging cells.
+- ✅ **100% Offline Privacy & Lifetime Reuse:** Save locally on your computer and reuse across unlimited pools, clubs, or SPVs with a single one-time payment.
+- ✅ **Risk-Free 30-Day Refund Guarantee:** Backed by a full 30-day no-questions-asked money-back guarantee.
+
+👉 **[Get the Complete Fund Unitization & Investment Pool NAV Excel Workbook (Instant .xlsx Download | One-Time Purchase | 30-Day Guarantee)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**
+
+*(Want to test the math first? [Try the Free Interactive Web Simulator in Your Browser →](https://hyvoid.github.io/investment-pool-nav-excel-template/))*
+
+---
+
+## About Theseus Workshop: Plug-and-Play Business Decision Toolkits
+
+**Pure utility. Zero fluff.** At **Theseus Workshop**, we engineer clean, audit-ready financial models, cash flow control dashboards, and parametric estimating Excel templates for small funds, founders, estimators, and operator-led businesses.
+
+We believe you shouldn't need a software engineering team or an expensive recurring SaaS subscription to make sharp commercial decisions. Every toolkit we build turns complex commercial and financial logic into a **simple, fixed Microsoft Excel workflow** using modern, auto-updating native dynamic array formulas (`LET`, `LAMBDA`, `XLOOKUP`, `FILTER`) with **zero bloated VBA macros, zero cloud privacy risks, and zero manual formula maintenance**—so you can copy-paste your business data locally and see your decision priorities in 1 minute.
+
+Looking for more plug-and-play spreadsheets to automate your cash flow, pricing, cost estimating, or financial forecasting with a one-time purchase?
+
+🏢 **[Explore Our Full Suite of Ready-to-Use Business & Financial Excel Templates at TheseusWorkshop.com →](https://www.theseusworkshop.com)**
 
 ---
 
@@ -307,13 +302,6 @@ Ready to automate your investment pool accounting and maintain a permanent, audi
 * **[shopify-pnl-reconciliation-excel](https://github.com/HyVoid/shopify-pnl-reconciliation-excel)** — Is each Shopify storefront actually profitable once true SKU-level costs, shared expenses, and bank charges are reconciled? — Reconcile multi-store Shopify sales exports against SKU-level COGS, allocated multi-currency OPEX, and bank statements to produce a trustworthy monthly P&L.
 * **[travel-agency-accounting-excel-template](https://github.com/HyVoid/travel-agency-accounting-excel-template)** — Which tour bookings actually generate net profit and positive cash flow after supplier costs and B2B collections? — Calculate per-booking tour job costs, gross margins, AR/AP settlement, and operating cash flow across multiple currencies.
 
-## About Theseus Workshop
-
-We build transparent, audit-ready financial and operational Excel models for small funds, syndicates, and operator-led businesses that need institutional accounting logic inside Microsoft Excel.
-
-Every template runs locally on native spreadsheet formulas, giving your team full visibility into every calculation cell and ownership ledger entry.
-
-Managing complex capital allocation, reconciliation, or ownership tracking workflows in spreadsheets? **[Explore Our Full Library of Financial & Operational Excel Templates at Theseus Workshop →](https://www.theseusworkshop.com)**
 
 ---
 
