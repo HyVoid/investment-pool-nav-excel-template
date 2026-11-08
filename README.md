@@ -1,6 +1,8 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
 # Investment Pool Excel Template, Profit Split Calculator & Fund Unitization NAV Spreadsheet: Track Shared Capital, Partner Ownership & Multi-Date Cash Flows
+<img width="1079" height="790" alt="image" src="https://github.com/user-attachments/assets/38949e33-2c8f-4f28-b36a-a3edd5c3ed4a" />
+
 
 <div align="left">
 
@@ -219,7 +221,7 @@ Follow these 6 simple steps to go from raw numbers to a complete, executive-read
 3. **Copy & Paste Your Investor Deposits (Zero Formula Copying Required)**
    Simply paste your deposit dates, investor names, and cash amounts into the standardized input table alongside your current account balance. The pre-built engine automatically matches each investor, calculates the live share price, and issues exact units—**without you ever touching or dragging a formula cell**.
 4. **Paste Periodic Portfolio Balances to Update Everyone's Profit Automatically**
-   Whenever you check your brokerage, crypto exchange, or syndicate bank balance (weekly, monthly, or right before someone adds cash), paste the single total market value number. Every partner's net profit and % ownership updates in 1 click.
+   Whenever you check your brokerage, crypto exchange, or syndicate bank balance (weekly, monthly, or right before someone adds cash), paste the single total market value number. Every partner's net profit and % ownership updates in 1 click.<img width="1198" height="790" alt="image" src="https://github.com/user-attachments/assets/c94542ca-18ff-4b0b-ae54-1c5eb4c1defb" />
 5. **Process Member Withdrawals & Buyouts in Seconds**
    When a member asks to withdraw cash or exit the pool, enter their withdrawal row. The sheet immediately calculates how many units to liquidate at today's NAV price and adjusts everyone else's post-withdrawal ownership automatically.
 6. **Switch from the Single-Use Demo to the Reusable Local Excel Workbook (Risk-Free)**
