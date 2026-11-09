@@ -1,266 +1,263 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
+# Modèle Excel de pool d'investissement, calculateur de répartition des profits et tableur de comptabilisation par unités et de NAV de fonds : suivez le capital partagé, la détention des associés et les flux de trésorerie multi-dates
+<img width="1079" height="790" alt="image" src="https://github.com/user-attachments/assets/38949e33-2c8f-4f28-b36a-a3edd5c3ed4a" />
 
-# Modèle Excel de comptabilisation par unités et de valeur liquidative (NAV) d'un fonds : suivre la détention d'un pool d'investissement, les comptes de capital des associés et les flux de trésorerie multi-dates
 
 <div align="left">
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel-217346)
-![Domain](https://img.shields.io/badge/domain-Fund%20NAV%20Accounting-orange)
+![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel%20365%20%7C%202021%2B-217346)
+![Privacy](https://img.shields.io/badge/data%20privacy-100%25%20Local%20Offline%20%7C%20Zero%20Cloud%20Risk-critical)
+![Guarantee](https://img.shields.io/badge/guarantee-30--Day%20Money--Back-success)
 
-**Un tableur dynamique Microsoft Excel de comptabilisation par unités de fonds et calculateur de valeur liquidative (NAV), conçu pour les clubs d'investissement, les syndicats immobiliers, les pools de négociation privés et les family offices qui gèrent des souscriptions et des rachats d'investisseurs échelonnés dans le temps.**
+<p><strong>Un tableur Microsoft Excel plug-and-play de suivi de pool d'investissement, un calculateur de répartition des profits de portefeuille partagé et un tableur automatisé de comptabilisation par unités et de valeur liquidative (NAV). Conçu pour les débutants, les fonds entre amis et en famille, les clubs d'investissement, les syndicats immobiliers et les groupes de trading qui gèrent des dépôts et des retraits d'investisseurs inégaux à des dates différentes — zéro formule à recopier, zéro risque de confidentialité lié au cloud, zéro abonnement SaaS mensuel.</strong></p>
 
-[Lancer la démo web interactive du calculateur de comptabilisation par unités et de NAV de fonds](https://hyvoid.github.io/investment-pool-nav-excel-template/) 
+<p>
+  🚀 <a href="https://hyvoid.github.io/investment-pool-nav-excel-template/" title="Lancer la démo web interactive gratuite du calculateur de pool d'investissement et de NAV"><strong>Lancez le simulateur web interactif gratuit de pool d'investissement et de calcul de NAV (testez des flux de trésorerie d'exemple dans votre navigateur)</strong></a>
+</p>
 
-[Télécharger le classeur Excel complet de comptabilisation par unités et de comptabilité NAV de fonds (gratuit)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
+<p>
+  📥 <a href="https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav" title="Obtenir le modèle Excel complet prêt à l'emploi de comptabilisation par unités de fonds et de pool d'investissement"><strong>Obtenez le classeur Excel complet de comptabilisation par unités et de comptabilité NAV de pool d'investissement (achat unique | fichier 100 % local hors ligne | garantie 30 jours satisfait ou remboursé)</strong></a>
+</p>
 
 </div>
 
-**Le classeur de comptabilisation par unités et de comptabilité NAV de fonds** est un **suivi automatisé de pool d'investissement Microsoft Excel** et un **registre des comptes de capital des associés**. Il calcule la **valeur liquidative (NAV) par part**, automatise **l'émission de parts et la tarification des rachats**, prévient la **dilution des profits pré-entrée** et maintient une **table de capitalisation des investisseurs prête pour l'audit** sur des dates de souscription échelonnées, sans nécessiter de logiciel institutionnel d'administration de fonds.
+---
+
+**Le classeur de comptabilisation par unités et de comptabilité NAV de fonds** est un **modèle Excel de pool d'investissement prêt à l'emploi**, un **suivi de compte de capital partagé** et un **calculateur automatisé de répartition des profits** conçu pour une saisie instantanée par copier-coller. Si vous mettez en commun de l'argent avec des amis, de la famille, des membres d'un club ou des partenaires d'un syndicat et que vous vous demandez **comment répartir équitablement les profits d'investissement lorsque chacun dépose ou retire des fonds à des dates différentes**, ce tableur pré-construit verrouille un flux de travail institutionnel complexe dans un simple système Excel local répétable. Il calcule automatiquement la **valeur liquidative (NAV) par part**, gère les **souscriptions et rachats échelonnés des investisseurs**, prévient la **dilution injuste des profits** et maintient une **table de capitalisation des investisseurs prête pour l'audit** — vous épargnant des milliers de dollars d'abonnements annuels à des logiciels de fonds tout en gardant vos données financières sensibles de partenaires 100 % hors ligne sur votre propre ordinateur.
 
 ---
 
-## Aperçu visuel : moteur de calcul de la NAV et tableau de bord des comptes de capital des associés
+## Pourquoi les tableurs à pourcentages manuels échouent dans le suivi des investissements partagés et des pools de groupe
 
-<img width="1536" height="1024" alt="Fund Unitization Excel Template Dashboard showing Net Asset Value per unit and investor ownership percentages" src="https://github.com/user-attachments/assets/42e2fe30-0173-45cc-945a-0d066ac2c974" />
-<img width="1672" height="941" alt="Investment Pool Transaction Ledger in Excel tracking staggered capital contributions, withdrawals, and P&L updates" src="https://github.com/user-attachments/assets/1b9a5b9c-5037-4e2a-8ddb-fd1584d48a5c" />
-<img width="1448" height="1086" alt="Partner Capital Account Statement in Excel displaying unit issuance, entry NAV pricing, and real-time redemption balances" src="https://github.com/user-attachments/assets/71d0cb5b-76f8-4152-b13d-0b58f792e9bc" />
+Lorsque des débutants ou des trésoriers mettent en commun de l'argent pour investir en actions, en crypto, dans l'immobilier ou dans des transactions privées, ils commencent presque toujours par suivre la détention à l'aide d'une simple **répartition en pourcentage du capital apporté** (`Votre dépôt ÷ Total de la trésorerie du pool`) accompagnée de colonnes manuelles de compte de résultat (P&L).
 
-> Testez la mathématique d'allocation par parts dans votre navigateur avant de télécharger : [Démo du simulateur interactif de comptabilisation par unités et de comptabilité NAV de fonds](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/)
+Dès que le portefeuille gagne ou perd de l'argent et qu'un membre ajoute de nouvelles liquidités — ou demande un retrait partiel — un tableur à pourcentages plats s'effondre. Reconstituer qui détient quoi après six mois de dépôts irréguliers révèle des erreurs mathématiques graves qui déclenchent des litiges entre associés.
 
----
-
-## Pourquoi les tables de capitalisation statiques échouent dans les pools d'investissement multi-dates
-
-Les litiges comptables dans les pools d'investissement surviennent lorsque les trésoriers combinent des pourcentages de détention figés, des dates d'entrée en capital échelonnées et des imputations manuelles du compte de résultat (P&L) dans un tableur plat. Lorsqu'un investisseur demande un rachat partiel ou total plusieurs mois plus tard, la reconstitution de son solde exact de compte de capital révèle les failles structurelles des modèles à pourcentages statiques.
-
-**Le flux de travail hérité à pourcentages statiques (risque de litige élevé) :**
+**Le flux de travail défaillant du tableur DIY à pourcentages (risque élevé de litige et de pertes financières) :**
 
 ```text
-New capital subscription logged
--> Partner ownership percentage split adjusted manually
--> Unrealized pre-entry market gains mixed with new capital
--> Valuation and dilution dispute surfaces at investor withdrawal
-
+New member deposits cash mid-year after the portfolio already grew +30%
+-> Treasurer manually overwrites ownership percentage formulas in Excel
+-> Early investors' unrealized profits get accidentally shared with the new depositor
+-> Cell references break (#REF! / #VALUE!) when dragging formulas down
+-> Accounting freeze and partner dispute erupt when someone asks to withdraw cash
 ```
 
-**Le flux de travail automatisé de comptabilisation par unités NAV (prêt pour l'audit) :**
+**Le flux de travail automatisé de comptabilisation par unités NAV par copier-coller (clarté prête pour l'audit en 1 minute) :**
 
 ```text
-New capital subscription logged
--> Pool units issued at current mark-to-market NAV per unit
--> Early investors' accumulated gains locked in structurally
--> Real-time capital account balances updated at every cash flow event
-
+Paste raw deposit, withdrawal, or portfolio balance rows into the standardized Excel input table
+-> Pre-built dynamic formulas automatically calculate current Share Price (NAV per Unit)
+-> Early investors' prior profits are locked in 100% before new shares are issued
+-> Real-time partner buyout values and ownership % update automatically with zero formula dragging
 ```
 
-Les opérateurs de pools, les GP de syndicats et les trésoriers de clubs ont besoin d'une clarté opérationnelle vérifiable. Chaque associé commandité et commanditaire doit pouvoir vérifier les soldes exacts de liquidation, les parts détenues et les participations implicites à toute date de valorisation.
+Que vous soyez **trésorier d'un club d'investissement**, **organisateur d'un fonds entre amis et famille** ou **associé commandité (GP) d'un syndicat**, vous avez besoin de chiffres instantanés et vérifiables. Chaque participant doit pouvoir consulter en quelques secondes son solde exact en dollars, ses parts détenues et son montant de rachat équitable à n'importe quelle date.
 
 ---
 
-## La logique métier et la méthodologie : comptabilité NAV par unités vs. répartitions en pourcentage
+## La logique métier et la méthodologie : guide en langage simple du partage équitable des profits et des angles morts financiers cachés
 
-Ce classeur résout le **problème d'allocation de capital multi-périodes** en utilisant la **comptabilisation par unités à la manière des fonds mutuels et la comptabilité de la valeur liquidative (NAV) pondérée dans le temps** (conforme à FASB ASC 946 et aux normes de l'IOSCO sur l'évaluation des investissements collectifs).
+La plupart des gestionnaires de pools novices ne réalisent pas que **suivre des investissements partagés par de simples pourcentages de trésorerie crée un transfert financier direct des premiers investisseurs vers les derniers investisseurs**. Même si la comptabilité de fonds institutionnelle semble complexe en apparence, comprendre la logique métier sous-jacente révèle pourquoi les tableurs standards vous coûtent silencieusement de l'argent — et comment ce classeur élimine automatiquement ces angles morts.
 
-### Le problème commercial : flux de capitaux asynchrones vs. mouvement continu du marché
+### Trois angles morts commerciaux qui coûtent de l'argent aux opérateurs de pools
 
-Dans un pool d'investissement dynamique, deux variables évoluent de manière asynchrone :
+Si vous mettez de l'argent en commun avec d'autres sans utiliser une tarification des parts par unités, vous êtes exposé à trois risques financiers objectifs :
 
-1. **Valorisation du portefeuille (P&L de marché) :** les actifs sous-jacents fluctuent chaque jour, chaque semaine ou chaque mois.
-2. **Flux de trésorerie des participants (souscriptions et rachats) :** les investisseurs déposent ou retirent des capitaux à intervalles irréguliers.
+1. **Angle mort 1 : le « cadeau silencieux de profits » sur les dépôts tardifs (jusqu'à 10 % à 40 % de vos gains offerts)**
+   * **Le fait objectif :** supposons que vous placiez **$100,000** dans un pool de trading et que vous le fassiez croître à **$130,000** (profit de +$30,000). Un ami rejoint ensuite le pool et dépose **$65,000**, portant la trésorerie totale du pool à **$195,000**. Si vous utilisez un tableur basique à pourcentages (`$65,000 ÷ $195,000`), votre tableur accorde à votre ami **33.33 % de détention de l'intégralité du pool**.
+   * **Votre perte financière :** comme votre ami détient désormais 33.33 % de $195,000, son compte vaut immédiatement **$65,000**, ce qui inclut un droit sur le profit de $30,000 gagné *avant même qu'il ne rejoigne le pool*. Si le marché chute le lendemain, ou si vous répartissez les profits au prorata de la trésorerie apportée, **vous transférez accidentellement jusqu'à $10,000 de votre profit personnel pré-entrée au nouvel entrant, gratuitement.**
+2. **Angle mort 2 : le « piège de subvention des pertes » pendant les replis de marché**
+   * **Le fait objectif :** supposons qu'un pool de $100,000 chute de 20 % à **$80,000** (perte de −$20,000). Un nouvel associé investit **$40,000** pour profiter du creux, portant la valeur totale du pool à **$120,000**. Si vous suivez la détention selon la trésorerie brute investie (`$40,000 ÷ $140,000 de trésorerie historique totale = 28.57%`), le compte du nouvel associé est immédiatement évalué à seulement **$34,285** (`28.57% × $120,000`).
+   * **Votre perte financière :** le nouvel investisseur perd instantanément **$5,715** dès le premier jour simplement en déposant de l'argent, car un tableur plat au prorata de la trésorerie oblige les nouvelles liquidités à rembourser les pertes historiques des anciens membres. Aucun investisseur averti n'apportera de capital frais une fois cette erreur de calcul repérée.
+3. **Angle mort 3 : le piège des coûts fiscaux, de rachat et de SaaS cloud (plus de $2,500 d'honoraires de CPA ou d'abonnements logiciels gonflés)**
+   * **Le fait objectif :** les autorités fiscales et les CPA exigent une continuité exacte des comptes de capital lorsque des associés entrent, complètent leur participation ou sortent en cours d'année.
+   * **Votre perte financière :** si vous écrasez les colonnes de pourcentages chaque mois, reconstituer des paiements équitables pendant la saison fiscale coûte **$2,500 à $10,000+ en heures de comptabilité judiciaire par un CPA externe**. À l'inverse, s'abonner à des plateformes SaaS institutionnelles d'administration de fonds coûte **$5,000 à $15,000+ chaque année** et vous oblige à téléverser des données sensibles sur la fortune des associés et leurs transactions vers des serveurs cloud tiers.
 
-Lorsqu'un pool suit la détention strictement par le cumul du capital apporté divisé par les fonds propres totaux du pool, chaque dépôt effectué après un gain de marché transfère une partie du profit non réalisé des premiers investisseurs au participant entrant. Inversement, un dépôt effectué après une baisse oblige le nouvel entrant à subventionner des pertes historiques qu'il n'a jamais subies.
+### Comment la « comptabilisation par unités à la manière des fonds mutuels » résout le problème automatiquement (explication pour débutants)
 
-### La méthodologie centrale : émission de parts à la valeur de marché
+Au lieu de recalculer des pourcentages de détention compliqués chaque fois que quelqu'un dépose $500 ou $50,000, ce modèle Excel utilise exactement la même **méthode de comptabilisation par unités (prix de la part)** que les ETF Vanguard et les fonds mutuels Fidelity (conforme à FASB ASC 946 et aux normes d'évaluation de l'IOSCO) — **préprogrammée dans un flux de travail Excel fixe et répétable pour que vous n'ayez jamais à faire le calcul vous-même** :
 
-Plutôt que d'ajuster directement les pourcentages de détention, le classeur sépare la **performance économique** de la **dilution du capital** grâce à une machine à états à trois équations exécutée à chaque ligne de transaction :
-
-1. **Valorisation NAV pré-transaction :**
-
-$$\text{NAV per Unit}_{t} = \frac{\text{Total Pool Market Value}_{t}}{\text{Total Outstanding Units}_{t-1}}$$
-
-
-
-*Effet métier :* toutes les variations de P&L de marché, réalisé et non réalisé, modifient le prix de la part ($\text{NAV per Unit}$), sans toucher au nombre de parts de chaque participant.
-2. **Tarification des souscriptions et rachats à la juste valeur :**
-
-$$\text{Units Issued or Redeemed}_{i,t} = \frac{\text{Cash Flow}_{i,t}}{\text{NAV per Unit}_{t}}$$
-
-
-
-*Effet métier :* le nouveau capital achète des parts à la NAV ajustée au marché actuelle plutôt qu'à la valeur nominale. Les premiers investisseurs conservent 100 % de leur plus-value pré-entrée, car l'investisseur entrant paie un prix par part plus élevé.
-3. **État dérivé du compte de capital en continu :**
-
-$$\text{Investor Balance}_{i,t} = \text{Units Held}_{i,t} \times \text{NAV per Unit}_{t}$$
-
-
-$$\text{Economic Ownership \%}_{i,t} = \frac{\text{Units Held}_{i,t}}{\text{Total Outstanding Units}_{t}}$$
-
-
-
-*Effet métier :* les pourcentages de détention deviennent un résultat dérivé des parts détenues plutôt qu'une table de saisie manuelle. Les rachats se règlent immédiatement à $\text{Units Redeemed} \times \text{Current NAV}$ sans aucun recalcul rétroactif.
+* **Considérez votre pool comme un mini-ETF :** au démarrage du pool, chaque $1.00 déposé achète **1 part (unité)** au prix de **$1.00**.
+* **Quand le portefeuille gagne de l'argent, seul le prix de la part monte :**
+  $$\text{Share Price (NAV per Unit)}_{t} = \frac{\text{Total Pool Market Value}_{t}}{\text{Total Units Already Issued}_{t-1}}$$
+  *Effet métier :* si votre pool de $100,000 croît de +30 % à $130,000, vous détenez toujours 100,000 parts, mais chaque part vaut désormais **$1.30**. Votre profit de $30,000 est verrouillé dans ce prix de part de $1.30.
+* **Les nouveaux dépôts achètent des parts au prix du jour (zéro dilution du profit) :**
+  $$\text{New Units Issued}_{i,t} = \frac{\text{New Cash Deposited}_{i,t}}{\text{Current Share Price (NAV)}_{t}}$$
+  *Effet métier :* lorsque votre ami dépose $65,000 dans le pool de $130,000, il doit acheter des parts à **$1.30 par part**, recevant exactement **50,000 parts** (`$65,000 ÷ $1.30`). Vous conservez 100 % de vos $130,000 (`100,000 parts × $1.30`), et il démarre avec exactement $65,000 (`50,000 parts × $1.30`).
+* **Les retraits et les pourcentages de détention se calculent d'eux-mêmes :**
+  $$\text{Partner Cash Value}_{i,t} = \text{Units Held}_{i,t} \times \text{Current Share Price (NAV)}_{t}$$
+  $$\text{True Ownership \%}_{i,t} = \frac{\text{Units Held}_{i,t}}{\text{Total Pool Units}_{t}}$$
+  *Effet métier :* si quelqu'un souhaite retirer de l'argent n'importe quel jour, la feuille Excel multiplie simplement les parts qu'il veut racheter par le prix de la part du jour. Zéro dispute, zéro modification rétroactive du tableur, et **zéro copie manuelle de formule**.
 
 ---
 
-## Trois pièges d'allocation de capital dans les tableurs d'investissement manuels
+## Trois erreurs Excel courantes commises par les débutants lors de la création de suivis d'investissement DIY
 
-### Piège 1 : les répartitions statiques en pourcentage diluent les gains de marché pré-entrée
+### Erreur 1 : écraser les pourcentages de détention aux dates de dépôt
+Les débutants construisent souvent un simple tableau listant la trésorerie totale apportée par chaque membre, divisée par la somme de tous les dépôts. Comme montré ci-dessus, cela traite $1,000 investi au jour 1 (qui a porté tout le risque de marché initial) de manière identique à $1,000 investi au jour 300 après le doublement du portefeuille. Notre **tableur calculateur de NAV automatisé** verrouille automatiquement les gains historiques à chaque horodatage de dépôt.
 
-Attribuer la détention selon la part de contribution en capital échoue dès que deux investisseurs entrent dans un portefeuille en hausse à des dates différentes.
+### Erreur 2 : essayer d'utiliser Excel `XIRR` pour calculer les soldes actuels des associés
+Beaucoup d'utilisateurs Excel de niveau intermédiaire essaient d'utiliser la formule `XIRR` pour déterminer combien d'argent détient chaque associé. Cependant, `XIRR` ne calcule qu'un **taux de rendement annualisé en pourcentage** ; il ne peut pas vous donner le **solde exact de liquidation en dollars d'un associé aujourd'hui** ni rapprocher le total des paiements avec votre solde bancaire ou de courtage réel. Utiliser `XIRR` vous oblige à maintenir des onglets séparés pour chaque membre et à ajuster manuellement les plages de cellules après chaque dépôt. Ce classeur remplace les bricolages fragiles à base de `XIRR` par un **moteur continu de soldes de parts sur registre unique**.
 
-Supposons qu'un pool d'investissement passe de $100,000 à $130,000 (rendement de +30 %), et qu'un second investisseur apporte $65,000, portant l'actif total du pool à $195,000. Si l'opérateur attribue au nouveau participant une part de détention fixe de 33.3 % ($65,000 / $195,000) sans comptabiliser par unités les fonds propres antérieurs, le nouvel investisseur capte immédiatement un droit sur le gain pré-entrée de $30,000 du premier investisseur.
-
-Les opérateurs de pools qui calculent des répartitions plates en pourcentage aux dates de contribution sous-compensent régulièrement les premiers investisseurs. L'écart comptable s'accumule silencieusement sur plusieurs tours de financement et déclenche des litiges lors de la liquidation.
-
-### Piège 2 : utiliser Excel XIRR pour calculer les soldes de capital des associés
-
-La fonction `XIRR` d'Excel calcule un taux de rendement interne annualisé sur une seule série de flux de trésorerie datés. Elle mesure la **performance historique ajustée du temps**, alors que l'administration d'un pool exige une **comptabilité du solde de liquidation courant**.
-
-Utiliser `XIRR` comme mécanisme d'allocation du capital oblige le trésorier à maintenir des tableaux de flux de trésorerie séparés pour chaque participant, à recalculer les séries de rendement après chaque dépôt et à rapprocher manuellement les soldes totaux avec les fonds propres réels du courtage. `XIRR` ne conserve aucun état de registre continu ; chaque appel de capital en cours de période, chaque distribution partielle ou chaque écriture de valorisation au marché exige une nouvelle passe de rapprochement manuel.
-
-### Piège 3 : rapprochement de dilution différé au règlement de fin de période
-
-Dans les modèles de partenariat traditionnels basés sur les pourcentages, les nouvelles souscriptions de capital sont souvent enregistrées comme de la trésorerie brute et rapprochées uniquement à la clôture trimestrielle ou annuelle. À la date de règlement, la valeur de marché exacte du portefeuille au moment du dépôt en cours de période est enfouie sous les mouvements de marché ultérieurs.
-
-Si le portefeuille a gagné 25 % avant un dépôt en cours de trimestre et perdu 10 % ensuite, fusionner la période efface l'avantage de temporalité du premier investisseur. La comptabilisation par unités NAV résout la dilution au moment exact où le capital est réglé, en verrouillant la transaction sur la NAV par part de ce jour-là.
+### Erreur 3 : attendre la fin de l'année pour calculer le partage des profits
+Lorsque les trésoriers enregistrent les dépôts comme de la trésorerie brute et attendent le 31 décembre pour répartir les profits, les fluctuations de marché de l'année sont moyennées de façon injuste. Si le pool a gagné +25 % avant le dépôt d'un ami en juin et perdu −10 % en octobre, regrouper l'année entière efface l'avantage de temporalité du premier investisseur. Ce modèle règle la dilution **le jour exact où l'argent entre ou sort**, simplement en collant le solde de courtage actuel à côté de la ligne de dépôt.
 
 ---
 
-## À qui s'adresse ce modèle Excel de comptabilisation par unités de fonds
+## À qui s'adresse ce tableur de pool d'investissement : modèles par rôle et scénarios concrets
 
-Ce modèle s'adresse aux opérateurs qui ont dépassé les tableurs ad hoc en pourcentages et ont besoin d'une **logique de logiciel de comptabilité NAV de niveau institutionnel dans Microsoft Excel** :
+Que vous soyez un débutant complet mettant de l'argent en commun avec des amis ou un opérateur expérimenté gérant un syndicat multi-tranches, ce modèle remplace les logiciels complexes par un flux de travail Excel local fixe et répétable :
 
-| Rôle et persona de recherche | Scénario opérationnel spécifique et cas d'usage du modèle |
+| Profil d'utilisateur et persona de recherche à forte intention | Scénario opérationnel spécifique et cas d'usage Excel prêt à l'emploi |
 | --- | --- |
-| **Trésoriers de clubs d'investissement** *(Comptabilité de club d'investissement sur tableur)* | Gérer les cotisations mensuelles des membres, les compléments irréguliers et les rachats complets de membres pour 3 à 20 membres, tout en produisant des relevés de capital vérifiables. |
-| **Responsables de syndicats et opérateurs GP** *(Modèle Excel de table de capitalisation SPV et syndicat)* | Intégrer des partenaires de capital en stade avancé sur plusieurs tranches de clôture (rolling closes) tout en protégeant les premiers LP de la dilution de valorisation pré-clôture. |
-| **Gérants émergents de hedge funds et de pools crypto** *(Calculateur shadow NAV de fonds incubateur)* | Tenir un registre de comptabilité parallèle indépendant à côté des relevés de courtage pour suivre les classes de parts LP, les prix des parts et la NAV par part avant de recruter un administrateur de fonds tiers. |
-| **Coordinateurs de family office** *(Classeur d'allocation de pool d'investissement familial)* | Mixer les capitaux de plusieurs trusts familiaux ou comptes générationaux entrant à des dates différentes, en garantissant une imputation équitable du P&L et des pistes d'audit propres pour les CPA fiscalistes. |
-| **Responsables de groupes de trading prop et discrétionnaires** *(Suivi de distribution de P&L de pool de trading)* | Émettre des parts de participation lorsque de nouveaux traders ou apporteurs déposent du capital sur marge, et régler les retraits partiels de profits aux prix de parts au marché. |
+| **Organisateurs de fonds entre amis et famille** *(Modèle Excel de pool d'investissement entre amis et famille)* | Mettre en commun de l'argent avec des proches ou des amis pour investir en actions, ETF ou crypto sans disputes d'argent gênantes. Collez les dépôts et les soldes de comptes pour générer des mises à jour de soldes claires et équitables pour tout le monde en 1 clic. |
+| **Trésoriers de clubs d'investissement actions et crypto** *(Tableur de comptabilité de club d'investissement et registre des membres)* | Suivre les cotisations mensuelles des membres, les paiements manqués, les compléments irréguliers et les rachats complets de membres pour 3 à 50 membres du club, sans aucun glissement manuel de formule. |
+| **Responsables de syndicats immobiliers et opérateurs GP** *(Calculateur Excel de table de capitalisation SPV et syndicat immobilier)* | Intégrer des commanditaires (LP) de stade avancé sur plusieurs dates de clôture (rolling closes) tout en protégeant automatiquement les premiers investisseurs de la dilution de valorisation pré-clôture. |
+| **Associés de co-investissement et fondateurs de joint-venture** *(Calculateur de comptes de capital de partenariat et de partage des profits)* | Suivre les contributions de capital inégales, les apports en équipement ou en trésorerie et les prélèvements partiels de profits entre 2 à 10 associés avec un registre privé, hors ligne et prêt pour le CPA. |
+| **Responsables de groupes de trading prop et crypto** *(Suivi de distribution de P&L de pool de trading partagé)* | Émettre des parts de participation lorsque des apporteurs ou des traders ajoutent du capital sur marge, et régler les retraits hebdomadaires ou mensuels de profits aux prix de parts exacts au marché sans exposer les données de portefeuille ou de compte au cloud. |
+| **Gérants émergents de hedge funds et de fonds incubateurs** *(Classeur de comptabilité shadow NAV de fonds incubateur)* | Tenir un registre de comptabilité shadow indépendant dans Excel local à côté des relevés Interactive Brokers, Schwab ou d'échanges crypto — en évitant les abonnements d'administrateur de fonds institutionnels de $15,000+/an. |
+| **Coordinateurs de family office et comptables** *(Modèle d'allocation de pool d'investissement familial multi-trusts)* | Mixer les capitaux de plusieurs trusts familiaux ou comptes générationaux entrant à des dates échelonnées, en gardant les données sensibles de patrimoine familial 100 % hors ligne sur un stockage local. |
 
 ---
 
-## Cas d'usage réels : résoudre des scénarios d'allocation de capital multi-dates
+## Cas d'usage à haute fréquence : comment les débutants et les gérants de fonds suivent les investissements multi-dates
 
-### Scénario A : clôtures successives dans les syndicats d'investissement privés et les SPV
+### Scénario A : pool d'actions ou de crypto entre amis et famille avec des dépôts irréguliers
+Cinq amis créent un compte d'investissement partagé de $20,000, mais chacun ajoute des montants différents ($500, $2,000, $5,000) dès qu'il a de l'argent de côté, et un ami doit retirer $3,000 pour une urgence six mois plus tard. Au lieu de passer des heures à construire des formules complexes, l'organisateur colle la date, le nom du membre, le montant du dépôt/retrait et le solde de courtage actuel dans la feuille Excel — voyant instantanément le solde en dollars mis à jour de chacun et le paiement équitable.
 
-Lorsqu'un associé commandité (GP) de syndicat lève des capitaux sur trois dates de clôture distinctes en six mois alors que les actifs sous-jacents s'apprécient déjà, les premiers commanditaires (LP) exigent une protection contre le free-riding des tranches ultérieures. En enregistrant chaque tranche de clôture comme une **souscription de parts à la NAV courante**, les entrants tardifs achètent au prix de part relevé, préservant 100 % des gains pré-clôture pour les investisseurs de la tranche 1.
+### Scénario B : clôtures successives dans les syndicats d'investissement privés et les SPV
+Lorsqu'un associé commandité (GP) de syndicat lève des capitaux sur trois tranches de clôture distinctes en six mois alors que les actifs sous-jacents prennent déjà de la valeur, les premiers commanditaires (LP) exigent une protection contre le free-riding des entrants tardifs. En enregistrant chaque tranche de clôture dans ce **tableur de table de capitalisation SPV**, les investisseurs des tranches 2 et 3 achètent automatiquement des parts au prix de NAV relevé, préservant 100 % des gains initiaux pour les apporteurs de la tranche 1.
 
-### Scénario B : entrées de membres, compléments et rachats dans les clubs d'investissement actions et crypto
-
-Les clubs d'investissement collectent typiquement des dépôts mensuels inégaux tout en permettant aux membres existants de suspendre leurs contributions ou de sortir partiellement. Plutôt que de renégocier les accords de partenariat chaque mois, le trésorier du club enregistre la valeur de liquidation courante du compte de courtage, met à jour la **NAV par part** et traite tous les dépôts mensuels et demandes de rachat à ce prix unique de règlement.
-
-### Scénario C : fonds incubateurs et pools de trading entre amis et famille nécessitant une comptabilité parallèle
-
-Les gérants de fonds émergents qui gèrent un portefeuille entre amis et famille de $100K–$5M justifient rarement des frais d'administration de fonds institutionnels de $15,000+/an. Ce classeur fonctionne comme un **système Excel local de comptabilité shadow NAV**, produisant des registres de parts par investisseur, des historiques de contributions et des synthèses de comptes de capital prêts pour la préparation fiscale par un CPA (prise en charge du Schedule K-1) ou le reporting LP.
+### Scénario C : fonds incubateurs et petits pools de trading remplaçant des abonnements SaaS coûteux
+Les gérants émergents qui gèrent un portefeuille de $50K à $5M ne peuvent pas justifier de payer $1,000 à $1,500/mois pour des plateformes cloud d'administration de fonds — et ne veulent pas téléverser des identités confidentielles d'associés et des registres de capital vers des serveurs tiers. Avec un **achat unique**, ce classeur Excel local sert de **système permanent de comptabilité shadow NAV hors ligne**, générant des registres de parts par investisseur et des synthèses de P&L net que vous pouvez dupliquer et réutiliser sur un nombre illimité de fonds et d'années.
 
 ---
 
-## Ce que suit le classeur : correspondance entre points sensibles et solutions
+## Ce que suit ce modèle Excel : correspondance entre points sensibles et solutions automatisées
 
-| Point sensible comptable du pool | Exigence de recherche à haute fréquence | Solution intégrée du classeur Excel |
+| Point sensible courant des débutants et des opérateurs | Recherche à haute fréquence (ce que vous devez résoudre) | Solution du classeur Excel automatisé pré-intégré |
 | --- | --- | --- |
-| **Dilution injuste sur les dépôts échelonnés** | *Comment imputer le profit lorsque les investisseurs entrent à des moments différents* | **Moteur d'émission de parts automatisé :** convertit les dépôts de trésorerie entrants en parts du pool au prix exact de la NAV par part pré-dépôt, isolant automatiquement les gains antérieurs. |
-| **Erreurs de distribution manuelle du P&L** | *Tableur d'imputation de P&L de pool d'investissement* | **Recalcul NAV en continu :** les gains et pertes du portefeuille mettent à jour la NAV par part globale ; les soldes individuels des investisseurs (`Units × Current NAV`) s'ajustent dynamiquement sans aucune édition manuelle de pourcentages. |
-| **Calculs complexes de retraits partiels** | *Calculer la valeur de rachat / sortie d'un investisseur dans un pool de partenariat* | **Rachat de parts au marché :** convertit les demandes de retrait en dollars en rachats exacts de parts à la NAV courante, laissant intacts les soldes des partenaires restants. |
-| **Reporting opaque des soldes des investisseurs** | *Suivi des comptes de capital des associés et table de capitalisation — modèle Excel* | **Tableau de bord en temps réel par participant :** affiche le capital net investi, le solde de parts, le pourcentage de détention économique, la NAV d'entrée pondérée et le P&L cumulé en dollars de chaque investisseur. |
-| **Friction de rapprochement audit et fiscalité** | *Registre de transactions de fonds auditable pour revue CPA* | **Piste d'audit chronologique des transactions :** journalise chaque événement de valorisation, dépôt et rachat avec la NAV horodatée, le delta de parts et l'état du pool post-transaction pour un export CSV/PDF instantané. |
+| **Partage injuste des profits sur les dépôts tardifs** | *Comment répartir équitablement les profits d'investissement quand quelqu'un investit plus tard dans Excel* | **Moteur d'émission de parts automatisé :** convertit instantanément les nouveaux dépôts de trésorerie en parts du pool au prix exact de la NAV par part de ce jour — verrouillant les gains antérieurs pour les membres existants sans aucun calcul manuel. |
+| **Formules cassées lors de l'ajout de lignes** | *Tableur simple de suivi d'investissement de groupe sans glisser de formules* | **Mise à jour automatique par tableaux dynamiques sans clic :** les formules natives pré-intégrées d'Excel s'étendent et se calculent automatiquement dès que vous collez de nouvelles lignes de transactions — sans cliquer ni faire glisser les coins de cellules. |
+| **Calculs confus de rachat de membres et de retraits** | *Comment calculer la valeur de rachat d'un associé ou un retrait partiel dans un club d'investissement* | **Calculateur de rachat au marché instantané :** saisissez le montant en dollars ou le nombre de parts qu'un membre souhaite retirer ; la feuille calcule immédiatement le paiement exact en espèces et met à jour le % de détention des membres restants. |
+| **Risques de confidentialité cloud et frais SaaS élevés** | *Logiciel de pool d'investissement hors ligne sans abonnement mensuel* | **Architecture Excel 100 % locale (paiement unique) :** fonctionne entièrement sur votre disque dur local avec zéro téléversement cloud, zéro fuite de données vers des tiers, et une fraction du coût des outils SaaS récurrents. |
+| **Saison fiscale stressante et audits CPA** | *Registre de transactions de pool d'investissement prêt pour l'audit pour la préparation du Schedule K-1 par un CPA* | **Piste d'audit chronologique et contrôles d'erreurs :** enregistre chaque mise à jour de valorisation, chaque dépôt et chaque retrait avec des indicateurs intégrés de rapprochement des soldes, prêts pour un export PDF ou CSV en 1 clic. |
 
 ---
 
-## Étude de cas : allocation manuelle en pourcentages vs. comptabilisation par unités NAV automatisée
+## Étude de cas et comparaison des fonctionnalités : tableurs manuels vs. SaaS cloud vs. notre moteur Excel local
 
-**Profil du pool :** 8 associés en capital contribuant de manière inégale sur 18 mois dans un portefeuille activement négocié qui s'est apprécié d'environ 40 % au total. Suivi initialement par le gérant principal dans un tableur manuel de répartition en pourcentages.
+**Panne d'un pool réel :** 8 associés ont contribué de manière inégale sur 18 mois dans un portefeuille activement négocié qui a gagné +40 % au total. L'organisateur a tout suivi dans un tableur artisanal de répartition en pourcentages en modifiant manuellement les formules après chaque dépôt.
 
-**La panne opérationnelle :** trois investisseurs ont rejoint le cycle en cours de période, durant des mois de forte volatilité. Le gérant recalculait manuellement les pourcentages de contribution en capital après chaque dépôt et répartissait le P&L mensuel selon ces poids statiques.
+**Ce qui a mal tourné :** trois membres ont rejoint le pool en cours d'année, durant des mois volatils. Lorsque deux premiers associés ont demandé à récupérer leurs profits, trois impasses comptables ont gelé tous les paiements :
+1. Personne ne pouvait se mettre d'accord sur la façon de répartir un repli de marché de −15 % survenu *avant* que le membre le plus récent ne rejoigne le pool.
+2. Un dépôt de $25,000 a été collé dans le mauvais onglet mensuel, cassant les références `SUM` et `%` en aval sur 6 feuilles.
+3. Reconstituer les soldes réels a exigé **3 semaines de reconstitution judiciaire manuelle** par un CPA externe.
 
-Lorsque deux premiers associés ont demandé le rachat total de leur capital, trois litiges comptables ont bloqué les distributions :
+### Comparaison des fonctionnalités : tableurs DIY à pourcentages vs. SaaS cloud institutionnels vs. classeur Excel automatisé de comptabilisation par unités de fonds
 
-1. Comment imputer un repli de 15 % du portefeuille en milieu d'année survenu entre les dates de financement de la cohorte 1 et de la cohorte 2.
-2. Comment corriger un dépôt de $25,000 d'un associé comptabilisé dans le mauvais onglet de rapprochement mensuel.
-3. Quelle table de pourcentages de détention régissait le dernier mois partiel avant le règlement du rachat.
-
-La reconstitution des comptes de capital historiques a exigé trois semaines de comptabilité judiciaire par un CPA externe.
-
-### Comparaison : tableurs à pourcentages statiques vs. comptabilité NAV par unités
-
-| Opération comptable | Tableur manuel de répartition en pourcentages (avant) | Classeur Excel automatisé de comptabilisation par unités de fonds (après) |
-| --- | --- | --- |
-| **Modèle de détention du capital** | Pourcentages de contribution en capital statiques, écrasés manuellement après chaque dépôt | **Modèle NAV par unités** dynamique ; parts émises au prix du marché lors du dépôt |
-| **Traitement des entrants tardifs et de la dilution** | Le nouveau capital diluait les gains non réalisés antérieurs sauf isolement manuel par tranche | **Tarification anti-dilution automatique** ; le capital entrant achète des parts à la NAV courante |
-| **Imputation périodique du P&L** | Recalcul manuel de fin de période sur des tables de pourcentages de partenaires en évolution | **Ajustement de la NAV par part en temps réel** ; les soldes de parts des investisseurs restent constants pendant les mouvements de marché |
-| **Règlement des rachats et sorties des associés** | Reconstitution judiciaire des onglets mensuels de P&L historique requise avant tout paiement | **Tarification de liquidation instantanée** (`Redeemed Units × Current NAV`) lue directement dans le registre en direct |
-| **Piste d'audit et surface de litige** | Risque d'erreur élevé à chaque écrasement manuel de formule et report de période | **Registre chronologique des transactions à source unique** ; le rapprochement est traité au niveau comptable |
+| Dimension opérationnelle et financière | Tableur artisanal à pourcentages et `XIRR` (DIY) | SaaS cloud institutionnel d'administration de fonds (concurrents) | Classeur Excel automatisé de comptabilisation par unités de fonds (cet outil) |
+| --- | --- | --- | --- |
+| **Flux de travail et maintenance des formules** | Insertion manuelle de colonnes, réécriture des références de cellules et glissement de formules (risque d'erreur `#REF!` élevé) | Intégration complexe, formulaires web rigides et courbes d'apprentissage abruptes | **Flux de travail fixe et répétable par copier-coller** ; formules dynamiques pré-intégrées qui se mettent à jour automatiquement sans aucun glissement de souris |
+| **Exactitude de la détention et du partage des profits** | Pourcentages statiques de capital apporté qui diluent injustement les premiers investisseurs | Comptabilisation par unités NAV institutionnelle | **Comptabilisation par unités NAV institutionnelle** ; parts émises à la valeur de marché en direct avec 100 % d'anti-dilution automatique |
+| **Coût et modèle de tarification** | « Gratuit » au départ, mais coûte des milliers de dollars en fuites de profits et en honoraires de correction CPA | **$3,000 – $15,000+ par an** de frais d'abonnement récurrents | **Paiement unique réduit** ; réutilisable indéfiniment sur un nombre illimité de pools avec une **garantie de remboursement de 30 jours** |
+| **Confidentialité des données et sécurité cloud** | Stocké localement, mais structurellement défaillant et impossible à auditer | **Exposition cloud élevée** ; noms sensibles des associés, patrimoine et flux de trésorerie stockés sur des serveurs tiers | **Confidentialité 100 % locale hors ligne** ; vos données financières ne quittent jamais votre ordinateur ni ne touchent le cloud |
+| **Rachats de membres et retraits partiels** | Exige des jours de reconstitution d'onglets historiques pour déterminer la valeur équitable de sortie | Automatisé, mais verrouillé derrière des paywalls d'abonnement continus | **Tarification de paiement de liquidation instantanée** (`Redeemed Units × Current NAV`) affichée en direct sur votre tableau de bord local |
+| **Facilité d'utilisation pour débutants et temps requis** | Prend des heures de débogage de tableur chaque mois | Exige un personnel comptable dédié pour fonctionner | **Flux de travail par copier-coller en 1 minute** ; transforme instantanément des débutants complets en analystes financiers assurés |
 
 ---
 
-## Normes institutionnelles derrière la comptabilité NAV par unités
+## Normes institutionnelles d'évaluation derrière la tarification automatisée des parts (logique FASB et IOSCO simplifiée)
 
-Les véhicules d'investissement collectif réglementés — fonds mutuels, ETF, SPV de capital-investissement et hedge funds — s'appuient sur la comptabilité de valeur liquidative par unités parce que les flux de trésorerie asynchrones des investisseurs créent un problème d'attribution économique que les tables plates de pourcentages ne peuvent pas résoudre.
+Les véhicules d'investissement réglementés — notamment les fonds mutuels, les ETF, les SPV immobiliers et les hedge funds — utilisent la **comptabilité de valeur liquidative (NAV) par unités** parce que les flux de trésorerie inégaux des investisseurs ne peuvent pas être résolus équitablement avec des pourcentages plats.
 
-Un investisseur qui souscrit au jour 90 dans un portefeuille en appréciation n'a pas porté le risque de marché des jours 1 à 89. La structure par unités encode le calendrier d'entrée directement dans le **prix de souscription de la part (NAV à la date de dépôt)**. La performance de marché ultérieure transite strictement par les **fluctuations de la NAV par part**, tandis que les retraits des investisseurs se règlent à la NAV de liquidation en vigueur.
+Ce classeur Excel intègre ces règles institutionnelles exactes dans des cellules de tableur propres et transparentes, afin que les petits pools et les débutants obtiennent une précision de niveau Wall Street sans apprendre le jargon comptable :
 
-| Dimension comptable du fonds | Mécanisme NAV institutionnel implémenté dans ce classeur |
+| Dimension comptable du fonds | Comment ce modèle Excel automatise les normes institutionnelles en coulisses |
 | --- | --- |
-| **Calendrier de souscription du capital** | Verrouillé dans le prix d'achat de l'investisseur via la **NAV par part à la date de dépôt** |
-| **Performance de marché du portefeuille (P&L)** | Reflétée strictement par le **mouvement de la NAV par part** ; le nombre de parts en circulation reste inchangé |
-| **Taille de la contribution en capital** | Reflétée dans la **quantité de parts du pool émises** ($\text{Deposit} \div \text{Current NAV}$) |
-| **Protection contre la dilution pour les LP existants** | Garantie par l'émission de nouvelles parts à la **NAV au marché courante** plutôt qu'à la valeur nominale initiale |
+| **Équité du calendrier d'entrée** | Verrouille automatiquement le calendrier d'entrée de chaque investisseur dans son **prix d'achat de la part (NAV par part à la date de dépôt)** |
+| **Suivi du profit et de la perte de marché (P&L)** | Transite à 100 % par les **variations du prix de la NAV par part**, laissant le nombre de parts de chacun intact pendant les fluctuations de marché |
+| **Pondération de la taille des dépôts** | Convertit automatiquement la taille du dépôt en dollars en la **quantité exacte de parts du pool émises** ($\text{Deposit} \div \text{Current NAV}$) |
+| **Protection des membres existants** | Applique une tarification de marché équitable en émettant de nouvelles parts à la **NAV au marché courante** plutôt qu'à la valeur nominale initiale de $1.00 |
 
-**Normes comptables et d'évaluation de référence :**
-
-* [CFA Institute : structure et valorisation des véhicules d'investissement collectifs](https://www.cfainstitute.org)
-* [IOSCO : principes pour la valorisation des fonds d'investissement collectifs](https://www.iosco.org)
-* [FASB ASC 946 : services financiers — normes comptables des sociétés d'investissement](https://www.fasb.org)
+**Normes comptables et d'évaluation de référence citées dans ce modèle :**
+- 📖 [Lisez le guide officiel du CFA Institute sur la structure et la valorisation des véhicules d'investissement collectifs (référence d'évaluation externe)](https://www.cfainstitute.org)
+- 📖 [Explorez les principes de l'IOSCO pour la valorisation des organismes de placement collectif (norme réglementaire internationale)](https://www.iosco.org)
+- 📖 [Consultez FASB ASC 946 Services financiers — normes comptables des sociétés d'investissement (cadre comptable NAV US GAAP)](https://www.fasb.org)
 
 ---
 
-## Exemple numérique détaillé : fonctionnement de l'émission de parts et de la tarification NAV
+## Exemple mathématique détaillé étape par étape : fonctionnement réel de l'émission de parts et de la tarification de rachat
 
-La **valeur liquidative par part** d'un pool est égale à la valeur de marché totale du portefeuille divisée par le nombre total de parts en circulation. Le capital entrant achète de nouvelles parts à la NAV par part courante. Les gains et pertes de marché modifient la NAV par part sans changer le nombre de parts en circulation.
+Voici le calcul exact que le modèle Excel exécute automatiquement en coulisses lorsque vous collez vos chiffres :
 
-| Événement de transaction | Valeur de marché totale du pool | Total des parts en circulation | NAV par part | Delta de parts des associés et impact comptable |
+| Événement de transaction que vous collez dans Excel | Valeur de marché totale du pool | Total des parts du pool | Prix de la part auto-calculé (NAV) | Ce que le modèle Excel enregistre automatiquement pour chaque associé |
 | --- | --- | --- | --- | --- |
-| **1. L'investisseur A dépose $100,000** | $100,000 | 100,000 | $1.000 | L'investisseur A se voit émettre **100,000 parts** à la NAV nominale d'ouverture de $1.000 (100 % de détention) |
-| **2. Gain de marché du portefeuille : +30 %** | $130,000 | 100,000 | $1.300 | Nombre de parts inchangé ; la NAV monte à **$1.300/part** (solde de l'investisseur A = $130,000) |
-| **3. L'investisseur B dépose $65,000** | $195,000 | 150,000 | $1.300 | L'investisseur B achète **50,000 parts** à la NAV de $1.300 (33.33 % de détention ; A conserve $130,000) |
-| **4. Perte de marché du portefeuille : −15 %** | $165,750 | 150,000 | $1.105 | Nombre de parts inchangé ; la NAV descend à **$1.105/part** (A = $110,500 ; B = $55,250) |
-| **5. L'investisseur A rachète 50,000 parts** | $110,250 | 100,000 | $1.105 | L'investisseur A retire **$55,250 en espèces** (50,000 × $1.105) ; détient 50,000 parts (50 % du pool restant) |
+| **1. L'investisseur A dépose $100,000 pour démarrer le pool** | $100,000 | 100,000 | **$1.000** | Émet **100,000 parts** à l'investisseur A au prix de part initial de $1.000 (100 % de détention) |
+| **2. Le portefeuille gagne +30 % sur le marché** | $130,000 | 100,000 | **$1.300** | Le nombre de parts reste 100,000 ; le prix de la part monte à **$1.300** (solde de l'investisseur A = **$130,000**) |
+| **3. L'investisseur B rejoint le pool plus tard et dépose $65,000** | $195,000 | 150,000 | **$1.300** | L'investisseur B achète **50,000 parts** au prix de $1.300 (33.33 % de détention ; l'investisseur A conserve **$130,000** intacts !) |
+| **4. Le marché chute de −15 % le mois suivant** | $165,750 | 150,000 | **$1.105** | Le nombre de parts reste 150,000 ; le prix de la part descend à **$1.105** (A = **$110,500** ; B = **$55,250**) |
+| **5. L'investisseur A rachète 50,000 parts (la moitié)** | $110,250 | 100,000 | **$1.105** | L'investisseur A retire **$55,250 en espèces** (`50,000 × $1.105`) ; conserve 50,000 parts (désormais 50 % du pool restant) |
 
-**Pourquoi la mathématique par unités protège chaque participant :**
-
-* **Tarification d'entrée équitable :** l'investisseur B apporte $65,000 alors que le prix de la part est de $1.300 et reçoit 50,000 parts. Le profit pré-entrée de $30,000 de l'investisseur A reste 100 % intact dans les 100,000 parts de l'investisseur A.
-* **Imputation proportionnelle du repli :** après la perte de marché de 15 %, la NAV passe de $1.300 à $1.105. Les 50,000 parts de l'investisseur B valent $55,250 — absorbant exactement une perte de 15 % sur son capital d'entrée de $65,000, sans hériter ni subventionner la période antérieure de l'investisseur A.
-
----
-
-## Tutoriel de démarrage rapide : configurer votre registre NAV de pool d'investissement en 6 étapes
-
-Suivez ce flux de travail étape par étape pour faire passer votre club d'investissement, votre syndicat ou votre pool de trading des répartitions manuelles en pourcentages à la comptabilisation par unités NAV automatisée :
-
-1. **Testez votre scénario de flux de trésorerie dans le simulateur en ligne**
-Ouvrez la [démo web interactive de comptabilisation par unités et de comptabilité NAV de fonds](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/) pour simuler des dépôts échelonnés, des fluctuations de P&L de marché et des rachats avant de saisir les chiffres réels de votre partenariat.
-2. **Initialisez les paramètres du pool et les profils des associés**
-Enregistrez vos investisseurs initiaux, définissez votre devise de base et établissez votre NAV nominale d'ouverture par part (par ex. $1.00 ou $100.00 par part) à la date de constitution.
-3. **Journalisez les souscriptions de capital pour émettre les parts automatiquement**
-Enregistrez chaque dépôt d'investisseur avec la valeur de marché courante du portefeuille. Le classeur calcule la NAV par part en vigueur et émet la quantité exacte de parts, fractionnaire ou entière, au compte de capital de l'associé.
-4. **Enregistrez le P&L de marché périodique du portefeuille**
-Saisissez les mises à jour de valorisation du portefeuille, réalisées et non réalisées, selon un calendrier quotidien, hebdomadaire ou mensuel — et immédiatement avant tout flux de trésorerie externe — pour mettre à jour la NAV par part du pool.
-5. **Traitez les retraits des investisseurs et les rachats de parts**
-Saisissez les demandes de rachat partielles ou totales. Le moteur liquide le nombre de parts correspondant à la NAV courante, réduit le total des parts en circulation et recalcule les poids de détention post-rachat pour les associés restants.
-6. **Auditez les relevés des comptes de capital et téléchargez le classeur Excel réutilisable**
-Vérifiez l'intégrité des soldes via les indicateurs automatisés de contrôle d'erreurs et exportez des journaux de transactions propres pour le reporting LP ou la préparation fiscale. Une fois le flux de travail validé dans la démo web à session unique, **[téléchargez le modèle Excel complet et réutilisable de comptabilisation par unités et de comptabilité NAV de fonds](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)** pour conserver des registres historiques permanents, personnaliser les tableaux de bord des associés et gérer les opérations continues du pool sur plusieurs années, hors ligne, dans Microsoft Excel.
-
-*Avertissement : ce classeur est un modèle opérationnel de comptabilité et d'aide à la décision. Consultez un CPA qualifié ou un avocat spécialisé en fonds concernant les allocations fiscales de partenariat (par ex. IRC Section 704(b) / Schedule K-1) et la conformité aux valeurs mobilières dans votre juridiction.*
+**Pourquoi les débutants adorent avoir cela automatisé dans Excel :**
+- **Zéro dilution injuste :** lorsque l'investisseur B apporte $65,000 à l'étape 3, le tableur lui facture automatiquement **$1.30 par part**, protégeant 100 % du profit initial de $30,000 de l'investisseur A.
+- **Équité exacte des pertes :** lorsque le marché chute de 15 % à l'étape 4, les $65,000 de l'investisseur B chutent d'exactement 15 % à $55,250 — il ne subventionne jamais l'historique antérieur de l'investisseur A.
 
 ---
 
-## Télécharger le modèle Excel complet
+## Tutoriel de démarrage rapide : automatiser l'analyse de votre pool d'investissement en 1 minute (zéro glissement de formule)
 
-Prêt à automatiser la comptabilité de votre pool d'investissement et à tenir un registre permanent et auditable des associés ?
+Même si la comptabilité de fonds institutionnelle et les calculs de NAV pondérée dans le temps sont complexes, **vous n'avez pas besoin de comprendre une seule formule pour utiliser cet outil**. Nous avons transformé un processus comptable institutionnel complexe en un **flux de travail Excel simple et fixe** avec des règles de correspondance pré-intégrées et des formules dynamiques à mise à jour automatique — **vous n'avez même pas besoin de double-cliquer pour faire glisser ou copier des formules dans une colonne.**
 
-👉 **[Obtenir le classeur Excel complet de comptabilisation par unités et de comptabilité NAV de fonds (téléchargement gratuit)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**
+Suivez ces 6 étapes simples pour passer des chiffres bruts à une analyse complète de pool d'investissement prête pour la direction en moins d'1 minute :
+
+1. **Testez votre scénario dans le simulateur gratuit du navigateur (zéro installation requise)**
+   Cliquez pour ouvrir la [démo web interactive de comptabilisation par unités et de comptabilité NAV de fonds](https://hyvoid.github.io/investment-pool-nav-excel-template/) *(ou consultez le [miroir de la démo web de gestion des flux de trésorerie](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/))* pour simuler en ligne gratuitement des dépôts échelonnés, des fluctuations de P&L de marché et des rachats d'investisseurs avant de vous engager dans votre registre permanent.
+2. **Initialisez les paramètres de votre pool et les profils des associés**
+   Définissez les noms de vos investisseurs initiaux, choisissez votre devise de base et établissez votre prix de part de départ (par ex. `$1.00` ou `$100.00` par part) à votre date de constitution.
+3. **Copiez-collez les dépôts de vos investisseurs (aucune copie de formule requise)**
+   Collez simplement vos dates de dépôt, noms d'investisseurs et montants en espèces dans la table de saisie standardisée à côté de votre solde de compte actuel. Le moteur pré-intégré associe automatiquement chaque investisseur, calcule le prix de part en direct et émet les parts exactes — **sans que vous ayez jamais à toucher ou faire glisser une cellule de formule**.
+4. **Collez les soldes périodiques du portefeuille pour mettre à jour automatiquement les profits de chacun**
+   Chaque fois que vous consultez votre solde de courtage, d'échange crypto ou bancaire du syndicat (chaque semaine, chaque mois ou juste avant qu'un participant n'ajoute de l'argent), collez le chiffre unique de valeur de marché totale. Le profit net et le % de détention de chaque associé se mettent à jour en 1 clic.<img width="1198" height="790" alt="image" src="https://github.com/user-attachments/assets/c94542ca-18ff-4b0b-ae54-1c5eb4c1defb" />
+5. **Traitez les retraits et rachats de membres en quelques secondes**
+   Lorsqu'un membre demande à retirer des liquidités ou à sortir du pool, saisissez sa ligne de retrait. La feuille calcule immédiatement le nombre de parts à liquider au prix de NAV du jour et ajuste automatiquement la détention post-retrait de tous les autres.
+6. **Passez de la démo à usage unique au classeur Excel local réutilisable (sans risque)**
+   Si le simulateur web gratuit est idéal pour un test unique dans votre navigateur, gérer un véritable pool d'investissement exige de sauvegarder votre registre historique mois après mois sans exposer les données privées des associés au cloud. **[Obtenez le classeur Excel complet et réutilisable de comptabilisation par unités et de comptabilité NAV de fonds](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)** pour verrouiller ce calcul comptable complexe dans un **flux de travail Excel local simple et fixe** que vous pouvez sauvegarder et réutiliser indéfiniment :
+   - **Retour de décision expert en 1 minute :** téléchargez simplement le fichier `.xlsx` sur votre ordinateur et copiez-collez vos propres données pour voir des résultats d'analyse instantanés — transformant des débutants complets en experts d'analyse financière en 1 minute pour que vous puissiez vous concentrer sur les décisions métier essentielles pendant les périodes chargées.
+   - **Paiement unique vs. abonnements SaaS coûteux :** payez une fois pour résoudre définitivement des problèmes récurrents d'allocation de capital, à une fraction minime de ce que facturent mensuellement les grandes plateformes cloud de comptabilité de fonds.
+   - **Confidentialité des données 100 % locale :** tous les calculs s'exécutent hors ligne sur votre machine — zéro téléversement cloud, zéro fuite de données vers des tiers.
+   - **Garantie de remboursement de 30 jours sans conditions :** testez le classeur Excel avec les données réelles de votre pool pendant 30 jours complets ; s'il ne vous épargne pas des heures de maux de tête de tableur, obtenez un remboursement à 100 % sans aucune formalité.
+
+*Avertissement : ce classeur est un modèle Excel de comptabilité opérationnelle et d'aide à la décision. Consultez un CPA qualifié ou un avocat fiscaliste concernant les déclarations fiscales formelles de partenariat (telles que le Schedule K-1 de l'IRS ou les allocations IRC Section 704(b)) dans votre juridiction.*
+
+---
+
+## Obtenez le classeur Excel de pool d'investissement prêt à l'emploi (garantie de remboursement de 30 jours)
+
+Arrêtez de perdre des heures à déboguer des formules de pourcentages cassées, de vous inquiéter de partages de profits injustes ou de trop payer pour des abonnements SaaS cloud. Verrouillez dès aujourd'hui la comptabilité de votre pool dans un flux de travail Excel local simple et répétable :
+
+- ✅ **Automatisation instantanée par copier-coller :** les formules dynamiques pré-intégrées se mettent à jour automatiquement sans cliquer ni faire glisser des cellules.
+- ✅ **Confidentialité 100 % hors ligne et réutilisation à vie :** enregistrez localement sur votre ordinateur et réutilisez sur un nombre illimité de pools, clubs ou SPV avec un seul paiement unique.
+- ✅ **Garantie de remboursement sans risque de 30 jours :** adossée à une garantie de remboursement complète de 30 jours sans conditions.
+
+👉 **[Obtenez le classeur Excel complet de comptabilisation par unités de fonds et de NAV de pool d'investissement (téléchargement instantané .xlsx | achat unique | garantie de 30 jours)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**
+
+*(Vous voulez d'abord tester le calcul ? [Essayez le simulateur web interactif gratuit dans votre navigateur →](https://hyvoid.github.io/investment-pool-nav-excel-template/))*
+
+---
+
+## À propos de Theseus Workshop : boîtes à outils décisionnelles professionnelles prêtes à l'emploi
+
+**Utilité pure. Zéro superflu.** Chez **Theseus Workshop**, nous concevons des modèles financiers propres et prêts pour l'audit, des tableaux de bord de contrôle de trésorerie et des modèles Excel d'estimation paramétrique pour les petits fonds, les fondateurs, les métreurs et les entreprises pilotées par des opérateurs.
+
+Nous pensons que vous ne devriez pas avoir besoin d'une équipe d'ingénierie logicielle ni d'un abonnement SaaS récurrent coûteux pour prendre des décisions commerciales tranchées. Chaque boîte à outils que nous construisons transforme une logique commerciale et financière complexe en un **flux de travail Microsoft Excel simple et fixe** utilisant des formules natives modernes de tableaux dynamiques à mise à jour automatique (`LET`, `LAMBDA`, `XLOOKUP`, `FILTER`) avec **zéro macro VBA gonflée, zéro risque de confidentialité cloud et zéro maintenance manuelle de formules** — pour que vous puissiez copier-coller vos données métier localement et voir vos priorités de décision en 1 minute.
+
+Vous cherchez d'autres tableurs prêts à l'emploi pour automatiser votre trésorerie, vos tarifs, votre estimation de coûts ou vos prévisions financières avec un achat unique ?
+
+🏢 **[Explorez notre gamme complète de modèles Excel professionnels et financiers prêts à l'emploi sur TheseusWorkshop.com →](https://www.theseusworkshop.com)**
 
 ---
 
@@ -276,13 +273,37 @@ Prêt à automatiser la comptabilité de votre pool d'investissement et à tenir
 
 ---
 
-## À propos de Theseus Workshop
+## Autres outils de cette série
 
-Nous construisons des modèles Excel financiers et opérationnels transparents et prêts pour l'audit pour les petits fonds, les syndicats et les entreprises pilotées par des opérateurs qui ont besoin d'une logique comptable institutionnelle dans Microsoft Excel.
+* **[rolling-cashflow-forecast](https://github.com/HyVoid/rolling-cashflow-forecast)** — Pourquoi la trésorerie est-elle toujours tendue ? — Prévoyez la liquidité future sous des hypothèses opérationnelles et financières changeantes.
+* **[Multi-Currency-Trade-Financial-Analyzer](https://github.com/HyVoid/Multi-Currency-Trade-Financial-Analyzer)** — Quels flux commerciaux sont réellement rentables après effets de change ? — Mesurez la rentabilité multi-devises des opérations commerciales à travers des opérations transfrontalières.
+* **[RTL_Loan_Sizer_Pricer](https://github.com/HyVoid/RTL_Loan_Sizer_Pricer)** — Quelle structure de financement est soutenable sous différents scénarios d'emprunteurs et de garanties ? — Comparez des scénarios de prêt à l'aide d'hypothèses de financement ajustées du risque.
+* **[Personal-Business-Dual-Track-Budget-Manager](https://github.com/HyVoid/Personal-Business-Dual-Track-Budget-Manager)** — Où la trésorerie personnelle et professionnelle est-elle mélangée ou mal allouée ? — Séparez les flux de trésorerie personnels et professionnels en pistes budgétaires suivies indépendamment.
+* **[Multifamily-Value-Add-Acquisition-Model](https://github.com/HyVoid/Multifamily-Value-Add-Acquisition-Model)** — Cette acquisition immobilière crée-t-elle encore de la valeur en fonds propres après hypothèses de rénovation et d'exploitation ? — Évaluez les rendements d'acquisition résidentielle collective (multifamily) sous financement de rénovation et scénarios d'exploitation.
+* **[Real-Estate-Valuation-all-in-one-calculator](https://github.com/HyVoid/Real-Estate-Valuation-all-in-one-calculator)** — Combien vaut un bien selon différentes méthodes d'évaluation ? — Calculez la valeur d'un bien selon plusieurs méthodes d'évaluation avec modélisation fiscale et des dépenses en capital.
+* **[multi-entity-expense-allocation](https://github.com/HyVoid/multi-entity-expense-allocation)** — Les coûts partagés sont-ils alloués équitablement entre les entités, ou certains actifs sont-ils surchargés tandis que d'autres échappent à leur véritable exposition aux coûts ? — Répartissez les factures fournisseurs entre plusieurs entités juridiques et actifs d'exploitation à l'aide de méthodologies d'allocation configurables.
+* **[shopify-cash-flow-forecast-excel-toolkit](https://github.com/HyVoid/shopify-cash-flow-forecast-excel-toolkit)** — Quels engagements opérationnels créeront un problème de trésorerie dans les douze prochaines semaines ? — Connectez les ventes Shopify, les transactions bancaires, les dépenses publicitaires et les achats de stocks dans un cadre de décision de trésorerie unifié.
+* **[Revenue-Management-Decision-Engine](https://github.com/HyVoid/Revenue-Management-Decision-Engine)** — Assez d'informations significatives ont-elles changé pour justifier un ajustement tarifaire ? — Gouvernez les recommandations tarifaires grâce à des garde-fous configurables qui préviennent la volatilité inutile des revenus.
+* **[amazon-wbr-sqp-analytics-template](https://github.com/HyVoid/amazon-wbr-sqp-analytics-template)** — Qu'est-ce qui a réellement changé dans l'activité cette période et quels produits ou mots-clés ont causé le changement ? — Transformez les exports Amazon Seller Central SQP et Sellerboard en revues d'activité de direction standardisées.
+* **[food-manufacturing-cost-calculator-excel](https://github.com/HyVoid/food-manufacturing-cost-calculator-excel)** — Quels produits sont réellement rentables après allocation de tous les coûts de fabrication, et lesquels détruisent la marge ? — Allouez la main-d'œuvre d'usine, les services, les frais généraux et les coûts de matières à chaque SKU pour une véritable économie de fabrication unitaire.
+* **[ecommerce-profit-calculator-excel](https://github.com/HyVoid/ecommerce-profit-calculator-excel)** — Quelles commandes sont réellement rentables après tous les coûts cachés, et où l'argent fuit-il entre les canaux et les devises ? — Reconstituez la véritable rentabilité au niveau des commandes en rapprochant les versements de ventes, les frais d'expédition, les frais de paiement et les commissions de marketplaces dans des opérations e-commerce multicanales.
+* **[construction-job-costing-excel-template](https://github.com/HyVoid/construction-job-costing-excel-template)** — Quels projets et clients d'entreprise sont réellement rentables après tous les coûts de chantier ? — Connectez l'estimation des affaires, l'exécution des chantiers et le suivi des coûts réels dans un cadre unifié de rentabilité d'entreprise.
+* **[Flora-Pastry-Coffee-Shop-Operating-Control-System](https://github.com/HyVoid/Flora-Pastry-Coffee-Shop-Operating-Control-System)** — La boutique est-elle réellement rentable après tous les coûts d'ingrédients, de main-d'œuvre et d'exploitation ? — Connectez le coût des recettes, les ventes, la consommation de stocks et les charges d'exploitation dans un cadre unifié de rentabilité et de trésorerie.
+* **[freight-forwarder-job-costing-excel](https://github.com/HyVoid/freight-forwarder-job-costing-excel)** — Quelles réservations de fret sont réellement rentables après tous les coûts, frais et conversions de devises ? — Mesurez la rentabilité du fret au niveau des réservations en rapprochant revenus, COGS, frais bancaires et coûts de conteneurs dans des transactions multi-devises.
+* **[cross-entity-logistics-console](https://github.com/HyVoid/cross-entity-logistics-console)** — Quels conteneurs et clients sont réellement rentables à travers les opérations douanières et de flotte ? — Consolidez les données de dédouanement et d'exécution de flotte dans une vue unique de rentabilité au niveau des conteneurs.
+* **[family-loan-tracker-excel](https://github.com/HyVoid/family-loan-tracker-excel)** — Que doit-on réellement aujourd'hui après des années de transferts et d'intérêts courus ? — Rapprochez les transferts de fonds à long terme et les intérêts courus en un solde impayé actuel.
+* **[3-statement-financial-model-excel](https://github.com/HyVoid/3-statement-financial-model-excel)** — À quoi ressembleront nos états financiers sous différents scénarios d'exploitation et de financement ? — Prévoyez des états financiers intégrés en reliant revenus, charges, fonds de roulement et dette dans un modèle unifié.
+* **[assisted-living-cost-allocation-excel](https://github.com/HyVoid/assisted-living-cost-allocation-excel)** — Quelle part de la marge rapportée de chaque résidence est réellement générée par cette résidence plutôt que par la manière dont les coûts du siège ont été alloués ? — Allouez les dépenses partagées entre unités d'exploitation tout en préservant les transactions sources et en rapprochant les résultats au niveau des unités des totaux de l'entreprise.
+* **[real-estate-development-feasibility-excel](https://github.com/HyVoid/real-estate-development-feasibility-excel)** — À quel prix maximum d'acquisition du terrain ce projet de développement devient-il un investissement finançable ? — Évaluez les opportunités de développement résidentiel en examinant les comparables fonciers, en estimant les coûts de construction et en calculant les seuils de profit sur coût.
+* **[uk-residential-costing-software](https://github.com/HyVoid/uk-residential-costing-software)** — Ce projet de construction atteindra-t-il réellement sa marge cible une fois prises en compte la logistique de chantier, les facteurs de gaspillage et les variations de taux des corps de métier ? — Séparez les quantités physiques du bâtiment des taux volatils des corps de métier et des installations de chantier pour décliner les majorations commerciales à travers les budgets d'appel d'offres et les devis clients.
+* **[b2b-pricing-landed-cost-excel-model](https://github.com/HyVoid/b2b-pricing-landed-cost-excel-model)** — Quels prix de gros et segments de clients préservent réellement la marge une fois le fret, les droits de douane, les conditions de paiement et le change entièrement coûtés ? — Calculez les coûts de revient rendus au niveau SKU, le coût de service et les cascades de prix à marge nette pour simuler la rentabilité du commerce de gros transfrontalier.
+* **[custom-label-pricing-calculator](https://github.com/HyVoid/custom-label-pricing-calculator)** — Combien facturer une commande d'étiquettes personnalisées à chaque palier de quantité pour rester compétitif et rentable ? — Calculez une tarification paramétrique des étiquettes en modélisant les coûts au pouce carré du substrat, les frais de préparation et les remises par paliers de quantité par rapport aux références concurrentes.
+* **[landed-cost-calculator-retail-deduction-excel](https://github.com/HyVoid/landed-cost-calculator-retail-deduction-excel)** — Quelle est la véritable marge nette de chaque SKU une fois les coûts rendus réels et les déductions des distributeurs prises en compte ? — Rapprochez les coûts rendus estimés au bon de commande des frais réels de fret, de droits de douane, de change et de camionnage local tout en auditant les déductions de versement des distributeurs pour révéler la marge nette au niveau SKU.
+* **[saas-finance-mrr-burn-rate-excel](https://github.com/HyVoid/saas-finance-mrr-burn-rate-excel)** — Pouvons-nous honorer les engagements de recrutement, de marketing et fournisseurs de cette semaine sans manquer de trésorerie avant la clôture ? — Suivez le rythme hebdomadaire de consommation de trésorerie, les écarts de cascade MRR/ARR, les indicateurs de rétention et les coûts de paie par rapport au budget avant la clôture de fin de mois.
+* **[startup-financial-model-excel](https://github.com/HyVoid/startup-financial-model-excel)** — Notre plan de croissance manquera-t-il de trésorerie avant que la monétisation des cohortes ne rattrape ? — Prévoyez la consommation de trésorerie pluriannuelle, la runway, l'économie unitaire et la dilution des levées de fonds à partir d'hypothèses ascendantes de cohortes et d'effectifs.
+* **[shopify-pnl-reconciliation-excel](https://github.com/HyVoid/shopify-pnl-reconciliation-excel)** — Chaque boutique Shopify est-elle réellement rentable une fois les coûts réels au niveau SKU, les dépenses partagées et les frais bancaires rapprochés ? — Rapprochez les exports de ventes Shopify multi-boutiques du COGS au niveau SKU, des OPEX multi-devises alloués et des relevés bancaires pour produire un P&L mensuel fiable.
+* **[travel-agency-accounting-excel-template](https://github.com/HyVoid/travel-agency-accounting-excel-template)** — Quelles réservations de voyages génèrent réellement un profit net et une trésorerie positive après coûts fournisseurs et encaissements B2B ? — Calculez les coûts de dossier par réservation, les marges brutes, le règlement clients/fournisseurs et la trésorerie d'exploitation dans plusieurs devises.
 
-Chaque modèle fonctionne localement sur des formules de tableur natives, donnant à votre équipe une visibilité complète sur chaque cellule de calcul et chaque écriture du registre de détention.
-
-Vous gérez dans des tableurs des flux de travail complexes d'allocation de capital, de rapprochement ou de suivi de détention ? **[Explorez notre bibliothèque complète de modèles Excel financiers et opérationnels chez Theseus Workshop →](https://www.theseusworkshop.com)**
 
 ---
 
