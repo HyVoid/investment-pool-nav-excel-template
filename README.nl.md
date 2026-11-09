@@ -1,266 +1,263 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
+# Investeringspool Excel-sjabloon, winstverdelingscalculator & fondseenheidsverrekening NAV-spreadsheet: gezamenlijk kapitaal, partnereigendom & cashflows op meerdere data bijhouden
+<img width="1079" height="790" alt="image" src="https://github.com/user-attachments/assets/38949e33-2c8f-4f28-b36a-a3edd5c3ed4a" />
 
-# Fondseenheidsverrekening & NAV-boekhouding Excel-sjabloon: eigendom van investeringspools, partnerkapitaalrekeningen en cashflows op meerdere data bijhouden
 
 <div align="left">
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel-217346)
-![Domain](https://img.shields.io/badge/domain-Fund%20NAV%20Accounting-orange)
+![Platform](https://img.shields.io/badge/platform-Microsoft%20Excel%20365%20%7C%202021%2B-217346)
+![Privacy](https://img.shields.io/badge/data%20privacy-100%25%20Local%20Offline%20%7C%20Zero%20Cloud%20Risk-critical)
+![Guarantee](https://img.shields.io/badge/guarantee-30--Day%20Money--Back-success)
 
-**Een dynamisch Microsoft Excel-spreadsheet voor fondseenheidsverrekening en NAV (Net Asset Value)-calculator, gebouwd voor investeringsclubs, vastgoedsyndicaten, particuliere handelspools en family offices die gefaseerde stortingen en terugnames van investeerders beheren.**
+<p><strong>Een plug-and-play Microsoft Excel-tracker voor investeringspools, winstverdelingscalculator voor gezamenlijke portefeuilles en geautomatiseerde fondseenheidsverrekening-spreadsheet met Net Asset Value (NAV). Gebouwd voor beginners, friends-and-family fondsen, investeringsclubs, vastgoedsyndicaten en handelsgroepen die ongelijke stortingen en opnames van investeerders op verschillende data beheren—zonder formules te hoeven slepen, zonder cloud-privacyrisico's en zonder maandelijkse SaaS-abonnementskosten.</strong></p>
 
-[Lanceer de interactieve webdemo van de fondseenheidsverrekening- & NAV-calculator](https://hyvoid.github.io/investment-pool-nav-excel-template/) 
+<p>
+  🚀 <a href="https://hyvoid.github.io/investment-pool-nav-excel-template/" title="Lanceer de gratis interactieve webdemo van de investeringspool & NAV-calculator"><strong>Lanceer de gratis interactieve webdemo-simulator voor investeringspools & NAV-calculator (test voorbeeldcashflows in je browser)</strong></a>
+</p>
 
-[Download de volledige fondseenheidsverrekening- & NAV-boekhouding Excel-werkmap (gratis)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)
+<p>
+  📥 <a href="https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav" title="Ontvang de complete kant-en-klare fondseenheidsverrekening- en investeringspool Excel-sjabloon"><strong>Ontvang de complete investeringspool & NAV-boekhouding Excel-werkmap (eenmalige aankoop | 100% lokaal offline bestand | 30 dagen geld-terug-garantie)</strong></a>
+</p>
 
 </div>
 
-**Fondseenheidsverrekening & NAV-boekhouding Werkmap** is een geautomatiseerde **Microsoft Excel-investeringspooltracker** en **kapitaalrekening-grootboek voor partners**. Het berekent de **Net Asset Value (NAV) per unit**, automatiseert de **prijsstelling bij uitgifte en terugname van units**, voorkomt **verwatering van winst vóór instap** en onderhoudt een **auditklare investeerders-cap table** over gefaseerde stortingsdata heen—zonder dat institutionele fondsadministratiesoftware nodig is.
+---
+
+**Fondseenheidsverrekening & NAV-boekhouding Werkmap** is een kant-en-klare **Microsoft Excel-investeringspoolsjabloon**, een **tracker voor gezamenlijke kapitaalrekeningen** en een **geautomatiseerde winstverdelingscalculator**, ontworpen voor directe kopieer-en-plak-invoer. Als je geld samenvoegt met vrienden, familie, clubleden of syndicaatpartners en worstelt met **hoe je beleggingswinsten eerlijk verdeelt wanneer mensen op verschillende momenten geld storten of opnemen**, dan vergrendelt dit voorgebouwde spreadsheet een complex institutioneel proces in een eenvoudig, herhaalbaar lokaal Excel-systeem. Het berekent automatisch de **Net Asset Value (NAV) per unit**, verwerkt **gefasceerde instappen en uitkopen van investeerders**, voorkomt **oneerlijke winstverwatering** en onderhoudt een **auditklare investeerders-cap table**—waardoor je duizenden dollars aan jaarlijkse fondsensoftware-abonnementen bespaart terwijl je gevoelige financiële gegevens van partners 100% offline blijven op je eigen computer.
 
 ---
 
-## Visuele preview: NAV-berekeningsengine & dashboard met partnerkapitaalrekeningen
+## Waarom handmatige percentagespreadsheets falen bij het bijhouden van gezamenlijke beleggingen & groepspools
 
-<img width="1536" height="1024" alt="Fund Unitization Excel Template Dashboard showing Net Asset Value per unit and investor ownership percentages" src="https://github.com/user-attachments/assets/42e2fe30-0173-45cc-945a-0d066ac2c974" />
-<img width="1672" height="941" alt="Investment Pool Transaction Ledger in Excel tracking staggered capital contributions, withdrawals, and P&L updates" src="https://github.com/user-attachments/assets/1b9a5b9c-5037-4e2a-8ddb-fd1584d48a5c" />
-<img width="1448" height="1086" alt="Partner Capital Account Statement in Excel displaying unit issuance, entry NAV pricing, and real-time redemption balances" src="https://github.com/user-attachments/assets/71d0cb5b-76f8-4152-b13d-0b58f792e9bc" />
+Wanneer beginners of thesauriers geld samenvoegen om te beleggen in aandelen, crypto, vastgoed of private deals, beginnen ze bijna altijd met het bijhouden van eigendom via een eenvoudige **percentagesplitsing op basis van gestort cash** (`jouw storting ÷ totale poolcash`) naast handmatige winst-en-verlieskolommen (P&L).
 
-> Test de rekenkunde van de toewijzing op unitbasis in je browser voordat je downloadt: [Interactieve demo van de simulator voor fondseenheidsverrekening & NAV-boekhouding](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/)
+Zodra de portefeuille geld verliest of verdient en een lid nieuw cash toevoegt—of vraagt om gedeeltelijk uit te kassen—breekt een plat percentagespreadsheet af. Het reconstrueren van wie wat bezit na zes maanden ongelijke stortingen legt ernstige rekenfouten bloot die partnergeschillen triggeren.
 
----
-
-## Waarom statische cap tables falen in investeringspools met meerdere stortingsdata
-
-Geschillen over investeringspoolboekhouding ontstaan wanneer thesauriers vaste eigendomspercentages, gefaseerde instapdata en handmatige toerekening van winst en verlies (P&L) combineren in een plat spreadsheet. Wanneer een investeerder maanden later een gedeeltelijke of volledige terugname aanvraagt, legt de reconstructie van het exacte kapitaalrekeningsaldo de structurele zwaktes van statische percentagemodellen bloot.
-
-**De traditionele workflow met statische percentages (hoog geschillenrisico):**
+**De kapotte DIY-percentagespreadsheet-workflow (hoog geschillen- & verliesrisico):**
 
 ```text
-New capital subscription logged
--> Partner ownership percentage split adjusted manually
--> Unrealized pre-entry market gains mixed with new capital
--> Valuation and dilution dispute surfaces at investor withdrawal
-
+New member deposits cash mid-year after the portfolio already grew +30%
+-> Treasurer manually overwrites ownership percentage formulas in Excel
+-> Early investors' unrealized profits get accidentally shared with the new depositor
+-> Cell references break (#REF! / #VALUE!) when dragging formulas down
+-> Accounting freeze and partner dispute erupt when someone asks to withdraw cash
 ```
 
-**De geautomatiseerde NAV-eenheidsverrekening-workflow (auditklaar):**
+**De geautomatiseerde kopieer-plak NAV-eenheidsverrekening-workflow (auditklare helderheid in 1 minuut):**
 
 ```text
-New capital subscription logged
--> Pool units issued at current mark-to-market NAV per unit
--> Early investors' accumulated gains locked in structurally
--> Real-time capital account balances updated at every cash flow event
-
+Paste raw deposit, withdrawal, or portfolio balance rows into the standardized Excel input table
+-> Pre-built dynamic formulas automatically calculate current Share Price (NAV per Unit)
+-> Early investors' prior profits are locked in 100% before new shares are issued
+-> Real-time partner buyout values and ownership % update automatically with zero formula dragging
 ```
 
-Poolbeheerders, syndicaat-GP's en clubthesauriers hebben verifieerbare operationele helderheid nodig. Elke gewone partner en beperkte partner moet op elke waarderingsdatum exacte liquidatiesaldi, unitbezit en impliciete eigendomsbelangen kunnen verifiëren.
+Of je nu een **thesaurier van een investeringsclub** bent, een **organisator van een friends-and-family fonds**, of een **syndicaat-general partner (GP)**, je hebt directe, verifieerbare cijfers nodig. Elke deelnemer moet in seconden zijn exacte dollarsaldo, unitbezit en eerlijke uitkoopuitkering op elke datum kunnen zien.
 
 ---
 
-## De bedrijfslogica & methodiek: eenheidsverrekening NAV-boekhouding vs. percentagesplitsingen
+## De bedrijfslogica & methodiek: begrijpelijke gids voor eerlijke winstverdeling & verborgen financiële blinde vlekken
 
-Deze werkmap lost het **probleem van kapitaaltoewijzing over meerdere periodes** op met behulp van **eenheidsverrekening volgens de units-methodiek en tijdgewogen Net Asset Value (NAV)-boekhouding** (in lijn met FASB ASC 946 en de IOSCO-waarderingsnormen voor collectieve beleggingen).
+De meeste beginnende poolbeheerders realiseren zich niet dat **het bijhouden van gezamenlijke beleggingen via eenvoudige cashpercentages een directe financiële overdracht creëert van vroege investeerders naar late investeerders**. Hoewel institutionele fondsboekhouding aan de oppervlakte complex lijkt, laat het begrijpen van de onderliggende bedrijfslogica zien waarom standaard spreadsheets je stilletjes geld kosten—en hoe deze werkmap die blinde vlekken automatisch elimineert.
 
-### Het commerciële probleem: asynchrone kapitaalstromen vs. continue marktbeweging
+### Drie commerciële blinde vlekken die poolbeheerders geld kosten
 
-In een dynamische investeringspool veranderen twee variabelen asynchroon:
+Als je geld samenvoegt met anderen en geen unitgebaseerde prijsstelling gebruikt, loop je drie objectieve financiële risico's:
 
-1. **Portefeuillewaardering (markt-P&L):** De onderliggende activa schommelen dagelijks, wekelijks of maandelijks.
-2. **Cashflows van deelnemers (inschrijvingen & terugnames):** Investeerders storten of nemen kapitaal op op onregelmatige momenten.
+1. **Blinde vlek 1: De "stille winstweggifte" bij late stortingen (10%–40% van je winst weggeven)**
+   * **Het objectieve feit:** Stel dat je **$100,000** in een handelspool stopt en deze laat groeien naar **$130,000** (+$30,000 winst). Een vriend stapt vervolgens in en stort **$65,000**, waardoor de totale poolcash op **$195,000** komt. Als je een eenvoudig percentagespreadsheet gebruikt (`$65,000 ÷ $195,000`), geeft je spreadsheet je vriend **33.33% eigendom van de hele pool**.
+   * **Je financiële verlies:** Omdat je vriend nu 33.33% van $195,000 bezit, is zijn rekening onmiddellijk **$65,000** waard, inclusief een claim op de $30,000 winst die is behaald *voordat hij zelfs maar was toegetreden*. Als de markt de volgende dag daalt, of als je winsten verdeelt op basis van de verhouding aan gestort cash, **draag je tot $10,000 van je persoonlijke winst vóór instap gratis over aan de laatkomer.**
+2. **Blinde vlek 2: De "verliessubsidie-valle" tijdens marktdalingen**
+   * **Het objectieve feit:** Stel dat een pool van $100,000 met 20% daalt naar **$80,000** (−$20,000 verlies). Een nieuwe partner investeert **$40,000** om de dip te kopen, waardoor de totale poolwaarde **$120,000** wordt. Als je eigendom bijhoudt op basis van ruw gestort cash (`$40,000 ÷ $140,000 totaal historisch cash = 28.57%`), wordt de rekening van de nieuwe partner onmiddellijk gewaardeerd op slechts **$34,285** (`28.57% × $120,000`).
+   * **Je financiële verlies:** De nieuwe investeerder verliest op dag 1 onmiddellijk **$5,715** door alleen maar geld te storten, omdat een plat cashratio-spreadsheet nieuw cash dwingt om de historische verliezen van oude leden af te lossen. Geen enkele geïnformeerde investeerder voegt vers kapitaal toe zodra hij deze rekenfout ziet.
+3. **Blinde vlek 3: De belasting-, uitkoop- & cloud SaaS-kostenvalle ($2.500+ aan CPA-kosten of opgeblazen softwareabonnementen)**
+   * **Het objectieve feit:** Belastingautoriteiten en CPA's vereisen exacte kapitaalrekeningcontinuïteit wanneer partners instappen, bijstorten of halverwege het jaar uitstappen.
+   * **Je financiële verlies:** Als je elke maand percentagekolommen overschrijft, kost het reconstrueren van eerlijke uitkeringen tijdens het belastingseizoen **$2.500–$10.000+ aan externe CPA-uren voor forensische boekhouding**. Omgekeerd kost een abonnement op zakelijke fondsadministratie-SaaS-platforms **$5.000–$15.000+ per jaar** en dwingt het je om gevoelige nettovermogens- en transactiegegevens van partners te uploaden naar cloudservers van derden.
 
-Wanneer een pool eigendom strikt bijhoudt als cumulatief gestort kapitaal gedeeld door het totale poolvermogen, draagt elke storting na een marktwinst een deel van de ongerealiseerde winst van de vroege investeerders over aan de binnenkomende deelnemer. Omgekeerd dwingt een storting na een daling de nieuweling om historische verliezen te subsidiëren die hij nooit heeft gedragen.
+### Hoe "fondseenheidsverrekening" het probleem automatisch oplost (uitgelegd voor beginners)
 
-### De kernmethodiek: uitgifte van units tegen mark-to-market waardering
+In plaats van elke keer rommelige eigendomspercentages te herberekenen wanneer iemand $500 of $50.000 stort, gebruikt dit Excel-sjabloon exact dezelfde **eenheidsverrekenmethode (unitprijs)** die Vanguard ETF's en Fidelity mutual funds gebruiken (in lijn met FASB ASC 946 en de IOSCO-waarderingsnormen)—**voorgeprogrammeerd in een vast, herhaalbaar Excel-proces zodat je de rekenkunde nooit zelf hoeft te doen**:
 
-In plaats van eigendomspercentages direct aan te passen, scheidt de werkmap **economische prestatie** van **kapitaalverwatering** via een toestandsmachine met drie vergelijkingen die bij elke transactieregel wordt uitgevoerd:
-
-1. **NAV-waardering vóór de transactie:**
-
-$$\text{NAV per Unit}_{t} = \frac{\text{Total Pool Market Value}_{t}}{\text{Total Outstanding Units}_{t-1}}$$
-
-
-
-*Zakelijk effect:* Alle gerealiseerde en ongerealiseerde markt-P&L verandert de unitprijs ($\text{NAV per Unit}$), terwijl het unitaantal van elke deelnemer onaangetast blijft.
-2. **Prijsstelling van inschrijvingen en terugnames tegen reële waarde:**
-
-$$\text{Units Issued or Redeemed}_{i,t} = \frac{\text{Cash Flow}_{i,t}}{\text{NAV per Unit}_{t}}$$
-
-
-
-*Zakelijk effect:* Nieuw kapitaal koopt units tegen de huidige marktaangepaste NAV in plaats van tegen pari. Vroege investeerders behouden 100% van hun winst vóór instap, omdat de binnenkomende investeerder een hogere prijs per unit betaalt.
-3. **Doorlopende kapitaalrekening als afgeleide toestand:**
-
-$$\text{Investor Balance}_{i,t} = \text{Units Held}_{i,t} \times \text{NAV per Unit}_{t}$$
-
-
-$$\text{Economic Ownership \%}_{i,t} = \frac{\text{Units Held}_{i,t}}{\text{Total Outstanding Units}_{t}}$$
-
-
-
-*Zakelijk effect:* Eigendomspercentages worden een output die is afgeleid uit het unitbezit in plaats van een handmatige invoertabel. Terugnames worden direct afgewikkeld tegen $\text{Units Redeemed} \times \text{Current NAV}$ zonder enige retroactieve herberekening.
+* **Zie je pool als een mini-ETF:** Wanneer de pool start, koopt elke gestorte $1.00 **1 unit (aandeel)** tegen een prijs van **$1.00**.
+* **Wanneer de portefeuille geld verdient, stijgt alleen de unitprijs:**
+  $$\text{Share Price (NAV per Unit)}_{t} = \frac{\text{Total Pool Market Value}_{t}}{\text{Total Units Already Issued}_{t-1}}$$
+  *Begrijpelijk effect:* Als je pool van $100,000 met +30% groeit naar $130,000, houd je nog steeds 100,000 units, maar is elke unit nu **$1.30** waard. Je winst van $30,000 zit vergrendeld in die unitprijs van $1.30.
+* **Nieuwe stortingen kopen units tegen de prijs van vandaag (nul winstverwatering):**
+  $$\text{New Units Issued}_{i,t} = \frac{\text{New Cash Deposited}_{i,t}}{\text{Current Share Price (NAV)}_{t}}$$
+  *Begrijpelijk effect:* Wanneer je vriend $65,000 stort in de pool van $130,000, moet hij units kopen tegen **$1.30 per unit** en ontvangt hij exact **50,000 units** (`$65,000 ÷ $1.30`). Jij behoudt 100% van je $130,000 (`100,000 units × $1.30`), en hij begint met exact $65,000 (`50,000 units × $1.30`).
+* **Opnames & eigendomspercentages rekenen zichzelf uit:**
+  $$\text{Partner Cash Value}_{i,t} = \text{Units Held}_{i,t} \times \text{Current Share Price (NAV)}_{t}$$
+  $$\text{True Ownership \%}_{i,t} = \frac{\text{Units Held}_{i,t}}{\text{Total Pool Units}_{t}}$$
+  *Begrijpelijk effect:* Als iemand op elke willekeurige dag cash wil opnemen, vermenigvuldigt het Excel-blad simpelweg het aantal units dat hij wil uitkeren met de unitprijs van vandaag. Nul discussies, nul retroactieve spreadsheetbewerkingen en **nul handmatig formules kopiëren**.
 
 ---
 
-## Drie valkuilen van kapitaaltoewijzing in handmatige investeringsspreadsheets
+## Drie veelgemaakte Excel-fouten van beginners bij het bouwen van doe-het-zelf beleggingstrackers
 
-### Valkuil 1: Statische percentagesplitsingen verwateren marktwinst vóór instap
+### Fout 1: Eigendomspercentages overschrijven op stortingsdata
+Beginners bouwen vaak een eenvoudige tabel met het totale gestorte cash van elk lid en delen dat door de som van alle stortingen. Zoals hierboven getoond, behandelt dit $1,000 geïnvesteerd op dag 1 (dat het hele vroege marktrisico droeg) identiek aan $1,000 geïnvesteerd op dag 300, nadat de portefeuille al was verdubbeld. Onze **geautomatiseerde NAV-calculatorspreadsheet** vergrendelt historische winsten automatisch bij elke enkele stortings-timestamp.
 
-Eigendom toewijzen op basis van het aandeel in de kapitaalbijdrage faalt zodra twee investeerders op verschillende data instappen in een stijgende portefeuille.
+### Fout 2: Excel `XIRR` proberen te gebruiken om huidige partnersaldi te berekenen
+Veel gevorderde Excel-gebruikers proberen de `XIRR`-formule te gebruiken om te achterhalen hoeveel geld elke partner bezit. `XIRR` berekent echter alleen een **geannualiseerd percentage rendement**; het kan je niet vertellen wat het **exacte dollar-liquidatiesaldo van een partner vandaag** is, of totale uitkeringen afstemmen op je echte bank- of effectenrekeningsaldo. Het gebruik van `XIRR` dwingt je om aparte tabbladen aan te houden voor elk lid en celbereiken handmatig aan te passen na elke storting. Deze werkmap vervangt kwetsbare `XIRR`-hacks door een **doorlopende unitbalansen-engine met één grootboek**.
 
-Stel dat een investeringspool groeit van $100,000 naar $130,000 (+30% rendement) en dat een tweede investeerder $65,000 stort, waardoor de totale poolactiva op $195,000 uitkomen. Als de beheerder de nieuwe deelnemer een vlak eigendomsbelang van 33.3% toekent ($65,000 / $195,000) zonder het eerdere vermogen via de units-methodiek te verrekenen, verwerft de nieuwe investeerder onmiddellijk een claim op de winst van $30,000 die de eerste investeerder vóór zijn instap behaalde.
-
-Poolbeheerders die vlakke percentagesplitsingen berekenen op stortingsdata ondercompenseren vroege geldschieters routinematig. De boekhoudkundige discrepantie stapelt zich geruisloos op over meerdere financieringsrondes en leidt tot geschillen bij liquidatie.
-
-### Valkuil 2: Excel XIRR gebruiken om partnerkapitaalsaldi te berekenen
-
-De `XIRR`-functie van Excel berekent een geannualiseerd intern rendement over één reeks gedateerde cashflows. Het meet **historische, tijdgewogen prestatie**, terwijl pooladministratie **boekhouding van huidige liquidatiesaldi** vereist.
-
-`XIRR` gebruiken als aandelenverdelingsmechanisme dwingt de thesaurier om aparte cashflowreeksen bij te houden voor elke deelnemer, rendementsstromen opnieuw te berekenen na elke storting, en totale saldi handmatig af te stemmen op de werkelijke effectenrekening. `XIRR` houdt geen doorlopende grootboekstaat bij; elke kapitaaloproeping midden in de periode, elke gedeeltelijke uitkering of elke mark-to-market waarderingsboeking vereist een verse handmatige afstemmingsronde.
-
-### Valkuil 3: Uitgestelde verwateringsafstemming bij de afwikkeling aan het einde van de periode
-
-In traditionele partnerschapsmodellen op percentagebasis worden nieuwe kapitaalinschrijvingen vaak geregistreerd als ruwe cash en pas aan het einde van het kwartaal of jaar afgestemd. Op de afwikkelingsdatum is de exacte portefeuillemarktwaarde op het tijdstip van de storting midden in de periode begraven onder latere marktschommelingen.
-
-Als de portefeuille 25% won vóór een storting midden in het kwartaal en daarna 10% verloor, wist het samennemen van de periode het timingvoordeel van de vroege investeerder. Eenheidsverrekening NAV-boekhouding lost verwatering op het exacte moment op waarop kapitaal binnenkomt, door de transactie te koppelen aan de NAV per unit van die dag.
+### Fout 3: Wachten tot het einde van het jaar om winstsplitsingen te berekenen
+Wanneer thesauriers stortingen registreren als ruw cash en wachten tot 31 december om winsten te verdelen, worden marktschommelingen halverwege het jaar oneerlijk uitgemiddeld. Als de pool +25% won voordat een vriend in juni storte en −10% verloor in oktober, wist het samennemen van het hele jaar het timingvoordeel van de vroege investeerder. Dit sjabloon rekent verwatering af **op de exacte dag dat cash binnenkomt of vertrekt**, door simpelweg de huidige effectenrekeningsaldo naast de stortingsregel te plakken.
 
 ---
 
-## Voor wie deze fondseenheidsverrekening Excel-sjabloon is
+## Voor wie deze investeringspool spreadsheet is: rolgebaseerde sjablonen & praktijkscenario's
 
-Deze sjabloon bedient beheerders die voorbij ad-hoc percentagespreadsheets zijn gegroeid en logica van **NAV-boekhoudsoftware op institutioneel niveau binnen Microsoft Excel** nodig hebben:
+Of je nu een complete beginner bent die geld samenvoegt met vrienden of een ervaren beheerder die een syndicaat met meerdere tranches runt, dit sjabloon vervangt complexe software door een vast, herhaalbaar lokaal Excel-proces:
 
-| Rol & zoekpersona | Specifiek operationeel scenario & sjabloongebruik |
+| Gebruikersidentiteit & zoekpersona met hoge intentie | Specifiek operationeel scenario & plug-and-play Excel-use case |
 | --- | --- |
-| **Thesauriers van investeringsclubs** *(Investeringsclub boekhoudspreadsheet)* | Beheer maandelijkse ledenbijdragen, onregelmatige bijschrijvingen en volledige liduitkopen voor 3–20 leden, met verifieerbare kapitaaloverzichten per lid als resultaat. |
-| **Syndicaatleiders & GP-beheerders** *(SPV & syndicaat cap table Excel-sjabloon)* | Neem laat-fase kapitaalpartners aan over meerdere closing-tranches (rolling closes), terwijl vroege LP's worden beschermd tegen verwatering van de pre-close waardering. |
-| **Startende hedgefondsen & crypto-poolbeheerders** *(Shadow NAV-calculator voor incubatorfondsen)* | Draai een onafhankelijk shadow-accounting grootboek naast effectenrekeningoverzichten om LP-aandeelklassen, unitprijzen en NAV per aandeel bij te houden voordat een externe fondsadministrateur wordt ingehuurd. |
-| **Coördinatoren van family offices** *(Werkboek voor de toewijzing van familiale beleggingspools)* | Meng kapitaal uit meerdere familietrusts of generatierekeningen die op verschillende data instappen, met eerlijke P&L-toerekening en schone audittrajecten voor belasting-CPA's. |
-| **Leiders van prop trading- & discretionaire groepen** *(Tracker voor de P&L-verdeling van handelspools)* | Geef deelname-units uit wanneer nieuwe traders of geldschieters margekapitaal storten, en wijk gedeeltelijke winstopnames af tegen mark-to-market unitprijzen. |
+| **Organisatoren van friends & family fondsen** *(Friends and Family Investment Pool Excel-sjabloon)* | Voeg geld samen met familie of vrienden om te beleggen in aandelen, ETF's of crypto zonder ongemakkelijke geldgeschillen. Plak stortingen en rekeningsaldi om met 1 klik duidelijke, eerlijke saldo-updates voor iedereen te genereren. |
+| **Thesauriers van aandelen- & crypto-investeringsclubs** *(Investeringsclub boekhoudspreadsheet & ledengrootboek)* | Beheer maandelijkse ledenbijdragen, overgeslagen betalingen, onregelmatige bijschrijvingen en volledige liduitkopen voor 3–50 clubleden zonder ook maar één formule te slepen. |
+| **Leiders van vastgoedsyndicaten & GP-beheerders** *(Vastgoed syndicaat & SPV cap table Excel-calculator)* | Neem laatfase limited partners (LP's) aan over meerdere closing-dates (rolling closes), terwijl vroege investeerders automatisch worden beschermd tegen verwatering van de pre-close waardering. |
+| **Co-beleggingspartners & joint venture-oprichters** *(Partnerschapskapitaalrekening & winstverdelingscalculator)* | Volg ongelijke kapitaalbijdragen, injecties van apparatuur/cash en gedeeltelijke winstopnames tussen 2–10 zakenpartners met een privé-, offline, CPA-klaar grootboek. |
+| **Leiders van prop trading- & cryptogroepen** *(Tracker voor de P&L-verdeling van gezamenlijke handelspools)* | Geef deelname-units uit wanneer geldschieters of traders margekapitaal storten, en reken wekelijkse of maandelijkse winstopnames af tegen exacte mark-to-market unitprijzen zonder wallet-/accountgegevens aan de cloud bloot te stellen. |
+| **Startende hedgefonds- & incubatorbeheerders** *(Shadow NAV-boekhoudwerkmap voor incubatorfondsen)* | Draai een onafhankelijk lokaal Excel shadow-accounting grootboek naast Interactive Brokers-, Schwab- of crypto-exchange-overzichten—waardoor je institutionele fondsadministratie-abonnementen van $15.000+/jaar vermijdt. |
+| **Coördinatoren & boekhouders van family offices** *(Sjabloon voor de toewijzing van familiale beleggingspools met meerdere trusts)* | Meng kapitaal uit meerdere familietrusts of generatierekeningen die op gefaseerde data instappen, met gevoelijke familie-nettovermogensgegevens 100% offline op lokale opslag. |
 
 ---
 
-## Praktijkvoorbeelden: scenario's van kapitaaltoewijzing op meerdere data oplossen
+## Veelvoorkomende use cases: hoe beginners & fondsbeheerders beleggingen op meerdere data bijhouden
 
-### Scenario A: Rolling closes in particuliere investeringssyndicaten & SPV's
+### Scenario A: Friends & family aandelen- of cryptopool met onregelmatige stortingen
+Vijf vrienden starten een gezamenlijke beleggingsrekening van $20,000, maar iedereen stort op willekeurige momenten verschillende bedragen ($500, $2,000, $5,000) wanneer er geld over is, en zes maanden later moet één vriend $3,000 opnemen voor een noodgeval. In plaats van uren te besteden aan het bouwen van complexe formules, plakt de organisator de datum, ledennaam, storting/opname en huidige effectenrekeningsaldo in het Excel-blad—en ziet onmiddellijk het bijgewerkte dollarsaldo en de eerlijke uitkering van iedereen.
 
-Wanneer een syndicaat-general partner (GP) kapitaal aantrekt over drie afzonderlijke sluitingsdata verspreid over zes maanden, terwijl de onderliggende activa al waarderen, eisen vroege limited partners (LP's) bescherming tegen meeliflen door latere tranches. Door elke closing-tranche te boeken als **unitinschrijving tegen de huidige NAV**, kopen latere instappers in tegen de verhoogde unitprijs, waarmee 100% van de pre-close winsten behouden blijft voor Tranche 1-investeerders.
+### Scenario B: Rolling closes in particuliere investeringssyndicaten & SPV's
+Wanneer een syndicaat-general partner (GP) kapitaal aantrekt over drie afzonderlijke closing-tranches verspreid over zes maanden, terwijl de onderliggende activa al in waarde stijgen, eisen vroege limited partners (LP's) bescherming tegen meeliflen door latere instappers. Door elke closing-tranche te boeken in deze **SPV cap table-spreadsheet**, kopen Tranche 2- en Tranche 3-investeerders automatisch units tegen de verhoogde NAV-prijs, waarmee 100% van de vroege winsten behouden blijft voor Tranche 1-geldschieters.
 
-### Scenario B: Lidinstap, bijschrijvingen en uitkopen in aandelen- & crypto-investeringsclubs
-
-Investeringsclubs innen doorgaans ongelijke maandstorten, terwijl bestaande leden bijdragen kunnen pauzeren of gedeeltelijk kunnen uitkassen. In plaats van elke maand de partnerschapsovereenkomsten te heronderhandelen, registreert de clubthesaurier de huidige liquidatiewaarde van de effectenrekening, werkt de **NAV per unit** bij en verwerkt alle maandstorten en uitkoopverzoeken tegen die ene afwikkelingsprijs.
-
-### Scenario C: Incubatorfondsen & friends-and-family handelspools die shadow accounting nodig hebben
-
-Startende fondsbeheerders die een friends-and-family portefeuille van $100K–$5M beheren, rechtvaardigen zelden $15,000+/jaar aan institutionele fondsadministratiekosten. Deze werkmap functioneert als een lokaal **Excel shadow NAV-boekhoudsysteem** en produceert unitgrootboeken op investeerdersniveau, stortingshistorieën en kapitaalrekeningsamenvattingen, klaar voor belastingvoorbereiding door de CPA (Schedule K-1-ondersteuning) of LP-rapportage.
+### Scenario C: Incubatorfondsen & kleine handelspools die dure SaaS-abonnementen vervangen
+Startende beheerders met een portefeuille van $50K–$5M kunnen $1,000–$1,500/maand voor cloud fondsadministratieplatforms niet rechtvaardigen—en willen ook geen vertrouwelijke identiteits- en kapitaalgegevens van partners uploaden naar servers van derden. Met een **eenmalige aankoop** fungeert deze lokale Excel-werkmap als een permanent **offline shadow NAV-boekhoudsysteem**, dat unitgrootboeken op investeerdersniveau en netto P&L-samenvattingen genereert die je onbeperkt kunt dupliceren en hergebruiken voor fondsen en jaren.
 
 ---
 
-## Wat de werkmap bijhoudt: mapping van pijnpunt naar oplossing
+## Wat dit Excel-sjabloon bijhoudt: mapping van pijnpunt naar geautomatiseerde oplossing
 
-| Pijnpunt poolboekhouding | Vaak gezochte vereiste | Ingebouwde Excel-werkmapoplossing |
+| Veelvoorkomend pijnpunt van beginners & beheerders | Veelgezochte zoekopdracht (wat je moet oplossen) | Voorgebouwde geautomatiseerde Excel-werkmapoplossing |
 | --- | --- | --- |
-| **Oneerlijke verwatering bij gefaseerde stortingen** | *Winst toewijzen wanneer investeerders op verschillende momenten instappen* | **Geautomatiseerde unituitgifte-engine:** Zet binnenkomende stortingen om in pool-units geprijsd tegen de exacte NAV per unit vóór de storting, waarbij eerdere winsten automatisch worden geïsoleerd. |
-| **Fouten bij handmatige P&L-verdeling** | *Investeringspool P&L-toewijzingsspreadsheet* | **Doorlopende NAV-herberekening:** Portefeuillewinsten en -verliezen werken de globale NAV per unit bij; individuele investeerderssaldi (`Units × Current NAV`) passen dynamisch aan zonder handmatige percentagebewerkingen. |
-| **Complexe rekenkunde voor gedeeltelijke opnames** | *Uitkoopwaarde / terugnamewaarde van een investeerder berekenen in een partnerschapspool* | **Mark-to-market unitterugname:** Zet opnameverzoeken in dollars om in exacte unitterugnames tegen de huidige NAV, waarbij de saldi van de overige partners onaangetast blijven. |
-| **Ondoorzichtig saldo-overzicht voor investeerders** | *Partnerkapitaalrekening-tracker & cap table Excel-sjabloon* | **Realtime dashboard per deelnemer:** Toont per investeerder het netto geïnvesteerde kapitaal, het unitsaldo, het economisch eigendomspercentage, de gewogen instap-NAV en de cumulatieve dollar-P&L. |
-| **Wrijving bij audit- & belastingafstemming** | *Auditbaar fondstransactiegrootboek voor CPA-review* | **Chronologische transactie-audittrail:** Registreert elke waarderingsgebeurtenis, storting en terugname met tijdstempel-NAV, unitdelta en poolstatus na de transactie, voor directe CSV/PDF-export. |
+| **Oneerlijke winstverdeling bij late stortingen** | *Beleggingswinsten eerlijk verdelen wanneer iemand later instapt in Excel* | **Geautomatiseerde unituitgifte-engine:** Zet nieuwe cashstortingen direct om in pool-units geprijsd tegen de exacte NAV per unit van die dag—waardoor eerdere winsten voor bestaande leden worden vergrendeld zonder handmatige rekenkunde. |
+| **Kapotte formules bij het toevoegen van rijen** | *Eenvoudige groepsbeleggingstracker-spreadsheet zonder formules te slepen* | **Nulklik dynamische array-auto-update:** Voorgebouwde native Excel-formules breiden automatisch uit en rekenen zodra je nieuwe transactierijen plakt—celhoeken aanklikken en slepen is niet nodig. |
+| **Verwarrende uitkoop- & opnamerekenkunde voor leden** | *Uitkoopwaarde of gedeeltelijke opname van een partner berekenen in een investeringsclub* | **Directe mark-to-market terugnamecalculator:** Voer het dollarbedrag of unitaantal in dat een lid wil opnemen; het blad berekent onmiddellijk de exacte cashuitkering en werkt het eigendoms-% van de overige leden bij. |
+| **Cloud-privacyrisico's & dure SaaS-kosten** | *Offline investeringspoolsoftware zonder maandelijks abonnement* | **100% lokale Excel-architectuur (eenmalige betaling):** Draait volledig op je lokale harde schijf met nul cloud-uploads, nul datalekken naar derden, en een fractie van de kosten van terugkerende SaaS-tools. |
+| **Stressvol belastingseizoen & CPA-audits** | *Auditklaar investeringspool transactielogboek voor CPA Schedule K-1-voorbereiding* | **Chronologische audittrail & foutcontroles:** Legt elke waarderingsupdate, storting en opname vast met ingebouwde saldo-afstemmingsvlaggen, klaar voor export naar PDF of CSV met 1 klik. |
 
 ---
 
-## Casestudy: handmatige percentageverdeling vs. geautomatiseerde NAV-eenheidsverrekening
+## Casestudy & functievergelijking: handmatige spreadsheets vs. cloud SaaS vs. onze lokale Excel-engine
 
-**Poolprofiel:** 8 kapitaalpartners die ongelijk storten over 18 maanden in een actief verhandelde portefeuille die in totaal ~40% waardeerde. Aanvankelijk bijgehouden door de leidende beherende partner in een handmatige percentagesplits-spreadsheet.
+**Praktijkvoorbeeld van een pool die vastliep:** 8 partners storten ongelijk over 18 maanden in een actief verhandelde portefeuille die in totaal +40% groeide. De organisator hield alles bij in een zelfgemaakt percentagesplits-spreadsheet door na elke storting handmatig formules te bewerken.
 
-**De operationele afgang:** Drie investeerders stapten halverwege de cyclus in tijdens maanden met hoge volatiliteit. De beherende partner herberekende de kapitaalbijdragepercentages handmatig na elke storting en verdeelde de maandelijkse P&L op basis van die statische wegingen.
+**Wat er misging:** Drie leden stapten halverwege het jaar in tijdens volatiele maanden. Toen twee vroege partners vroegen om hun winsten uit te kassen, bevriezden drie boekhoudkundige impasses alle uitkeringen:
+1. Niemand kon het eens worden over hoe een marktdaling van −15% toe te rekenen die plaatsvond *voordat* het nieuwste lid toetrad.
+2. Een storting van $25,000 werd in het verkeerde maandtabblad geplakt, waardoor downstream `SUM`- en `%`-verwijzingen over 6 bladen braken.
+3. Het reconstrueren van de echte saldi vereiste **3 weken handmatige forensische reconstructie** door een externe CPA.
 
-Toen twee vroege partners volledige kapitaalterugnames aanvroegen, stopten drie boekhoudkundige geschillen de uitkeringen:
+### Functievergelijking: DIY-percentagespreadsheets vs. zakelijke cloud SaaS vs. geautomatiseerde fondseenheidsverrekening Excel-werkmap
 
-1. Hoe een portefeuilledaling van 15% halverwege het jaar toe te rekenen, die plaatsvond tussen de financieringsdata van Cohort 1 en Cohort 2.
-2. Hoe een partnerstorting van $25,000 te corrigeren die op het verkeerde maandelijkse afstemmingstabblad was geboekt.
-3. Welke eigendomspercentagetabel gold voor de laatste gedeeltelijke maand vóór de terugname-afwikkeling.
-
-De reconstructie van de historische kapitaalrekeningen vereiste drie weken forensische boekhouding door een externe CPA.
-
-### Vergelijking: statische percentagespreadsheets vs. eenheidsverrekening NAV-boekhouding
-
-| Boekhoudkundige operatie | Handmatige percentagesplits-spreadsheet (voor) | Geautomatiseerde fondseenheidsverrekening Excel-werkmap (na) |
-| --- | --- | --- |
-| **Eigendomsmodel** | Statische percentages op basis van kapitaalbijdrage, na elke storting handmatig overschreven | Dynamisch **eenheidsverrekend NAV-model**; units uitgegeven tegen mark-to-market prijs bij storting |
-| **Omgaan met late instappers & verwatering** | Nieuw kapitaal verwaterde eerdere ongerealiseerde winsten tenzij per tranche handmatig afgeschermd | **Automatische anti-verwateringsprijsstelling**; binnenkomend kapitaal koopt units tegen de huidige NAV |
-| **Periodieke P&L-toewijzing** | Handmatige herberekening aan het einde van de periode over verschuivende partnerpercentagetabellen | **Realtime NAV-per-unit-aanpassing**; unitbalansen van investeerders blijven constant tijdens marktbewegingen |
-| **Terugname- & uitkoopafwikkeling door partners** | Forensische reconstructie van historische maandelijkse P&L-tabbladen vereist vóór uitbetaling | **Directe liquidatieprijsstelling** (`Redeemed Units × Current NAV`) direct afgelezen uit het live grootboek |
-| **Audittrail & geschiloppervlak** | Hoog foutenrisico bij elke handmatige formule-override en periode-overdracht | **Eén bron: chronologisch transactiegrootboek**; afstemming afgehandeld op het boekhoudniveau |
+| Operationele & financiële dimensie | Zelfgemaakt percentages- & `XIRR`-spreadsheet (DIY) | Zakelijke fondsadministratie cloud SaaS (concurrenten) | Geautomatiseerde fondseenheidsverrekening Excel-werkmap (deze tool) |
+| --- | --- | --- | --- |
+| **Workflow & formuleonderhoud** | Handmatig kolommen invoegen, celverwijzingen herschrijven en formules naar beneden slepen (hoog `#REF!`-foutenrisico) | Complexe onboarding, starre webformulieren en steile leercurves | **Vaste, herhaalbare kopieer-plak-workflow**; voorgebouwde dynamische formules updaten automatisch zonder muis te slepen |
+| **Nauwkeurigheid van eigendom & winstsplitsing** | Statische percentages op basis van gestort cash die vroege investeerders oneerlijk verwateren | Institutionele NAV-eenheidsverrekening | **Institutionele NAV-eenheidsverrekening**; units uitgegeven tegen live marktwaarde met 100% automatische anti-verwatering |
+| **Kosten & prijsmodel** | Vooraf "gratis", maar kost duizenden aan winstlekkage en CPA-opschoonkosten | **$3,000 – $15,000+ per jaar** aan terugkerende abonnementskosten | **Lage eenmalige betaling**; eeuwig herbruikbaar voor onbeperkt veel pools met een **30 dagen geld-terug-garantie** |
+| **Dataprivacy & cloudbeveiliging** | Lokaal opgeslagen, maar structureel kapot en niet auditeerbaar | **Hoge blootstelling aan de cloud**; gevoelige partnernamen, nettovermogens en cashflows opgeslagen op servers van derden | **100% lokale offline privacy**; je financiële gegevens verlaten nooit je computer en raken de cloud nooit |
+| **Liduitkopen & gedeeltelijke opnames** | Vereist dagen aan reconstructie van historische tabbladen om de eerlijke uitkoopwaarde te bepalen | Geautomatiseerd, maar vergrendeld achter doorlopende abonnementspaywalls | **Directe liquidatie-uitkeringsprijsstelling** (`Redeemed Units × Current NAV`) live zichtbaar op je lokale dashboard |
+| **Gebruiksgemak voor beginners & benodigde tijd** | Kost elke maanden uren aan spreadsheet-debugging | Vereist toegewijd boekhoudpersoneel om te bedienen | **Kopieer-plak-workflow van 1 minuut**; maakt van complete beginners direct zelfverzekerde financieel analisten |
 
 ---
 
-## Institutionele normen achter eenheidsverrekening NAV-boekhouding
+## Institutionele waarderingsnormen achter geautomatiseerde unitprijsstelling (FASB & IOSCO-logica eenvoudig uitgelegd)
 
-Gereguleerde collectieve beleggingsvoertuigen—waaronder mutual funds, ETF's, private equity SPV's en hedgefondsen—vertrouwen op eenheidsverrekening NAV-boekhouding, omdat asynchrone investeerderscashflows een economisch toerekeningsprobleem creëren dat platte percentagetabellen niet kunnen oplossen.
+Gereguleerde beleggingsvoertuigen—waaronder mutual funds, ETF's, vastgoed-SPV's en hedgefondsen—gebruiken **eenheidsverrekening Net Asset Value (NAV)-boekhouding**, omdat ongelijke investeerderscashflows niet eerlijk opgelost kunnen worden met platte percentages.
 
-Een investeerder die op dag 90 inschrijft in een waarderende portefeuille droeg het marktrisico van dag 1 tot en met 89 niet. De eenheidsstructuur codeert het instaptijdstip direct in de **inschrijvingsunitprijs (NAV op stortingsdatum)**. Latere marktprestaties stromen uitsluitend door **NAV-per-unit-schommelingen**, terwijl opnames van investeerders worden afgewikkeld tegen de heersende liquidatie-NAV.
+Deze Excel-werkmap verankert exact die institutionele regels in overzichtelijke, transparante spreadsheetcellen, zodat kleine pools en beginners nauwkeurigheid op Wall Street-niveau krijgen zonder boekhoudjargon te hoeven leren:
 
-| Dimensie fondsboekhouding | Institutioneel NAV-mechanisme geïmplementeerd in deze werkmap |
+| Dimensie fondsboekhouding | Hoe dit Excel-sjabloon institutionele normen achter de schermen automatiseert |
 | --- | --- |
-| **Tijdstip van de kapitaalinschrijving** | Vergrendeld in de aankoopprijs van de investeerder via **NAV per unit op stortingsdatum** |
-| **Portefeuillemarktprestatie (P&L)** | Uitsluitend weerspiegeld via **NAV-per-unit-beweging**; uitstaande unitaantallen blijven onveranderd |
-| **Omvang van de kapitaalbijdrage** | Weerspiegeld in de **hoeveelheid uitgegeven pool-units** ($\text{Deposit} \div \text{Current NAV}$) |
-| **Verwateringsbescherming voor bestaande LP's** | Afgedwongen door nieuwe units uit te geven tegen de **huidige mark-to-market NAV** in plaats van de oorspronkelijke pari-waarde |
+| **Eerlijkheid van instaptijdstip** | Vergrendelt automatisch het instaptijdstip van elke investeerder in zijn **aankoopprijs per unit (NAV per unit op stortingsdatum)** |
+| **Bijhouden van marktwinst & verlies (P&L)** | Stroomt 100% door **veranderingen in de NAV per unit**, waarbij het unitaantal van iedereen onaangetast blijft tijdens marktschommelingen |
+| **Gewicht van de stortingsomvang** | Converteert de omvang van de dollarstorting automatisch naar de **exacte hoeveelheid uitgegeven pool-units** ($\text{Deposit} \div \text{Current NAV}$) |
+| **Bescherming van bestaande leden** | Dwingt eerlijke marktprijsstelling af door nieuwe units uit te geven tegen de **huidige mark-to-market NAV** in plaats van de oorspronkelijke pari-waarde van $1.00 |
 
-**Geraadpleegde gezaghebbende boekhoud- & waarderingsnormen:**
-
-* [CFA Institute: Structuur en waardering van pooled beleggingsvoertuigen](https://www.cfainstitute.org)
-* [IOSCO: Beginselen voor de waardering van collectieve beleggingsregelingen](https://www.iosco.org)
-* [FASB ASC 946: Financiële dienstverlening — boekhoudnormen voor beleggingsmaatschappijen](https://www.fasb.org)
+**Gezaghebbende boekhoud- & waarderingsnormen waarnaar dit model verwijst:**
+- 📖 [Lees de officiële CFA Institute-gids over structuur en waardering van gepoolde beleggingsvoertuigen (externe waarderingsreferentie)](https://www.cfainstitute.org)
+- 📖 [Bekijk de IOSCO-beginselen voor de waardering van collectieve beleggingsregelingen (internationale regelgevingsnorm)](https://www.iosco.org)
+- 📖 [Raadpleeg FASB ASC 946 Financial Services — boekhoudnormen voor beleggingsmaatschappijen (US GAAP NAV-boekhoudkader)](https://www.fasb.org)
 
 ---
 
-## Rekenvoorbeeld: hoe unituitgifte en NAV-prijsstelling werken
+## Uitgewerkt rekenvoorbeeld stap voor stap: hoe unituitgifte & uitkoopprijsstelling echt werken
 
-De **Net Asset Value per unit** van een pool is gelijk aan de totale portefeuillemarktwaarde gedeeld door het totale aantal uitstaande units. Binnenkomend kapitaal koopt nieuwe units tegen de huidige NAV per unit. Marktwinsten en -verliezen veranderen de NAV per unit terwijl de uitstaande unitaantallen onveranderd blijven.
+Dit is de exacte rekenkunde die het Excel-sjabloon automatisch achter de schermen uitvoert wanneer je je cijfers plakt:
 
-| Transactiegebeurtenis | Totale poolmarktwaarde | Totale uitstaande units | NAV per unit | Unitdelta van partner & boekhoudkundig effect |
+| Transactiegebeurtenis die je in Excel plakt | Totale poolmarktwaarde | Totale units in de pool | Automatisch berekende unitprijs (NAV) | Wat het Excel-sjabloon automatisch vastlegt voor elke partner |
 | --- | --- | --- | --- | --- |
-| **1. Investeerder A stort $100,000** | $100,000 | 100,000 | $1.000 | Investeerder A krijgt **100,000 units** uitgegeven tegen $1.000 openings-pari-NAV (100% eigendom) |
-| **2. Marktwinst portefeuille: +30%** | $130,000 | 100,000 | $1.300 | Unitantal onveranderd; NAV stijgt naar **$1.300/unit** (saldo investeerder A = $130,000) |
-| **3. Investeerder B stort $65,000** | $195,000 | 150,000 | $1.300 | Investeerder B koopt **50,000 units** tegen $1.300 NAV (33.33% eigendom; A behoudt $130,000) |
-| **4. Marktverlies portefeuille: −15%** | $165,750 | 150,000 | $1.105 | Unitantal onveranderd; NAV daalt naar **$1.105/unit** (A = $110,500; B = $55,250) |
-| **5. Investeerder A neemt 50,000 units terug** | $110,250 | 100,000 | $1.105 | Investeerder A neemt **$55,250 cash** op (50,000 × $1.105); houdt 50,000 units (50% van de resterende pool) |
+| **1. Investeerder A stort $100,000 om de pool te starten** | $100,000 | 100,000 | **$1.000** | Geeft **100,000 units** uit aan investeerder A tegen een start-unitprijs van $1.000 (100% eigendom) |
+| **2. Portefeuille groeit +30% op de markt** | $130,000 | 100,000 | **$1.300** | Unitaantal blijft 100,000; unitprijs stijgt naar **$1.300** (saldo investeerder A = **$130,000**) |
+| **3. Investeerder B stapt later in & stort $65,000** | $195,000 | 150,000 | **$1.300** | Investeerder B koopt **50,000 units** tegen $1.300 (33.33% aandeel; investeerder A behoudt **$130,000** intact!) |
+| **4. Markt daalt −15% de volgende maand** | $165,750 | 150,000 | **$1.105** | Unitaantal blijft 150,000; unitprijs daalt naar **$1.105** (A = **$110,500**; B = **$55,250**) |
+| **5. Investeerder A kast 50,000 units uit (de helft)** | $110,250 | 100,000 | **$1.105** | Investeerder A neemt **$55,250 cash** op (`50,000 × $1.105`); houdt 50,000 units over (nu 50% van de resterende pool) |
 
-**Waarom de rekenkunde van de eenheidsverrekening elke deelnemer beschermt:**
-
-* **Eerlijke instapprijsstelling:** Investeerder B stort $65,000 wanneer de unitprijs $1.300 is en ontvangt 50,000 units. De winst van $30,000 vóór instap van investeerder A blijft 100% intact binnen de 100,000 units van investeerder A.
-* **Proportionele toerekening van dalingen:** Na het marktverlies van 15% daalt de NAV van $1.300 naar $1.105. De 50,000 units van investeerder B zijn $55,250 waard—precies een verlies van 15% absorberend op hun instapkapitaal van $65,000, zonder de eerdere periode van investeerder A te erven of te subsidiëren.
-
----
-
-## Snelstart-tutorial: je NAV-grootboek voor investeringspools opzetten in 6 stappen
-
-Volg deze stapsgewijze workflow om je investeringsclub, syndicaat of handelspool over te zetten van handmatige percentagesplitsingen naar geautomatiseerde NAV-eenheidsverrekening:
-
-1. **Test je cashflowscenario in de live browsersimulator**
-Open de [interactieve webdemo voor fondseenheidsverrekening & NAV-boekhouding](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/) om gefaseerde stortingen, marktp&L-schommelingen en terugnames te simuleren voordat je je live partnerschapsgegevens invoert.
-2. **Initialiseer poolparameters en partnerprofielen**
-Registreer je initiële investeerders, stel je basisvaluta in en bepaal je openings-pari-NAV per unit (bijv. $1.00 of $100.00 per unit) op de oprichtingsdatum.
-3. **Registreer kapitaalinschrijvingen om automatisch units uit te geven**
-Leg elke investeerdersstorting vast naast de huidige portefeuillemarktwaarde. De werkmap berekent de heersende NAV per unit en geeft de exacte hoeveelheid fractionele of hele units uit op de kapitaalrekening van de partner.
-4. **Registreer periodieke mark-to-market portefeuille-P&L**
-Voer gerealiseerde en ongerealiseerde portefeuillewaarderingsupdates in op een dagelijks, wekelijks of maandelijks schema—en onmiddellijk vóór elke externe cashflow—om de NAV per unit van de pool bij te werken.
-5. **Verwerk investeerdersopnames en unitterugnames**
-Voer gedeeltelijke of volledige terugnameverzoeken in. De engine liquideert het overeenkomstige aantal units tegen de huidige NAV, vermindert het totale aantal uitstaande units en herberekent de eigendomsgewichten na terugname voor de overige partners.
-6. **Controleer kapitaalrekeningoverzichten en download de herbruikbare Excel-werkmap**
-Controleer de saldointegriteit via de geautomatiseerde foutcontrole-vlaggen en exporteer schone transactielogboeken voor LP-rapportage of belastingvoorbereiding. Zodra je de workflow in de single-session webdemo hebt gevalideerd, **[download dan de volledige, herbruikbare fondseenheidsverrekening & NAV-boekhouding Excel-sjabloon](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)** om permanente historische grootboeken op te slaan, partnerdashboards aan te passen en doorlopende meerjarige pooloperaties offline in Microsoft Excel te beheren.
-
-*Disclaimer: Deze werkmap is een operationeel boekhoud- en beslissingsondersteuningssjabloon. Raadpleeg een gekwalificeerde CPA of fondsadvocaat over fiscale partnerschapstoerekeningen (bijv. IRC Section 704(b) / Schedule K-1) en effectenrechtelijke naleving in jouw jurisdictie.*
+**Waarom beginners het fijn vinden dat dit geautomatiseerd is in Excel:**
+- **Nul oneerlijke verwatering:** Wanneer investeerder B bij stap 3 $65,000 inlegt, brengt het spreadsheet hem automatisch **$1.30 per unit** in rekening, waarmee 100% van de vroege winst van $30,000 van investeerder A wordt beschermd.
+- **Exacte eerlijkheid bij verliezen:** Wanneer de markt bij stap 4 met 15% daalt, daalt de $65,000 van investeerder B met precies 15% naar $55,250—hij subsidieert nooit de eerdere historie van investeerder A.
 
 ---
 
-## Download de volledige Excel-sjabloon
+## Snelstart-tutorial: hoe je je investeringspoolanalyse in 1 minuut automatiseert (nul formules slepen)
 
-Klaar om je investeringspoolboekhouding te automatiseren en een permanent, auditbaar partnergrootboek bij te houden?
+Hoewel institutionele fondsboekhouding en tijdgewogen NAV-wiskunde complex zijn, **hoef je geen enkele formule te begrijpen om deze tool te gebruiken**. We hebben een complex institutioneel boekhoudproces omgezet in een **eenvoudig, vast Excel-proces** met voorgebouwde matchregels en dynamisch automatisch bijwerkende formules—**je hoeft niet eens met je muis te dubbelklikken om formules te kopiëren of naar beneden te slepen in een kolom.**
 
-👉 **[Ontvang de volledige fondseenheidsverrekening & NAV-boekhouding Excel-werkmap (gratis download)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**
+Volg deze 6 eenvoudige stappen om in minder dan 1 minuut van ruwe cijfers naar een complete, direct presenteerbare investeringspoolanalyse te gaan:
+
+1. **Test je scenario in de gratis browsersimulator (nul installatie nodig)**
+   Klik om de [gratis interactieve fondseenheidsverrekening & NAV-calculator webdemo-simulator](https://hyvoid.github.io/investment-pool-nav-excel-template/) te openen *(of bekijk de [webdemo-mirror voor cashflowbeheer](https://hyvoid.github.io/Fund-Unitization-NAV-Excel-tool-for-cashflow-management/))* om gefaseerde stortingen, marktp&L-schommelingen en investeerdersuitkopen gratis online te simuleren voordat je aan je permanente grootboek begint.
+2. **Initialiseer je poolparameters & partnerprofielen**
+   Stel je initiële investeerdersnamen in, kies je basisvaluta en bepaal je start-unitprijs (bijv. `$1.00` of `$100.00` per unit) op je oprichtingsdatum.
+3. **Kopieer & plak je investeerdersstortingen (nul formules kopiëren nodig)**
+   Plak simpelweg je stortingsdata, investeerdersnamen en cashbedragen in de gestandaardiseerde invoertabel naast je huidige rekeningsaldo. De voorgebouwde engine matcht automatisch elke investeerder, berekent de live unitprijs en geeft exacte units uit—**zonder dat je ooit een formulecel aanraakt of sleept**.
+4. **Plak periodieke portefeuillesaldi om de winst van iedereen automatisch bij te werken**
+   Wanneer je je effectenrekening, crypto-exchange of syndicaatbankrekening controleert (wekelijks, maandelijks of vlak voordat iemand cash toevoegt), plak je het ene totale marktwaardegetal. Het nettowinst- en eigendoms-% van elke partner wordt bijgewerkt met 1 klik.<img width="1198" height="790" alt="image" src="https://github.com/user-attachments/assets/c94542ca-18ff-4b0b-ae54-1c5eb4c1defb" />
+5. **Verwerk ledenopnames & uitkopen in seconden**
+   Wanneer een lid vraagt om cash op te nemen of uit de pool te stappen, voer je zijn opnameregel in. Het blad berekent onmiddellijk hoeveel units vandaag tegen de NAV-prijs geliquidateerd moeten worden en past het eigendom van iedereen na de opname automatisch aan.
+6. **Schakel over van de eenmalige demo naar de herbruikbare lokale Excel-werkmap (risicovrij)**
+   Hoewel de gratis webdemo-simulator ideaal is voor een eenmalige test in je browser, vereist het beheren van een echte investeringspool dat je je historische grootboek maand na maand opslaat zonder privégegevens van partners aan de cloud bloot te stellen. **[Ontvang de complete, herbruikbare fondseenheidsverrekening & NAV-boekhouding Excel-werkmap](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)** om deze complexe boekhoudwiskunde te vergrendelen in een **eenvoudig, vast lokaal Excel-proces** dat je eeuwig kunt opslaan en hergebruiken:
+   - **Expert-beslisfeedback in 1 minuut:** Download gewoon het `.xlsx`-bestand naar je computer en kopieer-plak je eigen gegevens om direct analyse-resultaten te zien—waardoor complete beginners in 1 minuut financieel analysespecialisten worden en jij je kunt richten op kernbeslissingen tijdens drukke periodes.
+   - **Eenmalige betaling vs. dure SaaS-abonnementen:** Betaal één keer om terugkerende kapitaaltoewijzingsproblemen voor altijd op te lossen, voor een fractie van wat toonaangevende cloud fondsboekhoudplatforms per maand vragen.
+   - **100% lokale dataprivacy:** Alle berekeningen draaien offline op je eigen computer—nul cloud-uploads, nul datalekken naar derden.
+   - **30 dagen geld-terug-garantie zonder vragen:** Test de Excel-werkmap 30 volle dagen met je echte poolgegevens; als het je geen uren spreadsheetgedoe bespaart, krijg je zonder gedoe 100% terugbetaald.
+
+*Disclaimer: Deze werkmap is een operationeel boekhoud- en beslissingsondersteuningssjabloon. Raadpleeg een gekwalificeerde CPA of belastingadvocaat over formele fiscale partnerschapsaangiften (zoals IRS Schedule K-1 of IRC Section 704(b)-toerekeningen) in jouw jurisdictie.*
+
+---
+
+## Ontvang de kant-en-klare investeringspool Excel-werkmap (30 dagen geld-terug-garantie)
+
+Stop met uren verspillen aan het debuggen van kapotte percentageformules, piekeren over oneerlijke winstsplitsingen, of te veel betalen voor cloud SaaS-abonnementen. Vergrendel vandaag nog je poolboekhouding in een eenvoudig, herhaalbaar lokaal Excel-proces:
+
+- ✅ **Directe kopieer-plak-automatisering:** Voorgebouwde dynamische formules werken automatisch bij zonder cellen aan te klikken of te slepen.
+- ✅ **100% offline privacy & levenslang hergebruik:** Sla lokaal op je computer op en hergebruik voor onbeperkt veel pools, clubs of SPV's met een enkele eenmalige betaling.
+- ✅ **Risicovrije 30 dagen restitutiegarantie:** Gedekt door een volledige 30 dagen geld-terug-garantie zonder vragen.
+
+👉 **[Ontvang de complete fondseenheidsverrekening & investeringspool NAV Excel-werkmap (directe .xlsx-download | eenmalige aankoop | 30 dagen garantie)](https://www.theseusworkshop.com/l/FundUnitizationDashboad?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=fund-unitization-nav)**
+
+*(Wil je eerst de rekenkunde testen? [Probeer de gratis interactieve webdemo-simulator in je browser →](https://hyvoid.github.io/investment-pool-nav-excel-template/))*
+
+---
+
+## Over Theseus Workshop: plug-and-play toolkits voor bedrijfsbeslissingen
+
+**Puur nut. Nul ballast.** Bij **Theseus Workshop** bouwen we strakke, auditklare financiële modellen, dashboards voor cashflowbeheersing en parametrische kostenbegroting Excel-sjablonen voor kleine fondsen, oprichters, calculatoren en door operators geleide bedrijven.
+
+Wij geloven dat je geen softwareontwikkelingsteam of dure terugkerende SaaS-abonnement nodig hebt om scherpe zakelijke beslissingen te nemen. Elke toolkit die we bouwen, vertaalt complexe commerciële en financiële logica naar een **eenvoudig, vast Microsoft Excel-proces** met moderne, automatisch bijwerkende native dynamische array-formules (`LET`, `LAMBDA`, `XLOOKUP`, `FILTER`) met **nul opgeblazen VBA-macro's, nul cloud-privacyrisico's en nul handmatig formuleonderhoud**—zodat je je bedrijfsgegevens lokaal kunt kopieer-plakken en je beslisprioriteiten in 1 minuut ziet.
+
+Op zoek naar meer plug-and-play spreadsheets om je cashflow, prijsstelling, kostenbegroting of financiële prognoses te automatiseren met een eenmalige aankoop?
+
+🏢 **[Bekijk onze volledige suite kant-en-klare zakelijke & financiële Excel-sjablonen op TheseusWorkshop.com →](https://www.theseusworkshop.com)**
 
 ---
 
@@ -276,13 +273,37 @@ Klaar om je investeringspoolboekhouding te automatiseren en een permanent, audit
 
 ---
 
-## Over Theseus Workshop
+## Andere tools in deze serie
 
-Wij bouwen transparante, auditklare financiële en operationele Excel-modellen voor kleine fondsen, syndicaten en door operators geleide bedrijven die institutionele boekhoudlogica binnen Microsoft Excel nodig hebben.
+* **[rolling-cashflow-forecast](https://github.com/HyVoid/rolling-cashflow-forecast)** — Waarom is cash altijd krap? — Prognosticeer toekomstige liquiditeit onder wisselende operationele en financiële aannames.
+* **[Multi-Currency-Trade-Financial-Analyzer](https://github.com/HyVoid/Multi-Currency-Trade-Financial-Analyzer)** — Welke handelsstromen zijn echt winstgevend na val effecten? — Meet de winstgevendheid van handel in meerdere valuta over grensoverschrijdende activiteiten heen.
+* **[RTL_Loan_Sizer_Pricer](https://github.com/HyVoid/RTL_Loan_Sizer_Pricer)** — Welke financieringsstructuur is houdbaar onder verschillende kredietnemers- en onderpandsenario's? — Vergelijk leenscenario's met risicogecorrigeerde financieringsaannames.
+* **[Personal-Business-Dual-Track-Budget-Manager](https://github.com/HyVoid/Personal-Business-Dual-Track-Budget-Manager)** — Waar wordt privé- en zakelijk cash gemengd of verkeerd toegewezen? — Scheid privé- en zakelijke cashflows in onafhankelijk bijgehouden budgetsporen.
+* **[Multifamily-Value-Add-Acquisition-Model](https://github.com/HyVoid/Multifamily-Value-Add-Acquisition-Model)** — Creëert deze vastgoedaanwerving nog eigenvermogenswaarde na renovatie- en exploitatieaannames? — Evalueer multifamily-acquisitierendementen onder renovatiefinanciering en exploitscenario's.
+* **[Real-Estate-Valuation-all-in-one-calculator](https://github.com/HyVoid/Real-Estate-Valuation-all-in-one-calculator)** — Hoeveel is een pand waard onder verschillende waarderingsmethoden? — Bereken pandwaarde over meerdere waarderingsmethoden met belasting- en kapitaaluitgavenmodellering.
+* **[multi-entity-expense-allocation](https://github.com/HyVoid/multi-entity-expense-allocation)** — Worden gedeelde kosten eerlijk verdeeld over entiteiten, of worden sommige activa overbelast terwijl andere hun werkelijke kostenlast ontlopen? — Verdeel leveranciersfacturen over meerdere rechtspersonen en operationele activa met configureerbare toerekeningsmethodieken.
+* **[shopify-cash-flow-forecast-excel-toolkit](https://github.com/HyVoid/shopify-cash-flow-forecast-excel-toolkit)** — Welke operationele verplichtingen veroorzaken de komende twaalf weken een cashprobleem? — Verbind Shopify-verkopen, banktransacties, advertentie-uitgaven en voorraadaankopen tot één beslissingskader voor cashflow.
+* **[Revenue-Management-Decision-Engine](https://github.com/HyVoid/Revenue-Management-Decision-Engine)** — Heeft er voldoende betekenisvolle informatie veranderd om een prijswijziging te rechtvaardigen? — Stuur prijsaanbevelingen aan via configureerbare vangrails die onnodige omzetvolatiliteit voorkomen.
+* **[amazon-wbr-sqp-analytics-template](https://github.com/HyVoid/amazon-wbr-sqp-analytics-template)** — Wat is er deze periode echt veranderd in het bedrijf en welke producten of zoekwoorden dreven die verandering? — Transformeer Amazon Seller Central SQP- en Sellerboard-exports naar gestandaardiseerde zakelijke reviews voor directies.
+* **[food-manufacturing-cost-calculator-excel](https://github.com/HyVoid/food-manufacturing-cost-calculator-excel)** — Welke producten zijn echt winstgevend nadat alle productiekosten zijn toegewezen en welke verwoesten de marge? — Wijs fabrieksarbeid, nutsvoorzieningen, overhead en materiaalkosten toe aan elke SKU voor echte unit-productie-economie.
+* **[ecommerce-profit-calculator-excel](https://github.com/HyVoid/ecommerce-profit-calculator-excel)** — Welke orders zijn echt winstgevend nadat alle verborgen kosten zijn meegerekend en waar lekt geld weg over kanalen en valuta? — Reconstrueer echte winstgevendheid per order door verkooppayouts, verzendkosten, betaalkosten en marktplaatscommissies af te stemmen over multi-channel e-commerceactiviteiten.
+* **[construction-job-costing-excel-template](https://github.com/HyVoid/construction-job-costing-excel-template)** — Welke projecten en klanten van aannemers zijn echt winstgevend na alle projectkosten? — Verbind leadcalculatie, projectuitvoering en werkelijke kostenregistratie tot één winstgevendheidskader voor aannemers.
+* **[Flora-Pastry-Coffee-Shop-Operating-Control-System](https://github.com/HyVoid/Flora-Pastry-Coffee-Shop-Operating-Control-System)** — Is de winkel echt winstgevend na alle ingrediënten-, arbeids- en exploitatiekosten? — Verbind receptkosten, verkoop, voorraadverbruik en exploitatiekosten tot één winstgevendheids- en cashflowkader.
+* **[freight-forwarder-job-costing-excel](https://github.com/HyVoid/freight-forwarder-job-costing-excel)** — Welke vrachtboekingen zijn echt winstgevend na alle kosten, fees en valutaconversie? — Meet de winstgevendheid per boeking door omzet, COGS, bankkosten en containerkosten af te stemmen over transacties in meerdere valuta.
+* **[cross-entity-logistics-console](https://github.com/HyVoid/cross-entity-logistics-console)** — Welke containers en klanten zijn echt winstgevend over douane- en wagenparkoperaties heen? — Consolideer douaneafhandeling en wagenparkuitvoering tot één overzicht van winstgevendheid op containerniveau.
+* **[family-loan-tracker-excel](https://github.com/HyVoid/family-loan-tracker-excel)** — Wat is er vandaag echt verschuldigd na jaren van overboekingen en opgelopen rente? — Stem langetermijn geldoverboekingen en renteopbouw af tot een actueel openstaand saldo.
+* **[3-statement-financial-model-excel](https://github.com/HyVoid/3-statement-financial-model-excel)** — Hoe zien onze jaarrekeningen eruit onder verschillende exploitatie- en financieringsscenario's? — Prognosticeer geïntegreerde jaarrekeningen door omzet, kosten, werkkapitaal en schulden te koppelen in één model.
+* **[assisted-living-cost-allocation-excel](https://github.com/HyVoid/assisted-living-cost-allocation-excel)** — Hoeveel van de gerapporteerde marge van elk gebouw wordt echt door dat gebouw gegenereerd en hoeveel door de manier waarop bedrijfskosten zijn verdeeld? — Wijs gedeelde kosten toe over operationele eenheden met behoud van de oorspronkelijke transacties, en stem resultaten per eenheid af op bedrijfstotalen.
+* **[real-estate-development-feasibility-excel](https://github.com/HyVoid/real-estate-development-feasibility-excel)** — Bij welke maximale grondaankoopprijs wordt dit ontwikkelproject een bankwaardige investering? — Evalueer woonaanbodontwikkelkansen door locatiecomparables te screenen, bouwkosten te schatten en winst-op-kosten drempels te berekenen.
+* **[uk-residential-costing-software](https://github.com/HyVoid/uk-residential-costing-software)** — Haalt dit bouwproject zijn doelmarge echt zodra sitelogistiek, verspillingsfactoren en gewijzigde vakmanstarieven zijn verrekend? — Scheid fysieke bouwhoeveelheden van volatiele vakmanstarieven en algemene bouwplaatskosten (site preliminaries) om commerciële opslagen door te rekenen over aanbestedingsbudgetten en klantoffertes.
+* **[b2b-pricing-landed-cost-excel-model](https://github.com/HyVoid/b2b-pricing-landed-cost-excel-model)** — Welke groothandelsprijzen en klantsegmenten behouden de marge echt zodra vracht, rechten, betalingstermijnen en valutaschommelingen volledig zijn verrekend? — Bereken SKU-level landed costs, cost-to-serve en pocket-margin prijswatervallen om grensoverschrijdende groothandelswinstgevendheid te simuleren.
+* **[custom-label-pricing-calculator](https://github.com/HyVoid/custom-label-pricing-calculator)** — Wat moeten we in rekening brengen voor een custom label-order per hoeveelheidstrap om concurrerend en winstgevend te blijven? — Bereken parametrische labelprijsstelling door substraatkosten per vierkante inch, opstartkosten en kwantumkortingen per hoeveelheidstrap te modelleren tegen concurrentbenchmarks.
+* **[landed-cost-calculator-retail-deduction-excel](https://github.com/HyVoid/landed-cost-calculator-retail-deduction-excel)** — Wat is de echte nettomarge per SKU zodra werkelijke landed costs en retailerinhoudingen zijn verrekend? — Stem op inkooporders gebaseerde landed costs af op werkelijke vracht-, rechten-, valuta- en drayagekosten, en controleer retailerafdrachten om de nettomarge per SKU bloot te leggen.
+* **[saas-finance-mrr-burn-rate-excel](https://github.com/HyVoid/saas-finance-mrr-burn-rate-excel)** — Kunnen we de aanwervingen, marketing- en leveranciersverplichtingen van deze week nakomen zonder voor de maandafsluiting zonder cash te vallen? — Volg wekelijkse cashburn-tempo, MRR/ARR-watervarianties, retentiemetrics en salariskosten tegen het budget vóór de maandafsluiting.
+* **[startup-financial-model-excel](https://github.com/HyVoid/startup-financial-model-excel)** — Raakt ons groeiplan door zijn cash heen voordat cohortmonetisatie inhaalt? — Prognosticeer meerjarige cashburn, runway, unit-economie en financieringsverwatering vanuit bottom-up cohort- en personeelsaannames.
+* **[shopify-pnl-reconciliation-excel](https://github.com/HyVoid/shopify-pnl-reconciliation-excel)** — Is elke Shopify-winkel echt winstgevend zodra echte SKU-level kosten, gedeelde kosten en bankkosten zijn afgestemd? — Stem multi-store Shopify-verkoopexports af op SKU-level COGS, toegewezen multi-valuta OPEX en bankafschriften om een betrouwbare maandelijkse P&L te produceren.
+* **[travel-agency-accounting-excel-template](https://github.com/HyVoid/travel-agency-accounting-excel-template)** — Welke toerboekingen genereren echt nettowinst en positieve cashflow na leverancierskosten en B2B-inningen? — Bereken projectkosten per boeking, brutomarges, AR/AP-afrekening en operationele cashflow over meerdere valuta.
 
-Elke sjabloon draait lokaal op native spreadsheetformules, waardoor je team volledig inzicht heeft in elke berekencel en elke grootboekregistratie van eigendom.
-
-Complex werk voor kapitaaltoewijzing, afstemming of eigendomstracking in spreadsheets beheren? **[Bekijk onze volledige bibliotheek met financiële & operationele Excel-sjablonen bij Theseus Workshop →](https://www.theseusworkshop.com)**
 
 ---
 
