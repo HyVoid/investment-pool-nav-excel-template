@@ -56,6 +56,14 @@ Paste raw deposit, withdrawal, or portfolio balance rows into the standardized E
 
 Whether you are an **investment club treasurer**, a **friends-and-family fund organizer**, or a **syndicate general partner (GP)**, you need instant, verifiable numbers. Every participant must be able to see their exact dollar balance, unit holdings, and fair buyout payout at any date in seconds.
 
+## Spreadsheet Preview
+
+Want to take a closer look before downloading? You can preview the spreadsheet in Google Sheets to explore its layout, structure, and calculation logic.
+
+**[View Spreadsheet Preview on Google Sheets](https://docs.google.com/spreadsheets/d/1AxRMltjSOJdG32hhfZTYx5cGpA0_ny-G/edit?usp=sharing&ouid=108770714531989318327&rtpof=true&sd=true)**
+
+> **Note on Compatibility:** The Google Sheets preview may display occasional `#NAME?` errors or formula warnings due to differences between Google Sheets and Microsoft Excel formula compatibility. These are preview-only compatibility issues and do not affect the functionality of the original Excel workbook. For the intended formula behavior and full functionality, please download and open the `.xlsx` file in Microsoft Excel.
+
 ---
 
 ## The Business Logic & Methodology: Plain-English Guide to Fair Profit Splitting & Hidden Financial Blind Spots
